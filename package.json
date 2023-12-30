@@ -1,9 +1,9 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.0.0-Dan001",
+    "version": "0.0.0-Dan002",
     "description": "Irimold React Component",
-    "main": "index.cjs.js",
-    "module": "index.js",
+    "main": "index.umd.js",
+    "module": "index.es.js",
     "scripts": {
         "build": "tsc && vite build",
         "lint": "eslint src --max-warnings=0"
