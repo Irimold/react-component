@@ -1,0 +1,6 @@
+{
+    "typescript": true,
+    "prettierConfig": {
+        "tabWidth"  : 4
+    }
+}

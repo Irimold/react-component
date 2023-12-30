@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+
+        "jsx": "react",
+        "module": "ESNext",
+        "declaration": true,
+        "declarationDir": "types",
+        "outDir": "dist",
+        "allowSyntheticDefaultImports": true,
+        "emitDeclarationOnly": true,
+        "moduleResolution":"Bundler",
+        "paths": {
+            "@/icons/*"     : ["./src/components/icons/*"],
+            "@/*"           : ["./src/*"]
+        },
+    },
+    "include": [
+        "**/*.ts", 
+        "**/*.tsx", 
+        "**/*.d.ts", 
+        "vite.config.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "types",
+    ]
+}

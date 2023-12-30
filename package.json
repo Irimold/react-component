@@ -1,0 +1,59 @@
+{
+    "name": "@irimold/react-component",
+    "version": "0.0.0-Dan001",
+    "description": "Irimold React Component",
+    "main": "index.cjs.js",
+    "module": "index.js",
+    "scripts": {
+        "build": "tsc && vite build",
+        "lint": "eslint src --max-warnings=0"
+    },
+    "keywords": [
+        "React Component"
+    ],
+    "author": {
+        "name": "Irimold",
+        "email": "hello@irimold.web.id",
+        "url": "https://irimold.web.id"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@next/font": "^14.0.4",
+        "@svgr/cli": "^8.1.0",
+        "@types/react": "^18.2.46",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.16",
+        "eslint": "^8.56.0",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-tailwindcss": "^3.13.1",
+        "postcss": "^8.4.32",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^3.4.0",
+        "tslib": "^2.6.2",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.10",
+        "vite-plugin-dts": "^3.7.0",
+        "vite-tsconfig-paths": "^4.2.3"
+    },
+    "peerDependencies": {
+        "@next/font": "^14.0.4",
+        "@types/react": "^18.2.46",
+        "autoprefixer": "^10.4.16",
+        "postcss": "^8.4.32",
+        "react": "^18.2.0",
+        "tailwindcss": "^3.4.0"
+    },
+    "peerDependenciesMeta": {
+        "@types/react": {
+            "optional": true
+        }
+    },
+    "sideEffects": false,
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ]
+}
