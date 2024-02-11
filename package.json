@@ -1,10 +1,10 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.0.0-Dan003",
+    "version": "0.0.0-Dan004",
     "description": "Irimold React Component",
     "type": "module",
-    "main": "index.umd.js",
-    "module": "index.es.js",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.es.js",
     "scripts": {
         "build": "tsc && vite build",
         "lint": "eslint src --max-warnings=0"
