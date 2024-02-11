@@ -8,6 +8,13 @@
     "settings": {
         "react" : {
             "version": "detect"
+        },
+        "alias" : {
+            "extensions" : [".ts", ".d.ts"],
+            "map" : [
+                ["@", "./src"],
+                ["@/icons" , "./src/components/icons/"]
+            ]
         }
     },
     "extends" : [

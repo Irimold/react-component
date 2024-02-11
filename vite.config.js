@@ -1,20 +1,18 @@
 import { defineConfig } from 'vite'
-import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import path from 'path'
 
 export default defineConfig({
     plugins: [
         react(),
         dts({
             insertTypesEntry: true
-        }),
-        tsconfigPaths(),
+        })
     ],
     build: {
         lib: {
-            entry : path.resolve(__dirname, 'src/index.ts'),
+            entry : './src/index.ts',
             name : 'IriReactComponent',
             formats: ['es', 'umd'],
             fileName: format => `index.${format}.js`,
@@ -29,5 +27,11 @@ export default defineConfig({
                 'tailwindcss'
             ],
         },
+    },
+    resolve: {
+        alias: {
+            "@/icons" : path.resolve(__dirname, './src/components/icons/'),
+            "@" : path.resolve(__dirname, './src/'),
+        }
     }
 })

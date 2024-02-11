@@ -1,7 +1,8 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.0.0-Dan002",
+    "version": "0.0.0-Dan003",
     "description": "Irimold React Component",
+    "type": "module",
     "main": "index.umd.js",
     "module": "index.es.js",
     "scripts": {
@@ -18,7 +19,6 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@next/font": "^14.0.4",
         "@svgr/cli": "^8.1.0",
         "@types/react": "^18.2.46",
         "@typescript-eslint/eslint-plugin": "^6.16.0",
@@ -35,11 +35,9 @@
         "tslib": "^2.6.2",
         "typescript": "^5.3.3",
         "vite": "^5.0.10",
-        "vite-plugin-dts": "^3.7.0",
-        "vite-tsconfig-paths": "^4.2.3"
+        "vite-plugin-dts": "^3.7.0"
     },
     "peerDependencies": {
-        "@next/font": "^14.0.4",
         "@types/react": "^18.2.46",
         "autoprefixer": "^10.4.16",
         "postcss": "^8.4.32",
