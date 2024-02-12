@@ -8,11 +8,8 @@
 
         "jsx": "react",
         "module": "ESNext",
-        "declaration": true,
-        "declarationDir": "types",
         "outDir": "dist",
         "allowSyntheticDefaultImports": true,
-        "emitDeclarationOnly": true,
         "moduleResolution":"Bundler",
         "paths": {
             "@/icons/*"     : ["./src/components/icons/*"],
