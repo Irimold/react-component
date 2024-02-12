@@ -1,30 +1,34 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFilledRoute = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const FilledRoute = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             fillRule="evenodd"
             d="M49.333 37.333C44.18 37.333 40 41.221 40 46.02c0 4.76 2.979 10.314 7.627 12.301a4.382 4.382 0 0 0 3.413 0c4.648-1.987 7.627-7.541 7.627-12.301 0-4.798-4.18-8.686-9.334-8.686m-34.666-32c-5.155 0-9.334 3.888-9.334 8.686 0 4.76 2.979 10.314 7.627 12.301a4.383 4.383 0 0 0 3.413 0C21.021 24.333 24 18.779 24 14.019c0-4.798-4.179-8.686-9.333-8.686"
             clipRule="evenodd"
             opacity={0.5}
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M52 46.667a2.667 2.667 0 1 1-5.333 0 2.667 2.667 0 0 1 5.333 0m-34.667-32a2.667 2.667 0 1 1-5.333 0 2.667 2.667 0 0 1 5.333 0"
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             fillRule="evenodd"
             d="M30 13.333a2 2 0 0 1 2-2H43.02c7.336 0 10.125 9.582 3.936 13.52L19.195 42.52c-2.816 1.792-1.547 6.147 1.786 6.147h6.19l-.587-.587a2 2 0 1 1 2.83-2.827l4 4a2 2 0 0 1 0 2.827l-4 4a2 2 0 1 1-2.827-2.827l.586-.586H20.98c-7.336 0-10.126-9.582-3.936-13.52L44.805 21.48c2.814-1.792 1.547-6.147-1.789-6.147H32a2 2 0 0 1-2-2"
             clipRule="evenodd"
         />
     </svg>
 );
-export default SvgFilledRoute;
+ 

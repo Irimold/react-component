@@ -1,10 +1,14 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOutlineBack = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const OutlineBack = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
@@ -17,4 +21,4 @@ const SvgOutlineBack = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-export default SvgOutlineBack;
+ 

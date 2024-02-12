@@ -1,10 +1,14 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOutlineWarning = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const OutlineWarning = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
@@ -15,7 +19,7 @@ const SvgOutlineWarning = (props: SVGProps<SVGSVGElement>) => (
             d="M32 18.667v16"
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M32 45.333A2.667 2.667 0 1 0 32 40a2.667 2.667 0 0 0 0 5.333"
         />
         <path
@@ -26,4 +30,4 @@ const SvgOutlineWarning = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-export default SvgOutlineWarning;
+ 

@@ -1,22 +1,26 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFilledCopy = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const FilledCopy = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M17.6 30.392c0-7.27 0-10.904 2.248-13.163 2.25-2.258 5.87-2.258 13.112-2.258h7.68c7.24 0 10.861 0 13.11 2.258C56 19.488 56 23.123 56 30.392v12.853c0 7.27 0 10.904-2.25 13.163-2.249 2.259-5.87 2.259-13.11 2.259h-7.68c-7.243 0-10.861 0-13.112-2.259C17.6 54.149 17.6 50.515 17.6 43.245z"
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M11.125 8.459C8 11.58 8 16.61 8 26.667V32c0 10.056 0 15.085 3.125 18.208 1.646 1.648 3.822 2.427 6.987 2.795-.512-2.24-.512-5.323-.512-9.76V30.392c0-7.27 0-10.904 2.248-13.163 2.25-2.258 5.87-2.258 13.112-2.258h7.68c4.405 0 7.467 0 9.701.506-.368-3.181-1.146-5.365-2.8-7.018-3.122-3.126-8.152-3.126-18.208-3.126s-15.085 0-18.208 3.126"
             opacity={0.5}
         />
     </svg>
 );
-export default SvgFilledCopy;
+ 

@@ -1,28 +1,32 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFilledRepo = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const FilledRepo = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M5.333 53.333a2 2 0 0 1 2-2H30V40h4v11.333h22.667a2 2 0 0 1 0 4H7.333a2 2 0 0 1-2-2"
             opacity={0.5}
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             fillRule="evenodd"
             d="M50.667 26.133v-3.816c0-4.562 0-6.845-1.438-8.328a5.792 5.792 0 0 0-.418-.389c-1.595-1.333-4.054-1.333-8.966-1.333h-.698c-2.155 0-3.23 0-4.235-.267a7.794 7.794 0 0 1-1.584-.608c-.91-.472-1.672-1.179-3.195-2.592l-1.026-.955c-.332-.32-.677-.627-1.035-.917a7.781 7.781 0 0 0-4.07-1.565c-.349-.03-.706-.03-1.429-.03-1.648 0-2.472 0-3.157.12-3.021.531-5.384 2.723-5.952 5.528-.13.638-.13 1.403-.13 2.934v12.218c0 6.536 0 9.806 2.186 11.835C17.707 40 21.227 40 28.267 40h7.466c7.04 0 10.56 0 12.747-2.03 2.187-2.031 2.187-5.3 2.187-11.837M36 18a2 2 0 0 0 0 4h8a2 2 0 1 0 0-4z"
             clipRule="evenodd"
         />
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M32 58.667A5.333 5.333 0 1 0 32 48a5.333 5.333 0 0 0 0 10.667"
         />
     </svg>
 );
-export default SvgFilledRepo;
+ 

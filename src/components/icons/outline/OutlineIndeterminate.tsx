@@ -1,15 +1,19 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOutlineIndeterminate = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const OutlineIndeterminate = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
         <path
-            fill="#3D9EC4"
+            fill="currentColor"
             d="M24 32a2.667 2.667 0 1 1-5.333 0A2.667 2.667 0 0 1 24 32m10.667 0a2.667 2.667 0 1 1-5.334 0 2.667 2.667 0 0 1 5.334 0m10.666 0A2.667 2.667 0 1 1 40 32a2.667 2.667 0 0 1 5.333 0"
         />
         <path
@@ -20,4 +24,4 @@ const SvgOutlineIndeterminate = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-export default SvgOutlineIndeterminate;
+ 

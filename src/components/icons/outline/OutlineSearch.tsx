@@ -1,10 +1,14 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOutlineSearch = (props: SVGProps<SVGSVGElement>) => (
+import type { IconProps } from "../types";
+export const OutlineSearch = ({
+    size = 64,
+    ...props
+} : IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={64}
-        height={64}
+        width={size}
+        height={size}
+        viewBox="0 0 64 64"
         fill="none"
         {...props}
     >
@@ -32,8 +36,8 @@ const SvgOutlineSearch = (props: SVGProps<SVGSVGElement>) => (
             />
         </mask>
         <g mask="url(#OutlineSearch_svg__a)">
-            <path fill="#3D9EC4" d="M0 0h64v64H0z" />
+            <path fill="currentColor" d="M0 0h64v64H0z" />
         </g>
     </svg>
 );
-export default SvgOutlineSearch;
+ 
