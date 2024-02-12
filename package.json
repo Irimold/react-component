@@ -1,6 +1,6 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.0.0-Dan005",
+    "version": "0.0.0-Dan006",
     "description": "Irimold React Component",
     "type": "module",
     "main": "dist/index.umd.js",

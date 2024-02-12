@@ -1,9 +1,9 @@
-import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
+import { ComponentPropsWithoutRef, ElementType } from "react";
 
 type BaseProps<T extends ElementType> = ComponentPropsWithoutRef<T> & {
     variant?    : 'solid' | 'outline' | 'link'
-    leftIcon?   : (size : number) => ReactNode
-    rightIcon?  : (size : number) => ReactNode
+    leftIcon    : ElementType
+    rightIcon   : ElementType
 }
 
 export interface DefaultButtonProps extends BaseProps<'button'> {

@@ -31,10 +31,13 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
             className
         }`
 
+    const LeftIcon = leftIcon
+    const RightIcon = rightIcon
+
     const content = (
         <>
             { 
-                typeof leftIcon != 'undefined' && (
+                typeof LeftIcon != 'undefined' && (
                     <span
                         className={`${
                             leftIconClasses.display
@@ -42,13 +45,13 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             leftIconClasses.margin
                         }`}
                     >
-                        { leftIcon(16) }
+                        <LeftIcon size={16}/>
                     </span>
                 )
             }
             { children }
             { 
-                typeof rightIcon != 'undefined' && (
+                typeof RightIcon != 'undefined' && (
                     <span
                         className={`${
                             rightIconClasses.display
@@ -56,7 +59,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             rightIconClasses.margin
                         }`}
                     >
-                        { rightIcon(16) }
+                        <RightIcon size={16}/>
                     </span>
                 )
             }
