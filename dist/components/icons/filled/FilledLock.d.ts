@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgFilledLock: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgFilledLock;
+import type { IconProps } from "../types";
+export declare const FilledLock: ({ size, ...props }: IconProps) => React.JSX.Element;

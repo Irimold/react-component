@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgOutlineWarning: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgOutlineWarning;
+import type { IconProps } from "../types";
+export declare const OutlineWarning: ({ size, ...props }: IconProps) => React.JSX.Element;

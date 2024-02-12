@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgOutlineCopy: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgOutlineCopy;
+import type { IconProps } from "../types";
+export declare const OutlineCopy: ({ size, ...props }: IconProps) => React.JSX.Element;

@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgFilledLogin: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgFilledLogin;
+import type { IconProps } from "../types";
+export declare const FilledLogin: ({ size, ...props }: IconProps) => React.JSX.Element;

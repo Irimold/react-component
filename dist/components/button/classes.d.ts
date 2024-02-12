@@ -14,6 +14,7 @@ export declare const colorClasses: {
     outline: string;
     link: string;
 };
+export declare const displayClass = "inline-block";
 export declare const fontSizeClass = "open-sans text-body";
 export declare const textAlignClass = "center";
 export declare const leftIconClasses: {

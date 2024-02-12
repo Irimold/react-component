@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgFilledLayer: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgFilledLayer;
+import type { IconProps } from "../types";
+export declare const FilledLayer: ({ size, ...props }: IconProps) => React.JSX.Element;

@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgFilledDestroyed: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgFilledDestroyed;
+import type { IconProps } from "../types";
+export declare const FilledDestroyed: ({ size, ...props }: IconProps) => React.JSX.Element;

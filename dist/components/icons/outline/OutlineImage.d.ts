@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgOutlineImage: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgOutlineImage;
+import type { IconProps } from "../types";
+export declare const OutlineImage: ({ size, ...props }: IconProps) => React.JSX.Element;

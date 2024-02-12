@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgFilledIndeterminate: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgFilledIndeterminate;
+import type { IconProps } from "../types";
+export declare const FilledIndeterminate: ({ size, ...props }: IconProps) => React.JSX.Element;

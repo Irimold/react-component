@@ -1,4 +1,3 @@
 import * as React from "react";
-import type { SVGProps } from "react";
-declare const SvgOutlineCalendar: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
-export default SvgOutlineCalendar;
+import type { IconProps } from "../types";
+export declare const OutlineCalendar: ({ size, ...props }: IconProps) => React.JSX.Element;
