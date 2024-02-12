@@ -1,7 +1,7 @@
 import * as React from "react";
 import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, LinkButtonProps } from "./props";
-import { backgroundClasses, borderClasses, borderRadiusClass, colorClasses, fontSizeClass, leftIconClasses, rightIconClasses, textAlignClass } from "./classes";
+import { backgroundClasses, borderClasses, borderRadiusClass, colorClasses, displayClass, fontSizeClass, leftIconClasses, rightIconClasses, textAlignClass } from "./classes";
 
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
     variant         = 'solid',
@@ -22,6 +22,8 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         } ${
             colorClasses[variant]
         } ${
+            displayClass
+        } ${
             fontSizeClass
         } ${
             textAlignClass
@@ -40,7 +42,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             leftIconClasses.margin
                         }`}
                     >
-                        { leftIcon }
+                        { leftIcon(16) }
                     </span>
                 )
             }
@@ -54,7 +56,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             rightIconClasses.margin
                         }`}
                     >
-                        { rightIcon }
+                        { rightIcon(16) }
                     </span>
                 )
             }

@@ -20,6 +20,8 @@ export const colorClasses = {
     link    : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
 }
 
+export const displayClass = 'inline-block'
+
 export const fontSizeClass = body
 
 export const textAlignClass= 'center'
@@ -31,5 +33,5 @@ export const leftIconClasses = {
 
 export const rightIconClasses = {
     display : 'inline-block',
-    margin  : 'mr-2',
+    margin  : 'ms-2',
 }
