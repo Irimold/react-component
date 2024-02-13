@@ -1,7 +1,7 @@
 import * as React from "react";
 import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, LinkButtonProps } from "./props";
-import { backgroundClasses, borderClasses, borderRadiusClass, colorClasses, displayClass, fontSizeClass, leftIconClasses, rightIconClasses, textAlignClass } from "./classes";
+import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
 
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
     variant         = 'solid',
@@ -14,19 +14,21 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
 }, ref) => {
 
     const ClassName = `${
-            backgroundClasses[variant]
+            buttonClasses.background[variant]
         } ${
-            borderClasses[variant]
+            buttonClasses.border[variant]
         } ${
-            borderRadiusClass
+            buttonClasses.borderRadius
         } ${
-            colorClasses[variant]
+            buttonClasses.color[variant]
         } ${
-            displayClass
+            buttonClasses.display
         } ${
-            fontSizeClass
+            buttonClasses.font
         } ${
-            textAlignClass
+            buttonClasses.padding
+        } ${
+            buttonClasses.textAlign
         } ${
             className
         }`
@@ -45,11 +47,19 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             leftIconClasses.margin
                         }`}
                     >
-                        <LeftIcon size={16}/>
+                        <LeftIcon size="1.25em"/>
                     </span>
                 )
             }
-            { children }
+            <span 
+                className={`${
+                    childrenClasses.display
+                } ${
+                    childrenClasses.height
+                }`}
+            >
+                { children }
+            </span>
             { 
                 typeof RightIcon != 'undefined' && (
                     <span
@@ -59,7 +69,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             rightIconClasses.margin
                         }`}
                     >
-                        <RightIcon size={16}/>
+                        <RightIcon size="1.25em"/>
                     </span>
                 )
             }
