@@ -47,7 +47,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             leftIconClasses.margin
                         }`}
                     >
-                        <LeftIcon size="1.25em"/>
+                        <LeftIcon size="1.5em"/>
                     </span>
                 )
             }
@@ -69,7 +69,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                             rightIconClasses.margin
                         }`}
                     >
-                        <RightIcon size="1.25em"/>
+                        <RightIcon size="1.5em"/>
                     </span>
                 )
             }

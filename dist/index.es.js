@@ -670,7 +670,7 @@ const v2 = "open-sans text-body", E = {
       "span",
       {
         className: `${R3.display} ${R3.margin}`,
-        children: /* @__PURE__ */ t.jsx(C, { size: "1.25em" })
+        children: /* @__PURE__ */ t.jsx(C, { size: "1.5em" })
       }
     ),
     /* @__PURE__ */ t.jsx(
@@ -684,7 +684,7 @@ const v2 = "open-sans text-body", E = {
       "span",
       {
         className: `${D3.display} ${D3.margin}`,
-        children: /* @__PURE__ */ t.jsx(v, { size: "1.25em" })
+        children: /* @__PURE__ */ t.jsx(v, { size: "1.5em" })
       }
     )
   ] });
