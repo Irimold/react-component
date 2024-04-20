@@ -13,3 +13,7 @@
     font-family: 'Open Sans';
     font-display: 'swap';
 }
+
+.btn {
+    padding: calc(.75rem - 1px) calc(1rem - 1px)
+}

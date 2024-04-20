@@ -17,10 +17,11 @@ export const buttonClasses = {
         outline : 'text-primary-700 hover:text-primary-100 active:text-primary-100',
         link    : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
     },
+    custom      : 'btn',
     display     : 'inline-flex justify-center items-center',
     font        : body,
+    outline     : 'outline-0',
     textAlign   : 'center',
-    padding     : 'px-4 py-3'
 }
 
 export const leftIconClasses = {
