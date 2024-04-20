@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/Irimold/react-component/compare/v0.1.2...v0.1.3) (2024-04-20)
+
+
+### Bug Fixes
+
+* **Button:** Remove focus outline & adjust padding ([92cb878](https://github.com/Irimold/react-component/commit/92cb87859435ce0f77fff9e0a2cc5b9b160ed97d))
+
 ## [0.1.2](https://github.com/Irimold/react-component/compare/v0.1.1...v0.1.2) (2024-04-20)
 
 
