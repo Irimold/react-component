@@ -12,7 +12,6 @@
         "allowSyntheticDefaultImports": true,
         "moduleResolution":"Bundler",
         "paths": {
-            "@/icons/*"     : ["./src/components/icons/*"],
             "@/*"           : ["./src/*"]
         },
     },
