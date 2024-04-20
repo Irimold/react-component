@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/Irimold/react-component/compare/v0.1.3...v0.1.4) (2024-04-20)
+
+
+### Bug Fixes
+
+* **Button:** outline important ([1f88094](https://github.com/Irimold/react-component/commit/1f880940f8a4e85adf3fb165f2e00968c17b6e5a))
+
 ## [0.1.3](https://github.com/Irimold/react-component/compare/v0.1.2...v0.1.3) (2024-04-20)
 
 
