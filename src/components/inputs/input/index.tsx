@@ -15,7 +15,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
     const inputRef = useRef<HTMLInputElement|null>(null)
     const inputId = `input-${name}-${id}`
 
-    const handleCHange : ChangeEventHandler<HTMLInputElement> = (event) => {
+    const handleChange : ChangeEventHandler<HTMLInputElement> = (event) => {
         if (typeof onChange != 'function') {
             return
         }
@@ -72,7 +72,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
                 }`}
                 id={inputId}
                 name={name}
-                onChange={handleCHange}
+                onChange={handleChange}
                 { ...props }
             />
             <label
