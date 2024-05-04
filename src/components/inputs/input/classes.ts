@@ -18,7 +18,7 @@ export const inputClasses = {
 }
 
 export const labelClasses = {
-    color       : "text-primary",
+    color       : "text-primary-600",
     display     : "block",
     padding     : "px-with-border-6 py-0 peer-placeholder-shown:py-with-border-4",
     position    : "absolute top-0 left-0",
