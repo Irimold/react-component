@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.6](https://github.com/Irimold/react-component/compare/v0.4.5...v0.4.6) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Textarea:** use autoresize hook from @irimold/react-hooks ([e90dad6](https://github.com/Irimold/react-component/commit/e90dad6f5e27bed8d8247fc4448d215a7b77359e))
+
 ## [0.4.5](https://github.com/Irimold/react-component/compare/v0.4.4...v0.4.5) (2024-05-04)
 
 
