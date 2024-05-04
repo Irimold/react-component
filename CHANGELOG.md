@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.5](https://github.com/Irimold/react-component/compare/v0.4.4...v0.4.5) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Textarea:** Add border height to autosize ([8801851](https://github.com/Irimold/react-component/commit/88018518cdea74d39680a4340dd45edfaad5295a))
+* **Textarea:** Still not working ([3401177](https://github.com/Irimold/react-component/commit/3401177a4569c5166977cf43d4884218190db666))
+
 ## [0.4.4](https://github.com/Irimold/react-component/compare/v0.4.3...v0.4.4) (2024-05-04)
 
 
