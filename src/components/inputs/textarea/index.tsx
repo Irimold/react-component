@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, FormEventHandler, forwardRef, useRef, useState } from "react";
+import React, { ChangeEventHandler, forwardRef, useLayoutEffect, useRef, useState } from "react";
 import { TextAreaProps } from "./props";
 import { containerClasses, counterClasses, labelClasses, textAreaClasses } from "./classes";
 
@@ -7,7 +7,6 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     name,
     id = '',
     onChange,
-    onInput,
     className = '',
     maxLength,
     disableAutoResize = false,
@@ -15,7 +14,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     ...props
 }, ref) => {
     const [count, setCount] = useState(0)
-    const [height, setHeight] = useState(minHeight)
+    const [content, setContent] = useState(props.value)
 
     const textAreaRef   = useRef<HTMLTextAreaElement|null>(null)
     const textAreaId    = `textarea-${name}-${id}`
@@ -34,29 +33,29 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
                 value: value
             })
         }
+
+        setContent(value)
     }
 
-    const handleInput : FormEventHandler<HTMLTextAreaElement> = (event) => {
-        if (typeof onInput == 'function') {
-            onInput(event)
+    useLayoutEffect(() => {
+        const textarea = textAreaRef.current
+        if (!textarea) {
+            return
         }
-
-        console.log("Auto resize disabled?", disableAutoResize)
 
         if (disableAutoResize) {
             return
         }
 
-        const target = event.currentTarget
-        let newHeight = target.scrollHeight
+        textarea.style.height = 'inherit'
+
+        let newHeight = textarea.scrollHeight
         if (newHeight < minHeight) {
             newHeight = minHeight
         }
 
-        console.log("New height: ", newHeight)
-
-        setHeight(newHeight)
-    }
+        textarea.style.height = `${newHeight}px !important`
+    }, [content, props.value])
 
     return (
         <div
@@ -102,14 +101,10 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
                 } ${
                     className
                 }`}
-                style={{
-                    height: `${height}px !important`
-                }}
                 id={textAreaId}
                 name={name}
                 maxLength={maxLength}
                 onChange={handleChange}
-                onInput={handleInput}
                 {...props}
             />
             <label
