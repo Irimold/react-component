@@ -10,6 +10,7 @@
         "module": "ESNext",
         "outDir": "dist",
         "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
         "moduleResolution":"Bundler",
         "paths": {
             "@/*"           : ["./src/*"]
