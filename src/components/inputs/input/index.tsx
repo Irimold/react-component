@@ -54,6 +54,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
                 } ${
                     inputClasses.border
                 } ${
+                    inputClasses.borderRadius
+                } ${
+                    inputClasses.display
+                } ${
                     inputClasses.outline
                 } ${
                     inputClasses.padding
@@ -61,6 +65,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
                     inputClasses.peer
                 } ${
                     inputClasses.placeholder
+                } ${
+                    inputClasses.width
                 } ${
                     className
                 }`}

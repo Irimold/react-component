@@ -8,10 +8,13 @@ export const containerClasses = {
 export const inputClasses = {
     background  : "bg-white",
     border      : "border border-primary-600",
+    borderRadius: "rounded",
+    display     : "block",
     outline     : "!outline-0",
     padding     : "p-control placeholder-shown:p-input-focus",
     peer        : "peer",
     placeholder : "placeholder:text-transparent",
+    width       : "w-full",
 }
 
 export const labelClasses = {
