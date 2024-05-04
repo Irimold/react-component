@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/Irimold/react-component/compare/v0.4.1...v0.4.2) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Textarea:** class was not used in the component ([1c58b94](https://github.com/Irimold/react-component/commit/1c58b9478faf2990023217c71850e7d946a3daad))
+
 ## [0.4.1](https://github.com/Irimold/react-component/compare/v0.4.0...v0.4.1) (2024-05-04)
 
 
