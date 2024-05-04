@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.4](https://github.com/Irimold/react-component/compare/v0.4.3...v0.4.4) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Textarea:** auto resize still not working ([0043633](https://github.com/Irimold/react-component/commit/0043633e19a58d89f577097129828bab67f76f1b))
+
 ## [0.4.3](https://github.com/Irimold/react-component/compare/v0.4.2...v0.4.3) (2024-05-04)
 
 
