@@ -73,7 +73,10 @@ module.exports = {
                 'information': ['.875rem'],
             },
             padding: {
-                control: "calc(.75rem - 1px) calc(1rem - 1px)"
+                control: "calc(.75rem - 1px) calc(1rem - 1px)",
+                "control-x": "calc(1rem - 1px)",
+                "control-y": "calc(.75rem - 1px)",
+                "input-focus": "calc(1rem - 1px) calc(1rem - 1px) calc(.5rem - 1px)",
             }
         },
     },

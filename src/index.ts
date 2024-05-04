@@ -1,3 +1,13 @@
 import './index.css'
 
-export * from "./components"
+export {
+    Button,
+
+    Input,
+} from "./components"
+
+export type {
+    ButtonProps,
+
+    InputProps,
+} from "./components"
