@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/Irimold/react-component/compare/v0.3.0...v0.3.1) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Input:** Radius and wrong layout ([55d4077](https://github.com/Irimold/react-component/commit/55d4077f6760b76ef5469f51b532f303f8ec2598))
+
 ## [0.3.0](https://github.com/Irimold/react-component/compare/v0.2.0...v0.3.0) (2024-05-04)
 
 
