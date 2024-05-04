@@ -1,6 +1,7 @@
-import React, { ChangeEventHandler, forwardRef, useLayoutEffect, useRef, useState } from "react";
+import React, { ChangeEventHandler, forwardRef, useRef, useState } from "react";
 import { TextAreaProps } from "./props";
 import { containerClasses, counterClasses, labelClasses, textAreaClasses } from "./classes";
+import { useTextareaAutoResize } from "@irimold/react-hooks";
 
 export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     label,
@@ -37,24 +38,10 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
         setContent(value)
     }
 
-    useLayoutEffect(() => {
-        const textarea = textAreaRef.current
-        if (!textarea) {
-            return
-        }
-
-        if (disableAutoResize) {
-            return
-        }
-
-        textarea.style.height = 'inherit'
-
-        let newHeight = textarea.scrollHeight + 2
-        if (newHeight < minHeight) {
-            newHeight = minHeight
-        }
-
-        textarea.style.height = `${newHeight}px`
+    useTextareaAutoResize({ 
+        textareaRef: textAreaRef, 
+        disable: disableAutoResize, 
+        minHeight: minHeight
     }, [content, props.value])
 
     return (
