@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/Irimold/react-component/compare/v0.3.1...v0.3.2) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Input:** Incorrect input padding class ([ccb8c9e](https://github.com/Irimold/react-component/commit/ccb8c9edcfed9be37f064e127d84462bd7218bb4))
+
 ## [0.3.1](https://github.com/Irimold/react-component/compare/v0.3.0...v0.3.1) (2024-05-04)
 
 
