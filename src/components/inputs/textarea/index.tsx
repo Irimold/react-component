@@ -41,6 +41,8 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
             onInput(event)
         }
 
+        console.log("Auto resize disabled?", disableAutoResize)
+
         if (disableAutoResize) {
             return
         }
@@ -50,6 +52,8 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
         if (newHeight < minHeight) {
             newHeight = minHeight
         }
+
+        console.log("New height: ", newHeight)
 
         setHeight(newHeight)
     }
