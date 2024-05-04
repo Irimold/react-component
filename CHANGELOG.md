@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/Irimold/react-component/compare/v0.3.3...v0.4.0) (2024-05-04)
+
+
+### Features
+
+* **TextArea:** Add text area component ([dfa9693](https://github.com/Irimold/react-component/commit/dfa96935d0ac9230ffb460c9bcaafa626cb7aed5))
+
 ## [0.3.3](https://github.com/Irimold/react-component/compare/v0.3.2...v0.3.3) (2024-05-04)
 
 
