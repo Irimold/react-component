@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     content: [
         './src/**/*.{js,ts,jsx,tsx,mdx}'
     ],
@@ -72,11 +72,25 @@ module.exports = {
                 'body': ['1rem'],
                 'information': ['.875rem'],
             },
-            padding: {
-                control: "calc(.75rem - 1px) calc(1rem - 1px)",
-                "control-x": "calc(1rem - 1px)",
-                "control-y": "calc(.75rem - 1px)",
-                "input-focus": "calc(1rem - 1px) calc(1rem - 1px) calc(.5rem - 1px)",
+            padding: () => {
+                const paddings = [
+                    ".25rem",   // 4px  | 1
+                    ".5rem",    // 8px  | 2
+                    ".625rem",  // 10px | 3
+                    ".75rem",   // 12px | 4
+                    ".875rem",  // 14px | 5
+                    "1rem",     // 16px | 6
+                ]
+
+                const output = {}
+
+                paddings.forEach((padding, index) => {
+                    const number = index + 1;
+                    output[`no-border-${number}`] = padding
+                    output[`with-border-${number}`] = `calc(${padding} - 1px)`
+                })
+
+                return output
             }
         },
     },

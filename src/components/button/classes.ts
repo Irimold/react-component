@@ -20,7 +20,7 @@ export const buttonClasses = {
     display     : 'inline-flex justify-center items-center',
     font        : body,
     outline     : '!outline-0',
-    padding     : 'p-control',
+    padding     : 'px-with-border-6 py-with-border-4',
     textAlign   : 'center',
 }
 
