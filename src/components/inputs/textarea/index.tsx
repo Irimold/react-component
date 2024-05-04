@@ -49,7 +49,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
 
         textarea.style.height = 'inherit'
 
-        let newHeight = textarea.scrollHeight
+        let newHeight = textarea.scrollHeight + 2
         if (newHeight < minHeight) {
             newHeight = minHeight
         }
