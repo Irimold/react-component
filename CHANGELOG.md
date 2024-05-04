@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/Irimold/react-component/compare/v0.2.0...v0.3.0) (2024-05-04)
+
+
+### Features
+
+* **Input:** Added input component ([6c01edd](https://github.com/Irimold/react-component/commit/6c01edd42138f50d40be66b5320302edd7d4d31f))
+
 ## [0.2.0](https://github.com/Irimold/react-component/compare/v0.1.4...v0.2.0) (2024-05-04)
 
 
