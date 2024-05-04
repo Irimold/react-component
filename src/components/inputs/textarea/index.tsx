@@ -84,11 +84,15 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
                 } ${
                     textAreaClasses.outline
                 } ${
+                    textAreaClasses.overflow
+                } ${
                     textAreaClasses.padding
                 } ${
                     textAreaClasses.peer
                 } ${
                     textAreaClasses.placeholder
+                } ${
+                    textAreaClasses.resize
                 } ${
                     textAreaClasses.width
                 } ${
