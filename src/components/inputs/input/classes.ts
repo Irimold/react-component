@@ -11,7 +11,7 @@ export const inputClasses = {
     borderRadius: "rounded",
     display     : "block",
     outline     : "!outline-0",
-    padding     : "p-control placeholder-shown:p-input-focus",
+    padding     : "p-input-focus placeholder-shown:p-control",
     peer        : "peer",
     placeholder : "placeholder:text-transparent",
     width       : "w-full",
