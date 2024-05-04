@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3](https://github.com/Irimold/react-component/compare/v0.3.2...v0.3.3) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Input:** Incorrect label color ([eac8981](https://github.com/Irimold/react-component/commit/eac898164373a0aee30725ab8408e34f047614ea))
+* **Lint:** Allow explicit any ([c8b5e11](https://github.com/Irimold/react-component/commit/c8b5e112320abdff00ecb7a4aa807fe6e3ad0818))
+
 ## [0.3.2](https://github.com/Irimold/react-component/compare/v0.3.1...v0.3.2) (2024-05-04)
 
 
