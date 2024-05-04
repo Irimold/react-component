@@ -54,7 +54,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
             newHeight = minHeight
         }
 
-        textarea.style.height = `${newHeight}px !important`
+        textarea.style.height = `${newHeight}px`
     }, [content, props.value])
 
     return (
