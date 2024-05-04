@@ -11,7 +11,7 @@ export const textAreaClasses = {
     borderRadius: "rounded",
     display     : "block",
     outline     : "!outline-0",
-    overflow    : "overflow-none",
+    overflow    : "overflow-hidden",
     padding     : "p-with-border-6",
     peer        : "peer",
     placeholder : "placeholder:text-transparent",
