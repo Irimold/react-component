@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/Irimold/react-component/compare/v0.1.4...v0.2.0) (2024-05-04)
+
+
+### Features
+
+* **Typography:** Add information text size ([df451bd](https://github.com/Irimold/react-component/commit/df451bd5ebc44cccad63321691c0fba80bab0922))
+
+
+### Bug Fixes
+
+* **Button:** Use config extend instead of custom class for button padding ([ccded42](https://github.com/Irimold/react-component/commit/ccded42b7b37be557667042fdeeee6045bd5ef2e))
+
 ## [0.1.4](https://github.com/Irimold/react-component/compare/v0.1.3...v0.1.4) (2024-04-20)
 
 
