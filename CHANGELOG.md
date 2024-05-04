@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.3](https://github.com/Irimold/react-component/compare/v0.4.2...v0.4.3) (2024-05-04)
+
+
+### Bug Fixes
+
+* **Textarea:** Autoresize doesn't work ([9c05d9f](https://github.com/Irimold/react-component/commit/9c05d9fe2e4b88904be80b27975b372ee401c9e7))
+* **Textarea:** Invalid overflow class ([d8ecca8](https://github.com/Irimold/react-component/commit/d8ecca8a2907526925618f57b53efbd3e417d787))
+
 ## [0.4.2](https://github.com/Irimold/react-component/compare/v0.4.1...v0.4.2) (2024-05-04)
 
 
