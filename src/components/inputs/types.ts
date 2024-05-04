@@ -1,6 +1,6 @@
-export interface InputChangeParams {
+export interface InputChangeParams<T> {
     name: string
-    value: any
+    value: T
 }
 
-export type InputChangeHandler = (params: InputChangeParams) => void
+export type InputChangeHandler<T = any> = (params: InputChangeParams<T>) => void

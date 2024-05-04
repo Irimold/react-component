@@ -13,6 +13,6 @@ type inputTypes =
 export interface InputProps extends Omit<ComponentPropsWithoutRef<'input'>, 'onChange' | 'name' | 'type'> {
     name        : string
     label?      : string
-    onChange?   : InputChangeHandler
+    onChange?   : InputChangeHandler<string>
     type?       : inputTypes
 }
