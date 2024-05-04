@@ -17,10 +17,10 @@ export const buttonClasses = {
         outline : 'text-primary-700 hover:text-primary-100 active:text-primary-100',
         link    : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
     },
-    custom      : 'btn',
     display     : 'inline-flex justify-center items-center',
     font        : body,
     outline     : '!outline-0',
+    padding     : 'p-control',
     textAlign   : 'center',
 }
 

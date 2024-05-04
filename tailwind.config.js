@@ -70,7 +70,11 @@ module.exports = {
                 'card-title': ['1.25rem'],
                 'navigation': ['1.5rem'],
                 'body': ['1rem'],
+                'information': ['.875rem'],
             },
+            padding: {
+                control: "calc(.75rem - 1px) calc(1rem - 1px)"
+            }
         },
     },
     plugins: [],

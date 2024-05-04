@@ -20,8 +20,6 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         } ${
             buttonClasses.borderRadius
         } ${
-            buttonClasses.custom
-        } ${
             buttonClasses.color[variant]
         } ${
             buttonClasses.display
@@ -29,6 +27,8 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
             buttonClasses.font
         } ${
             buttonClasses.outline
+        } ${
+            buttonClasses.padding
         } ${
             buttonClasses.textAlign
         } ${
