@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.9](https://github.com/Irimold/react-component/compare/v0.5.8...v0.5.9) (2024-05-18)
+
+
+### Bug Fixes
+
+* **Image:** Add srcset types ([d972939](https://github.com/Irimold/react-component/commit/d97293965bf42e7d746d9811e4815eff261e49e3))
+
 ## [0.5.8](https://github.com/Irimold/react-component/compare/v0.5.7...v0.5.8) (2024-05-18)
 
 
