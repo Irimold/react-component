@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.7](https://github.com/Irimold/react-component/compare/v0.5.6...v0.5.7) (2024-05-18)
+
+
+### Bug Fixes
+
+* **Image:** Revert change and add 1024px default image ([5e0faa7](https://github.com/Irimold/react-component/commit/5e0faa79851a6478cc7aa0a7f0d9177110e40d4a))
+
 ## [0.5.6](https://github.com/Irimold/react-component/compare/v0.5.5...v0.5.6) (2024-05-18)
 
 
