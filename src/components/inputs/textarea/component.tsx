@@ -1,3 +1,5 @@
+"use client"
+
 import React, { ChangeEventHandler, forwardRef, useRef, useState } from "react";
 import { TextAreaProps } from "./props";
 import { containerClasses, counterClasses, labelClasses, textAreaClasses } from "./classes";
@@ -134,5 +136,3 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
 })
 
 TextArea.displayName = 'TextArea'
-
-export type { TextAreaProps }

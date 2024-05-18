@@ -1,3 +1,5 @@
+"use client"
+
 import React, { ChangeEventHandler, useRef } from "react";
 import { forwardRef } from "react";
 import { InputProps } from "./props";
@@ -98,5 +100,3 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
 })
 
 Input.displayName = "Input"
-
-export type { InputProps }
