@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/Irimold/react-component/compare/v0.5.1...v0.5.2) (2024-05-18)
+
+
+### Bug Fixes
+
+* **Input file:** Border style ([03c495b](https://github.com/Irimold/react-component/commit/03c495b6194b1970833f9c9aded88a3fd8b6985e))
+
 ## [0.5.1](https://github.com/Irimold/react-component/compare/v0.5.0...v0.5.1) (2024-05-18)
 
 
