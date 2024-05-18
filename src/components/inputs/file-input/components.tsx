@@ -1,19 +1,20 @@
 'use client'
 
 import React, { ChangeEventHandler, FC, forwardRef, useEffect, useState } from "react"
-import { FileDisplayProps, FileInputProps } from "./props"
+import { FileDisplayProps, FileInputProps, FileInputVariants } from "./props"
 import { containerClasses, displayClasses, imageClass, inputClasses, labelClasses } from "./classes"
 import { Image } from "@/components/multimedias"
 import { Separate } from "./constants"
 
 const FileDisplay : FC<FileDisplayProps> = ({
-    src = ''
+    src = '',
+    variant = Separate,
 }) => (
     <div
         className={`${
-            displayClasses.height
+            displayClasses.height[variant]
         } ${
-            displayClasses.maxWidth
+            displayClasses.maxWidth[variant]
         } ${
             displayClasses.position
         } ${
@@ -92,6 +93,8 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
             } ${
                 containerClasses.flex
             } ${
+                containerClasses.minHeight[variant]
+            } ${
                 containerClasses.position
             } ${
                 containerClasses.width
@@ -100,6 +103,7 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
             { (!withoutDisplay || readOnly) ? (
                 <FileDisplay
                     src={fileUrl}
+                    variant={variant as FileInputVariants}
                 />
             ) : (<></>) }
 

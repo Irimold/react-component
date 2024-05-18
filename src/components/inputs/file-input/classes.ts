@@ -7,6 +7,10 @@ export const containerClasses = {
     },
     display     : 'flex',
     flex        : 'flex-col items-center',
+    minHeight   : {
+        [Hovering] : 'min-h-12',
+        [Separate] : '',
+    },
     position    : 'relative',
     width       : 'w-full',
 }
