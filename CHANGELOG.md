@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/Irimold/react-component/compare/v0.5.3...v0.5.4) (2024-05-18)
+
+
+### Bug Fixes
+
+* **File input:** Remove max width for hovering variant ([a72c5fa](https://github.com/Irimold/react-component/commit/a72c5fa035b238b47997942ca49971b8017fbe7d))
+
 ## [0.5.3](https://github.com/Irimold/react-component/compare/v0.5.2...v0.5.3) (2024-05-18)
 
 
