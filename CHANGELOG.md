@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0](https://github.com/Irimold/react-component/compare/v0.4.6...v0.5.0) (2024-05-18)
+
+
+### Features
+
+* **Button:** Add variant constants ([7e04882](https://github.com/Irimold/react-component/commit/7e048824729f808e9080b8e87b833a9d214cf55f))
+* **Input:** Add file input ([a00fc99](https://github.com/Irimold/react-component/commit/a00fc991fccf1d0271a7faa2c4a3082e17d1e454))
+* **Multimedia:** Image component ([b1e32c8](https://github.com/Irimold/react-component/commit/b1e32c8148bdb08b343ba7186ab2b12d7a6ea48f))
+* **Tailwind:** Add custom margin ([d06c354](https://github.com/Irimold/react-component/commit/d06c35436a75b21c7d094fa53c20b11312d65b6b))
+
+
+### Bug Fixes
+
+* **Input:** Export InputChangeHandler type ([eecaff5](https://github.com/Irimold/react-component/commit/eecaff54b6a8fbb84637aa4d413fcda079984cf9))
+* **Input:** Forgot to export InputChangeHandler from the real main Index ([189b7f5](https://github.com/Irimold/react-component/commit/189b7f55eeed7918512f74972a837ea34a52882f))
+* **Input:** forgot to export InputChangeHandler on main index.ts ([5a03508](https://github.com/Irimold/react-component/commit/5a035084bae3306ae63d81bcc6d4cadce99edf2b))
+
 ## [0.4.6](https://github.com/Irimold/react-component/compare/v0.4.5...v0.4.6) (2024-05-04)
 
 
