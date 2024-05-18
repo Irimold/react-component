@@ -47,7 +47,7 @@ export const labelClasses = {
 
 export const inputClasses = {
     background  : 'file:bg-primary-600 file:hover:bg-primary-700 file:active:bg-primary-800',
-    border      : 'file:border file:border-primary-600 file:hover:border-primary-700 file:active:border-primary-800',
+    border      : 'file:border file:border-solid file:border-primary-600 file:hover:border-primary-700 file:active:border-primary-800',
     borderRadius: 'rounded file:rounded',
     color       : 'text-dark file:text-primary-100',
     display     : 'block',
