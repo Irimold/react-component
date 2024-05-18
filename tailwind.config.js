@@ -1,3 +1,12 @@
+const spacings = [
+    ".25rem",   // 4px  | 1
+    ".5rem",    // 8px  | 2
+    ".625rem",  // 10px | 3
+    ".75rem",   // 12px | 4
+    ".875rem",  // 14px | 5
+    "1rem",     // 16px | 6
+]
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -64,30 +73,31 @@ export default {
                 },
             },
             fontSize: {
-                'page-title': ['calc(5.98vw + 1rem)'],
-                'section-title': ['calc(1.6vw + 1rem)'],
-                'sub-title': ['calc(.2vw + 1.25rem)'],
-                'card-title': ['1.25rem'],
-                'navigation': ['1.5rem'],
-                'body': ['1rem'],
-                'information': ['.875rem'],
+                'page-title'    : ['calc(5.98vw + 1rem)'],
+                'section-title' : ['calc(1.6vw + 1rem)'],
+                'sub-title'     : ['calc(.2vw + 1.25rem)'],
+                'card-title'    : ['1.25rem'],
+                'navigation'    : ['1.5rem'],
+                'body'          : ['1rem'],
+                'information'   : ['.875rem'],
             },
-            padding: () => {
-                const paddings = [
-                    ".25rem",   // 4px  | 1
-                    ".5rem",    // 8px  | 2
-                    ".625rem",  // 10px | 3
-                    ".75rem",   // 12px | 4
-                    ".875rem",  // 14px | 5
-                    "1rem",     // 16px | 6
-                ]
-
+            margin: () => {
                 const output = {}
 
-                paddings.forEach((padding, index) => {
+                spacings.forEach((spacing, index) => {
                     const number = index + 1;
-                    output[`no-border-${number}`] = padding
-                    output[`with-border-${number}`] = `calc(${padding} - 1px)`
+                    output[`iri-${number}`] = spacing
+                })
+
+                return output
+            },
+            padding: () => {
+                const output = {}
+
+                spacings.forEach((spacing, index) => {
+                    const number = index + 1;
+                    output[`no-border-${number}`] = spacing
+                    output[`with-border-${number}`] = `calc(${spacing} - 1px)`
                 })
 
                 return output
