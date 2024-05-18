@@ -21,7 +21,7 @@ export const displayClasses = {
         [Separate] : 'h-60',
     },
     maxWidth: {
-        [Hovering] : 'max-w-[30rem]',
+        [Hovering] : '',
         [Separate] : 'max-w-[15rem]',
     },
     position: 'relative',
