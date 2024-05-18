@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.5](https://github.com/Irimold/react-component/compare/v0.5.4...v0.5.5) (2024-05-18)
+
+
+### Bug Fixes
+
+* **File Input:** Fix border radius problem ([1faeafc](https://github.com/Irimold/react-component/commit/1faeafc54ecace59910ddd0dd032866d548e817c))
+
 ## [0.5.4](https://github.com/Irimold/react-component/compare/v0.5.3...v0.5.4) (2024-05-18)
 
 
