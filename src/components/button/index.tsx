@@ -82,7 +82,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         return (
             <a
                 className={ClassName}
-                ref={ref as React.LegacyRef<HTMLAnchorElement>}
+                ref={ref as React.ForwardedRef<HTMLAnchorElement>}
                 {...props as LinkButtonProps}
             >
                 { content }
@@ -93,7 +93,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     return (
         <button
             className={ClassName}
-            ref={ref as React.LegacyRef<HTMLButtonElement>}
+            ref={ref as React.ForwardedRef<HTMLButtonElement>}
             {...props as DefaultButtonProps}
         >
             { content }
