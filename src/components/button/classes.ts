@@ -1,21 +1,22 @@
 import { body } from "@/typography";
+import { Solid, Outline, Link } from "./constants";
 
 export const buttonClasses = {
     background : {
-        solid   : 'bg-primary-600 hover:bg-primary-700 active:bg-primary-800',
-        outline : 'bg-transparent hover:bg-primary-700 active:bg-primary-800',
-        link    : 'bg-transparent hover:bg-transparent active:bg-primary-800',
+        [Solid]     : 'bg-primary-600 hover:bg-primary-700 active:bg-primary-800',
+        [Outline]   : 'bg-transparent hover:bg-primary-700 active:bg-primary-800',
+        [Link]      : 'bg-transparent hover:bg-transparent active:bg-primary-800',
     },
     border      : {
-        solid   : 'border border-primary-600 hover:border-primary-700 active:border-primary-800',
-        outline : 'border border-primary-700 hover:border-primary-700 active:border-primary-800',
-        link    : 'border border-transparent hover:border-primary-700 active:border-primary-800',
+        [Solid]     : 'border border-primary-600 hover:border-primary-700 active:border-primary-800',
+        [Outline]   : 'border border-primary-700 hover:border-primary-700 active:border-primary-800',
+        [Link]      : 'border border-transparent hover:border-primary-700 active:border-primary-800',
     },
     borderRadius: 'rounded',
     color       : {
-        solid   : 'text-primary-100',
-        outline : 'text-primary-700 hover:text-primary-100 active:text-primary-100',
-        link    : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
+        [Solid]     : 'text-primary-100',
+        [Outline]   : 'text-primary-700 hover:text-primary-100 active:text-primary-100',
+        [Link]      : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
     },
     display     : 'inline-flex justify-center items-center',
     font        : body,

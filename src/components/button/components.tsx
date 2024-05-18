@@ -2,9 +2,10 @@ import React from "react";
 import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
+import { Solid } from "./constants";
 
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
-    variant         = 'solid',
+    variant         = Solid,
     functionality   = 'button',
     className       = '',
     children,

@@ -1,7 +1,8 @@
 import { ComponentPropsWithoutRef, ElementType } from "react";
+import { Variants } from "./constants";
 
 type BaseProps<T extends ElementType> = ComponentPropsWithoutRef<T> & {
-    variant?    : 'solid' | 'outline' | 'link'
+    variant?    : keyof typeof Variants
     leftIcon?   : ElementType
     rightIcon?  : ElementType
 }
