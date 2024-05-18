@@ -6,6 +6,9 @@ export {
     // Inputs
     Input,
     TextArea,
+
+    // Multimedias
+    Image,
 } from "./components"
 
 export type {
@@ -14,5 +17,9 @@ export type {
     // Inputs
     InputProps,
     TextAreaProps,
-    InputChangeHandler
+    InputChangeHandler,
+
+    // Multimedias
+    ImageProps,
+    ImageSrcSetParserType,
 } from "./components"

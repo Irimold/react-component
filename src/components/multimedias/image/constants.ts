@@ -1,0 +1,1 @@
+export const DefaultAvailableSrcSets = [ 320, 640, 768, 1280 ]
