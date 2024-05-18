@@ -95,6 +95,8 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
             } ${
                 containerClasses.minHeight[variant]
             } ${
+                containerClasses.overflow
+            } ${
                 containerClasses.position
             } ${
                 containerClasses.width
@@ -111,6 +113,8 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
                 <label
                     className={`${
                         labelClasses.background[variant]
+                    } ${
+                        labelClasses.borderRadius
                     } ${
                         labelClasses.display
                     } ${

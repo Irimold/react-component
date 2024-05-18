@@ -11,6 +11,7 @@ export const containerClasses = {
         [Hovering] : 'min-h-12',
         [Separate] : '',
     },
+    overflow    : 'overflow-hidden',
     position    : 'relative',
     width       : 'w-full',
 }
