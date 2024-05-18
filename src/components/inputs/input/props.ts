@@ -1,4 +1,4 @@
-import { BaseInputProps } from "../types";
+import { BaseInputProps } from "../props";
 
 type inputTypes = 
     | "email" 
