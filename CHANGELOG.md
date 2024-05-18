@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.8](https://github.com/Irimold/react-component/compare/v0.5.7...v0.5.8) (2024-05-18)
+
+
+### Bug Fixes
+
+* **Image:** make the parser only parse path ([61e4d51](https://github.com/Irimold/react-component/commit/61e4d511b1a0e6e8e5b2f84efccb1d8f2181f5af))
+
 ## [0.5.7](https://github.com/Irimold/react-component/compare/v0.5.6...v0.5.7) (2024-05-18)
 
 
