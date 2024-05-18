@@ -4,6 +4,7 @@ export {
     Button,
 
     // Inputs
+    FileInput,
     Input,
     TextArea,
 
@@ -15,6 +16,7 @@ export type {
     ButtonProps,
 
     // Inputs
+    FileInputProps,
     InputProps,
     TextAreaProps,
     InputChangeHandler,

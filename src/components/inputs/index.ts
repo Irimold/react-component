@@ -1,3 +1,6 @@
+export { FileInput } from "./file-input"
+export type { FileInputProps } from "./file-input"
+
 export { Input } from "./input"
 export type { InputProps } from "./input"
 
