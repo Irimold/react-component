@@ -1,10 +1,6 @@
-import { ComponentPropsWithoutRef } from "react";
-import { InputChangeHandler } from "../types";
+import { BaseInputProps } from "../types";
 
-export interface TextAreaProps extends Omit<ComponentPropsWithoutRef<'textarea'>, 'onChange' | 'name'> {
-    name                : string
-    label?              : string
-    onChange?           : InputChangeHandler<string>
+export interface TextAreaProps extends BaseInputProps<'textarea'> {
     disableAutoResize?  : boolean
     minHeight?          : number
 }

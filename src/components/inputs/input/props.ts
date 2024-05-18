@@ -1,5 +1,4 @@
-import { ComponentPropsWithoutRef } from "react";
-import { InputChangeHandler } from "../types";
+import { BaseInputProps } from "../types";
 
 type inputTypes = 
     | "email" 
@@ -10,9 +9,6 @@ type inputTypes =
     | "text"
     | "url"
 
-export interface InputProps extends Omit<ComponentPropsWithoutRef<'input'>, 'onChange' | 'name' | 'type'> {
-    name        : string
-    label?      : string
-    onChange?   : InputChangeHandler<string>
+export interface InputProps extends BaseInputProps {
     type?       : inputTypes
 }
