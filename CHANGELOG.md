@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/Irimold/react-component/compare/v0.5.0...v0.5.1) (2024-05-18)
+
+
+### Bug Fixes
+
+* **FileInput:** Disable srcset for file display ([6eddd25](https://github.com/Irimold/react-component/commit/6eddd250c9a6c082d2fe7fdc009ab83d84889214))
+
 ## [0.5.0](https://github.com/Irimold/react-component/compare/v0.4.6...v0.5.0) (2024-05-18)
 
 
