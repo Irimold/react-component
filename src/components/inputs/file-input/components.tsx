@@ -22,6 +22,7 @@ const FileDisplay : FC<FileDisplayProps> = ({
     >
         { src ? (
             <Image
+                disableSrcSet
                 src={src}
                 alt="Uploaded file"
                 className={`${
