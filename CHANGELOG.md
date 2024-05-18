@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/Irimold/react-component/compare/v0.5.2...v0.5.3) (2024-05-18)
+
+
+### Bug Fixes
+
+* **File Input:** Incorrect class outputted & add min-height ([c71512c](https://github.com/Irimold/react-component/commit/c71512c6f065d9b548c0d67143e52914e59a083f))
+
 ## [0.5.2](https://github.com/Irimold/react-component/compare/v0.5.1...v0.5.2) (2024-05-18)
 
 
