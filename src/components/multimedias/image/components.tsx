@@ -1,12 +1,13 @@
 import React, { forwardRef, memo } from "react";
 import { ImageProps } from "./props";
-import { DefaultAvailableSrcSets } from "./constants";
+import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";
 
 export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     src,
-    availableSrcSets = DefaultAvailableSrcSets,
+    availableSrcSets,
     srcSetParser = ImageSrcSetParser,
+    srcSetType,
     disableSrcSet = false,
     ...props
 }, ref) => {
@@ -29,11 +30,25 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     const path = src.replace(`.${extension}`, '')
 
     let srcSet = ''
-    availableSrcSets.forEach((width, index) => {
-        srcSet += srcSetParser(path, width, extension)
-        srcSet += ` ${width}w`
+    const srcSets = availableSrcSets || DefaultAvailableSrcSets[srcSetType || Width]
+    srcSets.forEach((size, index) => {
+        srcSet += srcSetParser(path, size, extension)
+        
+        switch (srcSetType) {
+            case Width:
+                srcSet += `${size}w`
+                break
+        
+            case PixelDensity:
+                srcSet += `${size}x`
+                break
+            
+            default:
+                srcSet += `${size}w`
+                break
+        }
 
-        if (index < availableSrcSets.length - 1) {
+        if (index < srcSets.length - 1) {
             srcSet += ', '
         }
     })
