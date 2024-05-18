@@ -31,6 +31,7 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     let srcSet = ''
     availableSrcSets.forEach((width, index) => {
         srcSet += srcSetParser(path, width, extension)
+        srcSet += ` ${width}w`
 
         if (index < availableSrcSets.length - 1) {
             srcSet += ', '
