@@ -2,7 +2,7 @@ import { cardTitle } from "@/typography";
 
 export const breadcrumbClasses = {
     display : 'flex',
-    flex    : 'align-items-center',
+    flex    : 'items-center',
     font    : cardTitle,
 }
 
