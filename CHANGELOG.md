@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/Irimold/react-component/compare/v0.5.9...v0.6.0) (2024-05-25)
+
+
+### Features
+
+* **Dependency:** Update dependency & Add icon ([bd19736](https://github.com/Irimold/react-component/commit/bd197360d581bab4fb48c962350d98bf5b6117ac))
+* **Navigation:** Breadcrumb ([e79cfff](https://github.com/Irimold/react-component/commit/e79cfff2bee5ce65d40d4d9fd457dd859b2ff217))
+* **Navigation:** Navigation Button ([da74124](https://github.com/Irimold/react-component/commit/da7412471b35595dd3fd4f156ecdbfdff513d886))
+* **Navigation:** Navigation Item ([7b822e0](https://github.com/Irimold/react-component/commit/7b822e09e4cbf3f0dc6e59d095239eec151c0375))
+* **Navigation:** Sidebar Item ([64593af](https://github.com/Irimold/react-component/commit/64593afc49faf22bb09e0ac1202b7573b0a2af7d))
+* **Tailwind:** Add 1.25rem spacing ([82d640c](https://github.com/Irimold/react-component/commit/82d640cf959f9f614e5daa47e54971b84becfa65))
+
 ## [0.5.9](https://github.com/Irimold/react-component/compare/v0.5.8...v0.5.9) (2024-05-18)
 
 
