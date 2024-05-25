@@ -1,12 +1,12 @@
 import { cardTitle } from "@/typography";
 
-export const BreadcrumbClasses = {
+export const breadcrumbClasses = {
     display : 'flex',
     flex    : 'align-items-center',
     font    : cardTitle,
 }
 
-export const BreadcrumbItemClasses = {
+export const breadcrumbItemClasses = {
     color   : {
         active  : 'text-primary-600',
         inactive: 'text-dark',

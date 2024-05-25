@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import { NavigationButtonProps } from "./props";
-import { NavBtnBarClasses, NavBtnClasses } from "./classes";
+import { navBtnBarClasses, navBtnClasses } from "./classes";
 
 export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonProps>(({
     className,
@@ -15,19 +15,19 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
     return (
         <button
             className={`${
-                NavBtnClasses.background
+                navBtnClasses.background
             } ${
-                NavBtnClasses.border
+                navBtnClasses.border
             } ${
-                NavBtnClasses.cursor
+                navBtnClasses.cursor
             } ${
-                NavBtnClasses.display
+                navBtnClasses.display
             } ${
-                NavBtnClasses.height[btnSize]
+                navBtnClasses.height[btnSize]
             } ${
-                NavBtnClasses.position
+                navBtnClasses.position
             } ${
-                NavBtnClasses.width[btnSize]
+                navBtnClasses.width[btnSize]
             } ${
                 className
             }`}
@@ -36,21 +36,21 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
         >
             <span 
                 className={`${
-                    NavBtnBarClasses.background[btnColor]
+                    navBtnBarClasses.background[btnColor]
                 } ${
-                    NavBtnBarClasses.display
+                    navBtnBarClasses.display
                 } ${
-                    NavBtnBarClasses.height[btnSize]
+                    navBtnBarClasses.height[btnSize]
                 } ${
-                    NavBtnBarClasses.opacity
+                    navBtnBarClasses.opacity
                 } ${
-                    NavBtnBarClasses.position
+                    navBtnBarClasses.position
                 } ${
-                    NavBtnBarClasses.transform[btnSize][isActive ? 'active' : 'inactive']
+                    navBtnBarClasses.transform[btnSize][isActive ? 'active' : 'inactive']
                 } ${
-                    NavBtnBarClasses.transition
+                    navBtnBarClasses.transition
                 } ${
-                    NavBtnBarClasses.width[btnSize]
+                    navBtnBarClasses.width[btnSize]
                 }`}
             />
         </button>

@@ -1,6 +1,6 @@
 import React, { FC, forwardRef } from "react";
 import { DefaultAnchorProps, NavigationItemLineProps, NavigationItemProps } from "./props";
-import { NavItemClasses, NavItemLineClasses } from "./classes";
+import { navItemClasses, navItemLineClasses } from "./classes";
 
 const DefaultAnchor = forwardRef<HTMLAnchorElement, DefaultAnchorProps>((props, ref) => (
     <a ref={ref} {...props}/>
@@ -13,19 +13,19 @@ const NavigationItemLine : FC<NavigationItemLineProps> = ({
 }) => (
     <span 
         className={`${
-            NavItemLineClasses.background
+            navItemLineClasses.background
         } ${
-            NavItemLineClasses.display
+            navItemLineClasses.display
         } ${
-            NavItemLineClasses.height
+            navItemLineClasses.height
         } ${
-            NavItemLineClasses.position
+            navItemLineClasses.position
         } ${
-            NavItemLineClasses.transform
+            navItemLineClasses.transform
         } ${
-            NavItemLineClasses.transition
+            navItemLineClasses.transition
         } ${
-            NavItemLineClasses.width[isActive ? 'active' : 'inactive']
+            navItemLineClasses.width[isActive ? 'active' : 'inactive']
         }`}
     />
 )
@@ -41,19 +41,19 @@ export const NavigationItem = forwardRef<HTMLAnchorElement, NavigationItemProps>
     return (
         <Component
             className={`${
-                NavItemClasses.color
+                navItemClasses.color
             } ${
-                NavItemClasses.display
+                navItemClasses.display
             } ${
-                NavItemClasses.font
+                navItemClasses.font
             } ${
-                NavItemClasses.group
+                navItemClasses.group
             } ${
-                NavItemClasses.margin
+                navItemClasses.margin
             } ${
-                NavItemClasses.padding
+                navItemClasses.padding
             } ${
-                NavItemClasses.position
+                navItemClasses.position
             } ${
                 className
             }`}

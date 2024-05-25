@@ -1,6 +1,6 @@
 import { navigation } from "@/typography";
 
-export const NavItemClasses = {
+export const navItemClasses = {
     color   : 'text-dark',
     display : 'block',
     font    : navigation,
@@ -10,7 +10,7 @@ export const NavItemClasses = {
     position: 'relative',
 }
 
-export const NavItemLineClasses = {
+export const navItemLineClasses = {
     background  : 'bg-primary',
     display     : 'block',
     height      : 'h-[3px]',

@@ -1,6 +1,6 @@
 import React, { FC, Fragment } from "react";
 import { BreadcrumbProps, DefaultBreadcrumbItemProps } from "./props";
-import { BreadcrumbClasses, BreadcrumbItemClasses } from "./classes";
+import { breadcrumbClasses, breadcrumbItemClasses } from "./classes";
 
 const DefaultBreadcrumbItem : FC<DefaultBreadcrumbItemProps> = (props) => (
     <a {...props}/>
@@ -19,22 +19,22 @@ export const Breadcrumb : FC<BreadcrumbProps> = ({
     return (
         <div 
             className={`${
-                BreadcrumbClasses.display
+                breadcrumbClasses.display
             } ${
-                BreadcrumbClasses.flex
+                breadcrumbClasses.flex
             } ${
-                BreadcrumbClasses.font
+                breadcrumbClasses.font
             }`}
         >
             { items.map((item, index) => (
                 <Fragment key={`breadcrumb-${index}`}>
                     <Component
                         className={`${
-                            BreadcrumbItemClasses.color[item.active ? 'active' : 'inactive']
+                            breadcrumbItemClasses.color[item.active ? 'active' : 'inactive']
                         } ${
-                            BreadcrumbItemClasses.display
+                            breadcrumbItemClasses.display
                         } ${
-                            BreadcrumbItemClasses.padding
+                            breadcrumbItemClasses.padding
                         }`}
                         href={item.href}
                     >

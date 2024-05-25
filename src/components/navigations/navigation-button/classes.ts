@@ -1,6 +1,6 @@
 import { Dark, Large, Light, Medium, Primary, Small } from "./constants";
 
-export const NavBtnClasses = {
+export const navBtnClasses = {
     background  : 'bg-transparent',
     border      : 'border-0',
     cursor      : 'cursor-pointer',
@@ -18,7 +18,7 @@ export const NavBtnClasses = {
     }
 }
 
-export const NavBtnBarClasses = {
+export const navBtnBarClasses = {
     background: {
         [Dark]      : 'bg-dark',
         [Light]     : 'bg-gray-50',
