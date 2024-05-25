@@ -41,19 +41,17 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
 
     const content = (
         <>
-            { 
-                typeof LeftIcon != 'undefined' && (
-                    <span
-                        className={`${
-                            leftIconClasses.display
-                        } ${
-                            leftIconClasses.margin
-                        }`}
-                    >
-                        <LeftIcon size="1.5em"/>
-                    </span>
-                )
-            }
+            { typeof LeftIcon != 'undefined' ? (
+                <span
+                    className={`${
+                        leftIconClasses.display
+                    } ${
+                        leftIconClasses.margin
+                    }`}
+                >
+                    <LeftIcon size="1.5em"/>
+                </span>
+            ) : (<></>) }
             <span 
                 className={`${
                     childrenClasses.display
@@ -63,19 +61,17 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
             >
                 { children }
             </span>
-            { 
-                typeof RightIcon != 'undefined' && (
-                    <span
-                        className={`${
-                            rightIconClasses.display
-                        } ${
-                            rightIconClasses.margin
-                        }`}
-                    >
-                        <RightIcon size="1.5em"/>
-                    </span>
-                )
-            }
+            { typeof RightIcon != 'undefined' ? (
+                <span
+                    className={`${
+                        rightIconClasses.display
+                    } ${
+                        rightIconClasses.margin
+                    }`}
+                >
+                    <RightIcon size="1.5em"/>
+                </span>
+            ) : (<></>)}
         </>
     )
 
