@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.1](https://github.com/Irimold/react-component/compare/v0.6.0...v0.6.1) (2024-05-25)
+
+
+### Bug Fixes
+
+* **Breadcrumb:** Items not centered ([d062e77](https://github.com/Irimold/react-component/commit/d062e7706b81b6f7ca41acbeaf34d752446d8293))
+* **Font:** Incorrect font display value ([efd3b94](https://github.com/Irimold/react-component/commit/efd3b942d577d42c6b97a48d02f2d7bd60bfbcf5))
+* **NavItem:** color, pointer and padding ([eb07f10](https://github.com/Irimold/react-component/commit/eb07f104f7e484aa3f393731092caa92b059a297))
+
 ## [0.6.0](https://github.com/Irimold/react-component/compare/v0.5.9...v0.6.0) (2024-05-25)
 
 
