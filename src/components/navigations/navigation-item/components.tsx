@@ -43,6 +43,8 @@ export const NavigationItem = forwardRef<HTMLAnchorElement, NavigationItemProps>
             className={`${
                 navItemClasses.color
             } ${
+                navItemClasses.cursor
+            } ${
                 navItemClasses.display
             } ${
                 navItemClasses.font

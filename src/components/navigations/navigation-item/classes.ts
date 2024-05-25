@@ -1,12 +1,13 @@
 import { navigation } from "@/typography";
 
 export const navItemClasses = {
-    color   : 'text-dark',
+    color   : 'text-dark hover:text-dark active:text-dark visited:text-dark',
+    cursor  : 'cursor-pointer',
     display : 'block',
     font    : navigation,
     group   : 'group',
     margin  : 'mx-auto lg:mx-iri-7 lg:my-iri-5',
-    padding : 'px-iri-7 py-iri-5 lg:p-0',
+    padding : 'px-no-border-7 py-no-border-5 lg:p-0',
     position: 'relative',
 }
 
