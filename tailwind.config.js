@@ -5,6 +5,7 @@ const spacings = [
     ".75rem",   // 12px | 4
     ".875rem",  // 14px | 5
     "1rem",     // 16px | 6
+    "1.25rem"   // 20px | 7
 ]
 
 /** @type {import('tailwindcss').Config} */
