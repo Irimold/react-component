@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.2](https://github.com/Irimold/react-component/compare/v0.6.1...v0.6.2) (2024-05-26)
+
+
+### Bug Fixes
+
+* **NavBtn:** there is only one bar & adjust bar translate ([04f7f18](https://github.com/Irimold/react-component/commit/04f7f18bf3e923812809b6c58276993bdec1c6b0))
+* **Sidebar Item:** Icon and color ([41c1391](https://github.com/Irimold/react-component/commit/41c13919cc9e9a859466e6c2b787dbe19e32dc7b))
+
 ## [0.6.1](https://github.com/Irimold/react-component/compare/v0.6.0...v0.6.1) (2024-05-25)
 
 
