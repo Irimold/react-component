@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/Irimold/react-component/compare/v0.6.3...v0.6.4) (2024-05-26)
+
+
+### Bug Fixes
+
+* **NavBtn:** Add show on large screen ([beb25a2](https://github.com/Irimold/react-component/commit/beb25a26dead29ad55ed90afa2fbf7acf3d78288))
+
 ## [0.6.3](https://github.com/Irimold/react-component/compare/v0.6.2...v0.6.3) (2024-05-26)
 
 
