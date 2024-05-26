@@ -5,7 +5,7 @@ export const navItemClasses = {
     cursor  : 'cursor-pointer',
     display : 'block',
     font    : navigation,
-    group   : 'group',
+    group   : 'group/nav-item',
     margin  : 'mx-auto lg:mx-iri-7 lg:my-iri-5',
     padding : 'px-no-border-7 py-no-border-5 lg:p-0',
     position: 'relative',
@@ -20,6 +20,6 @@ export const navItemLineClasses = {
     transition  : 'transition-all',
     width       : {
         active  : 'w-full',
-        inactive: 'w-0 group-hover:w-full',
+        inactive: 'w-0 group-hover/nav-item:w-full',
     }
 }
