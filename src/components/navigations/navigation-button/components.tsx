@@ -26,6 +26,10 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
             } ${
                 navBtnClasses.height[btnSize]
             } ${
+                navBtnClasses.outline
+            } ${
+                navBtnClasses.padding
+            } ${
                 navBtnClasses.position
             } ${
                 navBtnClasses.width[btnSize]
