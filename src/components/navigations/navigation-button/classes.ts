@@ -10,6 +10,8 @@ export const navBtnClasses = {
         [Medium]: 'h-[30px]',
         [Large] : 'h-[36px]',
     },
+    outline     : 'outline-0',
+    padding     : 'p-0',
     position    : 'relative',
     width       : {
         [Small] : 'w-[24px]',
@@ -34,16 +36,16 @@ export const navBtnBarClasses = {
     position    : 'absolute top-0 start-0',
     transform   : {
         [Small] : {
-            active  : 'translate-y-11 first:rotate-45 last:-rotate-45',
-            inactive: 'first:translate-y-3 even:translate-y-11 last:translate-y-19',
+            active  : 'translate-y-[11px] first:rotate-45 last:-rotate-45',
+            inactive: 'first:translate-y-[3px] even:translate-y-[11px] last:translate-y-[19px]',
         },
         [Medium]: {
-            active  : 'translate-y-14 first:rotate-45 last:-rotate-45',
-            inactive: 'first:translate-y-4 even:translate-y-14 last:translate-y-24',
+            active  : 'translate-y-[14px] first:rotate-45 last:-rotate-45',
+            inactive: 'first:translate-y-[4px] even:translate-y-[14px] last:translate-y-[24px]',
         },
         [Large] : {
-            active  : 'translate-y-16 first:rotate-45 last:-rotate-45',
-            inactive: 'first:translate-y-6 even:translate-y-16 last:translate-y-26',
+            active  : 'translate-y-[16px] first:rotate-45 last:-rotate-45',
+            inactive: 'first:translate-y-[6px] even:translate-y-[16px] last:translate-y-[26px]',
         },
     },
     transition  : 'transition-all',

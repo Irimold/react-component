@@ -34,25 +34,28 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
             ref={ref}
             {...props}
         >
-            <span 
-                className={`${
-                    navBtnBarClasses.background[btnColor]
-                } ${
-                    navBtnBarClasses.display
-                } ${
-                    navBtnBarClasses.height[btnSize]
-                } ${
-                    navBtnBarClasses.opacity
-                } ${
-                    navBtnBarClasses.position
-                } ${
-                    navBtnBarClasses.transform[btnSize][isActive ? 'active' : 'inactive']
-                } ${
-                    navBtnBarClasses.transition
-                } ${
-                    navBtnBarClasses.width[btnSize]
-                }`}
-            />
+            { [0, 1, 2].map((item) => (
+                <span 
+                    key={`nav-btn-bar-${item}`}
+                    className={`${
+                        navBtnBarClasses.background[btnColor]
+                    } ${
+                        navBtnBarClasses.display
+                    } ${
+                        navBtnBarClasses.height[btnSize]
+                    } ${
+                        isActive ? navBtnBarClasses.opacity : ''
+                    } ${
+                        navBtnBarClasses.position
+                    } ${
+                        navBtnBarClasses.transform[btnSize][isActive ? 'active' : 'inactive']
+                    } ${
+                        navBtnBarClasses.transition
+                    } ${
+                        navBtnBarClasses.width[btnSize]
+                    }`}
+                />
+            )) }
         </button>
     )
 })
