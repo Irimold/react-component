@@ -2,9 +2,10 @@ import { navigation } from "@/typography";
 
 export const sidebarItemClasses = {
     color   : {
-        active  : 'text-primary-600',
+        active  : '!text-primary-600',
         inactive: 'text-gray-500 hover:text-primary-600',
     },
+    cursor  : 'cursor-pointer',
     display : 'flex',
     flex    : 'justify-start items-center',
     font    : navigation,
@@ -12,6 +13,10 @@ export const sidebarItemClasses = {
 }
 
 export const sidebarItemIconClasses = {
-    display : 'block',
+    display : {
+        active      : 'block',
+        idle        : 'block hover:hidden',
+        interacted  : 'hidden hover:block',
+    },
     margin  : 'me-2',
 }
