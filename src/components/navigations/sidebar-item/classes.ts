@@ -9,14 +9,15 @@ export const sidebarItemClasses = {
     display : 'flex',
     flex    : 'justify-start items-center',
     font    : navigation,
+    group   : 'group/sidebar-item',
     padding : 'p-no-border-2',
 }
 
 export const sidebarItemIconClasses = {
     display : {
         active      : 'block',
-        idle        : 'block hover:hidden',
-        interacted  : 'hidden hover:block',
+        idle        : 'block group-hover/sidebar-item:hidden',
+        interacted  : 'hidden group-hover/sidebar-item:block',
     },
     margin  : 'me-2',
 }

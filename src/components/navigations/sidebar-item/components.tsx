@@ -37,6 +37,8 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
             } ${
                 sidebarItemClasses.font
             } ${
+                sidebarItemClasses.group
+            } ${
                 sidebarItemClasses.padding
             } ${
                 className
