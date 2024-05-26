@@ -36,15 +36,15 @@ export const navBtnBarClasses = {
     position    : 'absolute top-0 start-0',
     transform   : {
         [Small] : {
-            active  : 'translate-y-[11px] first:rotate-45 last:-rotate-45',
+            active  : 'translate-y-[11px] first:-rotate-315 last:rotate-315',
             inactive: 'first:translate-y-[3px] even:translate-y-[11px] last:translate-y-[19px]',
         },
         [Medium]: {
-            active  : 'translate-y-[14px] first:rotate-45 last:-rotate-45',
+            active  : 'translate-y-[14px] first:-rotate-315 last:rotate-315',
             inactive: 'first:translate-y-[4px] even:translate-y-[14px] last:translate-y-[24px]',
         },
         [Large] : {
-            active  : 'translate-y-[16px] first:rotate-45 last:-rotate-45',
+            active  : 'translate-y-[16px] first:-rotate-315 last:rotate-315',
             inactive: 'first:translate-y-[6px] even:translate-y-[16px] last:translate-y-[26px]',
         },
     },
