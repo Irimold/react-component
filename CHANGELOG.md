@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.5](https://github.com/Irimold/react-component/compare/v0.6.4...v0.6.5) (2024-05-26)
+
+
+### Bug Fixes
+
+* **NavBtn:** Increase transition duration & add timing function ([c0742a1](https://github.com/Irimold/react-component/commit/c0742a1365362fdc7e725120b6738528d59c61d6))
+* **NavBtn:** remove padding & outline ([f8fb228](https://github.com/Irimold/react-component/commit/f8fb22825b5fac55db7fa1e44233a5b0153406e9))
+
 ## [0.6.4](https://github.com/Irimold/react-component/compare/v0.6.3...v0.6.4) (2024-05-26)
 
 
