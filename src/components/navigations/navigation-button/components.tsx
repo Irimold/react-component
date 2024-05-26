@@ -6,6 +6,7 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
     className,
     color,
     isActive,
+    showOnLarge = false,
     size,
     ...props
 }, ref) => {
@@ -21,7 +22,7 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
             } ${
                 navBtnClasses.cursor
             } ${
-                navBtnClasses.display
+                !showOnLarge ? navBtnClasses.display : ''
             } ${
                 navBtnClasses.height[btnSize]
             } ${
