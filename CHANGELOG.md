@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.6](https://github.com/Irimold/react-component/compare/v0.6.5...v0.6.6) (2024-05-26)
+
+
+### Bug Fixes
+
+* **NavBtn:** Dramatized animation ([38308b5](https://github.com/Irimold/react-component/commit/38308b555137b52d61742cdff5d1f136ea3ef256))
+* **NavBtn:** Forgot to add "Deg" ([e8b67a2](https://github.com/Irimold/react-component/commit/e8b67a22cb3fe84fda2b9c6705ed5abefc368992))
+
 ## [0.6.5](https://github.com/Irimold/react-component/compare/v0.6.4...v0.6.5) (2024-05-26)
 
 
