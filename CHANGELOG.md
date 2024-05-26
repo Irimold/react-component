@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/Irimold/react-component/compare/v0.6.2...v0.6.3) (2024-05-26)
+
+
+### Bug Fixes
+
+* **Sidebar Item:** Icon not properly changed ([094a8ac](https://github.com/Irimold/react-component/commit/094a8ac0e776c7691f76d35ed5267195f408e291))
+
 ## [0.6.2](https://github.com/Irimold/react-component/compare/v0.6.1...v0.6.2) (2024-05-26)
 
 
