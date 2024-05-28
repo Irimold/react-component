@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.7](https://github.com/Irimold/react-component/compare/v0.6.6...v0.6.7) (2024-05-26)
+
+
+### Bug Fixes
+
+* **NavBtn:** Less dramatize & adjust rotation direction ([6c20032](https://github.com/Irimold/react-component/commit/6c20032c460e82decc4b0a6cd925e25d0276c0da))
+
 ## [0.6.6](https://github.com/Irimold/react-component/compare/v0.6.5...v0.6.6) (2024-05-26)
 
 
