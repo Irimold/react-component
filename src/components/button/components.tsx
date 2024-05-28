@@ -1,4 +1,3 @@
-import React from "react";
 import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";

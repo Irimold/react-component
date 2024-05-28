@@ -1,6 +1,6 @@
 "use client"
 
-import React, { ChangeEventHandler, forwardRef, useRef, useState } from "react";
+import { ChangeEventHandler, forwardRef, useRef, useState } from "react";
 import { TextAreaProps } from "./props";
 import { containerClasses, counterClasses, labelClasses, textAreaClasses } from "./classes";
 import { useTextareaAutoResize } from "@irimold/react-hooks";

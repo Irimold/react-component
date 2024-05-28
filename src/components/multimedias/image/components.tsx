@@ -1,4 +1,4 @@
-import React, { forwardRef, memo } from "react";
+import { forwardRef, memo } from "react";
 import { ImageProps } from "./props";
 import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";

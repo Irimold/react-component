@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { DefaultSidebarComponentProps, SidebarItemProps } from "./props";
 import { FilledHome, OutlineHome } from "@irimold/react-icons";
 import { sidebarItemClasses, sidebarItemIconClasses } from "./classes";

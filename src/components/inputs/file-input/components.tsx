@@ -1,6 +1,6 @@
 'use client'
 
-import React, { ChangeEventHandler, FC, forwardRef, useEffect, useState } from "react"
+import { ChangeEventHandler, FC, forwardRef, useEffect, useState } from "react"
 import { FileDisplayProps, FileInputProps, FileInputVariants } from "./props"
 import { containerClasses, displayClasses, imageClass, inputClasses, labelClasses } from "./classes"
 import { Image } from "@/components/multimedias"

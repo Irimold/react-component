@@ -1,6 +1,6 @@
 "use client"
 
-import React, { ChangeEventHandler, useRef } from "react";
+import { ChangeEventHandler, useRef } from "react";
 import { forwardRef } from "react";
 import { InputProps } from "./props";
 import { containerClasses, inputClasses, labelClasses } from "./classes";

@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import { FC, Fragment } from "react";
 import { BreadcrumbProps, DefaultBreadcrumbItemProps } from "./props";
 import { breadcrumbClasses, breadcrumbItemClasses } from "./classes";
 
