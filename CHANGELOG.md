@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.8](https://github.com/Irimold/react-component/compare/v0.6.7...v0.6.8) (2024-05-28)
+
+
+### Bug Fixes
+
+* **Typescript:** Incorrect jsx setup in tsconfig ([134140e](https://github.com/Irimold/react-component/commit/134140eedbc6d0f5b68565a3683eee1e6276d1a8))
+
 ## [0.6.7](https://github.com/Irimold/react-component/compare/v0.6.6...v0.6.7) (2024-05-26)
 
 
