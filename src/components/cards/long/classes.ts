@@ -14,7 +14,3 @@ export const cardDetailClasses = {
     width   : 'w-3/4',
     padding : 'px-no-border-4 py-no-border-2'
 }
-
-export const cardActionClasses = {
-    padding: '!p-0'
-}
