@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.1](https://github.com/Irimold/react-component/compare/v0.7.0...v0.7.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* **Card:** anchor after overflows to outside element ([e15fd3d](https://github.com/Irimold/react-component/commit/e15fd3d97a0effdc8606281b8886aa31d7c565d5))
+* **Classic Card:** Add overflow to image container ([02eda25](https://github.com/Irimold/react-component/commit/02eda2513c5f18f8babe3dced8e8a1468f79e9c0))
+* **Css:** no need font-display ([292f7c3](https://github.com/Irimold/react-component/commit/292f7c300e544f60775ef8a8ac3ae9b2162ffe0a))
+
 ## [0.7.0](https://github.com/Irimold/react-component/compare/v0.6.8...v0.7.0) (2024-06-03)
 
 
