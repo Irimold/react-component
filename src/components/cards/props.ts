@@ -30,3 +30,13 @@ export interface CardActionProps {
     href?           : string
     linkComponent?  : ElementType
 }
+
+export interface CardImageProps {
+    containerClassName? : string
+    className?          : string
+    src?                : string
+    disableSrcSet?      : boolean
+    srcSetParser?       : ImageSrcSetParserType
+    srcSetType?         : SrcSetType
+    availableSrcSets?   : number[]
+}

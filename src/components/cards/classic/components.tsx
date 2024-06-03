@@ -3,7 +3,7 @@ import { ClassicCardProps } from "./props";
 import { cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses, cardTitleClasses } from "./classes";
 import { baseCardClasses } from "../classes";
 import { Image } from "@/components/multimedias";
-import { CardAction, CardBody, CardTitle } from "../components";
+import { CardAction, CardBody, CardImage, CardTitle } from "../components";
 import { Free, Limited } from "./constants";
 
 export const ClassicCard : FC<ClassicCardProps> = ({
@@ -43,34 +43,25 @@ export const ClassicCard : FC<ClassicCardProps> = ({
         {...props}
     >
         { imgSrc ? (
-            <div
-                className={`${
+            <CardImage
+                containerClassName={`${
                     cardImageContainerClasses.height
                 } ${
                     cardImageContainerClasses.width
                 }`}
-            >
-                <Image
-                    className={`${
-                        cardImageClasses.filter
-                    } ${
-                        cardImageClasses.height
-                    } ${
-                        cardImageClasses.objectFit
-                    } ${
-                        cardImageClasses.transform
-                    } ${
-                        cardImageClasses.transition
-                    } ${
-                        cardImageClasses.width
-                    }`}
-                    src={imgSrc}
-                    disableSrcSet={disableSrcSet}
-                    srcSetParser={srcSetParser}
-                    srcSetType={srcSetType}
-                    availableSrcSets={availableSrcSets}
-                />
-            </div>
+                className={`${
+                    cardImageClasses.filter
+                } ${
+                    cardImageClasses.transform
+                } ${
+                    cardImageClasses.transition
+                }`}
+                src={imgSrc}
+                disableSrcSet={disableSrcSet}
+                srcSetParser={srcSetParser}
+                srcSetType={srcSetType}
+                availableSrcSets={availableSrcSets}
+            />
         ) : (<></>) }
         <div
             className={`${

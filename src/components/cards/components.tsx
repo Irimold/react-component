@@ -1,7 +1,8 @@
 import { FC } from "react";
-import { CardActionProps, CardBodyProps, CardTitleProps } from "./props";
-import { cardActionClasses, cardBodyClasses, cardTitleClasses } from "./classes";
+import { CardActionProps, CardBodyProps, CardImageProps, CardTitleProps } from "./props";
+import { cardActionClasses, cardBodyClasses, cardImageClasses, cardTitleClasses } from "./classes";
 import { Button } from "../button";
+import { Image } from "../multimedias";
 
 export const CardTitle : FC<CardTitleProps> = ({
     title,
@@ -54,4 +55,29 @@ export const CardAction : FC<CardActionProps> = ({
     >
         { children }
     </Button>
+)
+
+export const CardImage : FC<CardImageProps> = ({
+    containerClassName = '',
+    className = '',
+    ...props
+}) => (
+    <div
+        className={`${
+            containerClassName
+        }`}
+    >
+        <Image
+            className={`${
+                cardImageClasses.height
+            } ${
+                cardImageClasses.objectFit
+            } ${
+                cardImageClasses.width
+            } ${
+                className
+            }`}
+            { ...props }
+        />
+    </div>
 )

@@ -16,6 +16,12 @@ export const cardBodyClasses = {
     height  : 'min-h-24',
 }
 
+export const cardImageClasses = {
+    height      : 'h-full',
+    objectFit   : 'object-cover',
+    width       : 'w-full'
+}
+
 export const cardActionClasses = {
     position    : 'after:absolute after:inset-0',
 }

@@ -13,11 +13,8 @@ export const cardImageContainerClasses = {
 
 export const cardImageClasses = {
     filter      : 'group-hover/card:brightness-75',
-    height      : 'h-full',
-    objectFit   : 'object-cover',
     transition  : 'transition-all',
     transform   : 'group-hover/card:scale-125',
-    width       : 'w-full'
 }
 
 export const cardDetailClasses = {
