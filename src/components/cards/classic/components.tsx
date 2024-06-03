@@ -1,8 +1,7 @@
 import { FC } from "react";
 import { ClassicCardProps } from "./props";
-import { cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses, cardTitleClasses } from "./classes";
+import { cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses } from "./classes";
 import { baseCardClasses } from "../classes";
-import { Image } from "@/components/multimedias";
 import { CardAction, CardBody, CardImage, CardTitle } from "../components";
 import { Free, Limited } from "./constants";
 
@@ -66,19 +65,12 @@ export const ClassicCard : FC<ClassicCardProps> = ({
                 cardDetailClasses.padding
             }`}
         >
-            <CardTitle
-                title={title}
-                className={`${
-                    cardTitleClasses.margin
-                }`}
-            />
+            <CardTitle title={title} />
             <CardBody
                 className={`${
                     cardBodyClasses.height[limitHeight ? Limited : Free]
                 } ${
                     cardBodyClasses.lineClamp[limitHeight ? Limited : Free]
-                } ${
-                    cardBodyClasses.margin
                 }`}
             >
                 { children || content }

@@ -17,6 +17,8 @@ export const CardTitle : FC<CardTitleProps> = ({
             className={`${
                 cardTitleClasses.font
             } ${
+                cardTitleClasses.margin
+            } ${
                 className
             }`}
         >
@@ -39,6 +41,8 @@ export const CardBody : FC<CardBodyProps> = ({
                 cardBodyClasses.font
             } ${
                 cardBodyClasses.height
+            } ${
+                cardBodyClasses.margin
             } ${
                 className
             }`}

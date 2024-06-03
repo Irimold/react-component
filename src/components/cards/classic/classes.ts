@@ -21,10 +21,6 @@ export const cardDetailClasses = {
     padding : 'px-no-border-4 py-no-border-2'
 }
 
-export const cardTitleClasses = {
-    margin  : 'mb-iri-2',
-}
-
 export const cardBodyClasses = {
     height      : {
         [Free]      : 'h-fit',
@@ -34,5 +30,4 @@ export const cardBodyClasses = {
         [Free]      : '',
         [Limited]   : 'line-clamp-3',
     },
-    margin      : 'mb-iri-2',
 }

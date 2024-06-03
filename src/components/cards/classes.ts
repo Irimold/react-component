@@ -8,12 +8,14 @@ export const baseCardClasses = {
 }
 
 export const cardTitleClasses = {
-    font: cardTitle,
+    font    : cardTitle,
+    margin  : 'mb-iri-2',
 }
 
 export const cardBodyClasses = {
     font    : body,
     height  : 'min-h-24',
+    margin  : 'mb-iri-2',
 }
 
 export const cardImageClasses = {
