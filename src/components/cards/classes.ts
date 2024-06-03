@@ -5,6 +5,7 @@ export const baseCardClasses = {
     borderRadius: 'rounded',
     boxShadow   : 'shadow',
     overflow    : 'overflow-hidden',
+    position    : 'relative',
 }
 
 export const cardTitleClasses = {

@@ -2,7 +2,6 @@ import { Free, Limited } from "./constants"
 
 export const cardClasses = {
     group       : 'group/card',
-    position    : 'relative',
     width       : 'w-80 max-w-80',
 }
 

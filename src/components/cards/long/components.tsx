@@ -29,6 +29,8 @@ export const LongCard : FC<CardProps> = ({
         } ${
             baseCardClasses.overflow
         } ${
+            baseCardClasses.position
+        } ${
             cardClasses.display
         } ${
             cardClasses.flex

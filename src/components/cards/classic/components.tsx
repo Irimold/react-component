@@ -31,9 +31,9 @@ export const ClassicCard : FC<ClassicCardProps> = ({
         } ${
             baseCardClasses.overflow
         } ${
-            cardClasses.group
+            baseCardClasses.position
         } ${
-            cardClasses.position
+            cardClasses.group
         } ${
             cardClasses.width
         } ${
