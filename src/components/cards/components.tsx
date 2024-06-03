@@ -1,6 +1,7 @@
 import { FC } from "react";
-import { CardBodyProps, CardTitleProps } from "./props";
-import { cardBodyClasses, cardTitleClasses } from "./classes";
+import { CardActionProps, CardBodyProps, CardTitleProps } from "./props";
+import { cardActionClasses, cardBodyClasses, cardTitleClasses } from "./classes";
+import { Button } from "../button";
 
 export const CardTitle : FC<CardTitleProps> = ({
     title,
@@ -32,4 +33,25 @@ export const CardBody : FC<CardBodyProps> = ({
     >
         { children }
     </p>
+)
+
+export const CardAction : FC<CardActionProps> = ({
+    children,
+    className = '',
+    href = '',
+    linkComponent
+}) => (
+    <Button
+        variant="link"
+        functionality="link"
+        href={href}
+        linkComponent={linkComponent}
+        className={`${
+            cardActionClasses.position
+        } ${
+            className
+        }`}
+    >
+        { children }
+    </Button>
 )

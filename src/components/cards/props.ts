@@ -23,3 +23,10 @@ export interface CardBodyProps {
     children    : ReactNode
     className?  : string
 }
+
+export interface CardActionProps {
+    children?       : ReactNode
+    className?      : string
+    href?           : string
+    linkComponent?  : ElementType
+}

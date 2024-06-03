@@ -1,11 +1,10 @@
 import { FC } from "react";
 import { ClassicCardProps } from "./props";
 import { cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses, cardTitleClasses } from "./classes";
-import { baseCardClasses, cardActionClasses } from "../classes";
+import { baseCardClasses } from "../classes";
 import { Image } from "@/components/multimedias";
-import { CardBody, CardTitle } from "../components";
+import { CardAction, CardBody, CardTitle } from "../components";
 import { Free, Limited } from "./constants";
-import { Button } from "@/components/button";
 
 export const ClassicCard : FC<ClassicCardProps> = ({
     className       = '',
@@ -100,17 +99,12 @@ export const ClassicCard : FC<ClassicCardProps> = ({
                 </CardBody>
             ) : (<></>) }
             { href ? (
-                <Button
-                    variant="link"
-                    functionality="link"
-                    linkComponent={linkComponent}
+                <CardAction
                     href={href}
-                    className={`${
-                        cardActionClasses.position
-                    }`}
+                    linkComponent={linkComponent}
                 >
-                    { actionText }
-                </Button>
+                    { actionText || 'Click' }
+                </CardAction>
             ) : (<></>) }
         </div>
     </div>
