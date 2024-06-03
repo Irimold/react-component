@@ -39,7 +39,3 @@ export const cardBodyClasses = {
     },
     margin      : 'mb-iri-2',
 }
-
-export const cardActionClasses = {
-    position    : 'after:absolute after:inset-0',
-}

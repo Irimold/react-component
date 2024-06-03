@@ -25,6 +25,8 @@ export const CardBody : FC<CardBodyProps> = ({
         className={`${
             cardBodyClasses.font
         } ${
+            cardBodyClasses.height
+        } ${
             className
         }`}
     >

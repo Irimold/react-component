@@ -12,5 +12,10 @@ export const cardTitleClasses = {
 }
 
 export const cardBodyClasses = {
-    font: body
+    font    : body,
+    height  : 'min-h-24',
+}
+
+export const cardActionClasses = {
+    position    : 'after:absolute after:inset-0',
 }

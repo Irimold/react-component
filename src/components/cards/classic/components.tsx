@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ClassicCardProps } from "./props";
-import { cardActionClasses, cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses, cardTitleClasses } from "./classes";
-import { baseCardClasses } from "../classes";
+import { cardBodyClasses, cardClasses, cardDetailClasses, cardImageClasses, cardImageContainerClasses, cardTitleClasses } from "./classes";
+import { baseCardClasses, cardActionClasses } from "../classes";
 import { Image } from "@/components/multimedias";
 import { CardBody, CardTitle } from "../components";
 import { Free, Limited } from "./constants";
