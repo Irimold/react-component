@@ -22,12 +22,8 @@ export const cardDetailClasses = {
 }
 
 export const cardBodyClasses = {
-    height      : {
-        [Free]      : 'h-fit',
-        [Limited]   : 'h-[4.5em]'
-    },
     lineClamp   : {
         [Free]      : '',
-        [Limited]   : 'line-clamp-3',
+        [Limited]   : 'line-clamp-4',
     },
 }

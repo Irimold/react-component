@@ -70,8 +70,6 @@ export const ClassicCard : FC<ClassicCardProps> = ({
             <CardTitle title={title} />
             <CardBody
                 className={`${
-                    cardBodyClasses.height[limitHeight ? Limited : Free]
-                } ${
                     cardBodyClasses.lineClamp[limitHeight ? Limited : Free]
                 }`}
             >
