@@ -1,7 +1,13 @@
 import { forwardRef } from "react";
-import { ButtonProps, DefaultButtonProps, LinkButtonProps } from "./props";
+import { ButtonProps, DefaultButtonProps, DefaultLinkProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
 import { Solid } from "./constants";
+
+const DefaultLink = forwardRef<HTMLAnchorElement, DefaultLinkProps>((props, ref) => (
+    <a ref={ref} {...props}/>
+))
+
+DefaultLink.displayName = 'DefaultLink'
 
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
     variant         = Solid,
@@ -10,6 +16,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     children,
     leftIcon,
     rightIcon,
+    linkComponent,
     ...props
 }, ref) => {
 
@@ -75,14 +82,16 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     )
 
     if (functionality == 'link'){
+        const Component = linkComponent || DefaultLink
+
         return (
-            <a
+            <Component
                 className={ClassName}
                 ref={ref as React.ForwardedRef<HTMLAnchorElement>}
                 {...props as LinkButtonProps}
             >
                 { content }
-            </a>
+            </Component>
         )
     }
 

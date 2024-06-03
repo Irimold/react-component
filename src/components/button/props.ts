@@ -8,11 +8,15 @@ type BaseProps<T extends ElementType> = ComponentPropsWithoutRef<T> & {
 }
 
 export interface DefaultButtonProps extends BaseProps<'button'> {
-    functionality?  : 'button',
+    functionality?  : 'button'
+    linkComponent?  : undefined
 }
 
 export interface LinkButtonProps extends BaseProps<'a'> {
-    functionality?  : 'link',
+    functionality?  : 'link'
+    linkComponent?  : ElementType
 }
 
 export type ButtonProps = DefaultButtonProps | LinkButtonProps
+
+export type DefaultLinkProps = ComponentPropsWithoutRef<'a'>
