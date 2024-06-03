@@ -42,61 +42,53 @@ export const ClassicCard : FC<ClassicCardProps> = ({
         }`}
         {...props}
     >
-        { imgSrc ? (
-            <CardImage
-                containerClassName={`${
-                    cardImageContainerClasses.height
-                } ${
-                    cardImageContainerClasses.width
-                }`}
-                className={`${
-                    cardImageClasses.filter
-                } ${
-                    cardImageClasses.transform
-                } ${
-                    cardImageClasses.transition
-                }`}
-                src={imgSrc}
-                disableSrcSet={disableSrcSet}
-                srcSetParser={srcSetParser}
-                srcSetType={srcSetType}
-                availableSrcSets={availableSrcSets}
-            />
-        ) : (<></>) }
+        <CardImage
+            containerClassName={`${
+                cardImageContainerClasses.height
+            } ${
+                cardImageContainerClasses.width
+            }`}
+            className={`${
+                cardImageClasses.filter
+            } ${
+                cardImageClasses.transform
+            } ${
+                cardImageClasses.transition
+            }`}
+            src={imgSrc}
+            disableSrcSet={disableSrcSet}
+            srcSetParser={srcSetParser}
+            srcSetType={srcSetType}
+            availableSrcSets={availableSrcSets}
+        />
         <div
             className={`${
                 cardDetailClasses.padding
             }`}
         >
-            { title ? (
-                <CardTitle
-                    title={title}
-                    className={`${
-                        cardTitleClasses.margin
-                    }`}
-                />
-            ) : (<></>) }
-            { children || content ? (
-                <CardBody
-                    className={`${
-                        cardBodyClasses.height[limitHeight ? Limited : Free]
-                    } ${
-                        cardBodyClasses.lineClamp[limitHeight ? Limited : Free]
-                    } ${
-                        cardBodyClasses.margin
-                    }`}
-                >
-                    { children ? children : content }
-                </CardBody>
-            ) : (<></>) }
-            { href ? (
-                <CardAction
-                    href={href}
-                    linkComponent={linkComponent}
-                >
-                    { actionText || 'Click' }
-                </CardAction>
-            ) : (<></>) }
+            <CardTitle
+                title={title}
+                className={`${
+                    cardTitleClasses.margin
+                }`}
+            />
+            <CardBody
+                className={`${
+                    cardBodyClasses.height[limitHeight ? Limited : Free]
+                } ${
+                    cardBodyClasses.lineClamp[limitHeight ? Limited : Free]
+                } ${
+                    cardBodyClasses.margin
+                }`}
+            >
+                { children || content }
+            </CardBody>
+            <CardAction
+                href={href}
+                linkComponent={linkComponent}
+            >
+                { actionText || 'Click' }
+            </CardAction>
         </div>
     </div>
 )

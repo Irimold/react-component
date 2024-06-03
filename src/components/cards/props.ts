@@ -15,12 +15,12 @@ export interface CardProps extends Omit<ComponentPropsWithoutRef<'div'>, 'conten
 }
 
 export interface CardTitleProps {
-    title       : string
+    title?      : string
     className?  : string
 }
 
 export interface CardBodyProps {
-    children    : ReactNode
+    children?   : ReactNode
     className?  : string
 }
 
