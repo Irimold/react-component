@@ -6,6 +6,7 @@ export {
     // Cards
     Card,
     ClassicCard,
+    LongCard,
 
     // Inputs
     FileInput,
@@ -28,6 +29,7 @@ export type {
     ButtonProps,
 
     // Cards
+    CardProps,
     ClassicCardProps,
 
     // Inputs

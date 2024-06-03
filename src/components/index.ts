@@ -3,9 +3,13 @@ export type { ButtonProps } from "./button"
 
 export { 
     Card, 
-    ClassicCard
+    ClassicCard,
+    LongCard,
 } from "./cards"
-export type { ClassicCardProps } from "./cards"
+export type { 
+    CardProps,
+    ClassicCardProps
+} from "./cards"
 
 export { 
     FileInput, 
