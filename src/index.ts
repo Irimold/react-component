@@ -3,6 +3,10 @@ import './index.css'
 export {
     Button,
 
+    // Cards
+    Card,
+    ClassicCard,
+
     // Inputs
     FileInput,
     Input,
@@ -22,6 +26,9 @@ export {
 
 export type {
     ButtonProps,
+
+    // Cards
+    ClassicCardProps,
 
     // Inputs
     FileInputProps,

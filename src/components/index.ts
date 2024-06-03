@@ -2,6 +2,12 @@ export { Button } from "./button"
 export type { ButtonProps } from "./button"
 
 export { 
+    Card, 
+    ClassicCard
+} from "./cards"
+export type { ClassicCardProps } from "./cards"
+
+export { 
     FileInput, 
     Input, 
     TextArea
