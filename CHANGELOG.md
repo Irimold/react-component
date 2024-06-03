@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.7.0](https://github.com/Irimold/react-component/compare/v0.6.8...v0.7.0) (2024-06-03)
+
+
+### Features
+
+* **Button:** Make button accept other anchor element if acting as link ([610df81](https://github.com/Irimold/react-component/commit/610df81d70af8118dabb17e1e3c7114d1913776d))
+* **Card:** Classic card ([8aa0851](https://github.com/Irimold/react-component/commit/8aa08519d557c167668838876f5892f5f5731bde))
+* **Card:** Long card ([483e0b2](https://github.com/Irimold/react-component/commit/483e0b2b7bc530f72667bb7f8322b2bd3057211c))
+
+
+### Bug Fixes
+
+* **Card:** Move reusable classes to parent directory ([f5d23d9](https://github.com/Irimold/react-component/commit/f5d23d9c8e849011ef683a4336cd4b897720bd8e))
+* **Card:** Put conditional inside its own component ([861671b](https://github.com/Irimold/react-component/commit/861671bd4d855d8e24032d6899158d03922c7adf))
+* **Card:** Put margin in Title and Body Components ([015bc44](https://github.com/Irimold/react-component/commit/015bc44ea443bc92eb28cc94c53dd5f4c2f3f351))
+* **Card:** Separate card action as an independent component ([350602a](https://github.com/Irimold/react-component/commit/350602a90b12653070ec7cc7fa4b952b1e7831b7))
+* **Card:** Separate Card Image into independent component ([63e9ced](https://github.com/Irimold/react-component/commit/63e9ced0673b3495b7144cfb8715ddde00b3793c))
+* **Typography:** add font weight ([c74131f](https://github.com/Irimold/react-component/commit/c74131f173405770a7178724e0a9de511c27243d))
+
 ## [0.6.8](https://github.com/Irimold/react-component/compare/v0.6.7...v0.6.8) (2024-05-28)
 
 
