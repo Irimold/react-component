@@ -8,6 +8,7 @@ export const cardClasses = {
 
 export const cardImageContainerClasses = {
     height      : 'h-80 max-h-80',
+    overflow    : 'overflow-hidden',
     width       : 'w-80 max-w-80'
 }
 

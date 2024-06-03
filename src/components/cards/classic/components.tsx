@@ -45,6 +45,8 @@ export const ClassicCard : FC<ClassicCardProps> = ({
             containerClassName={`${
                 cardImageContainerClasses.height
             } ${
+                cardImageContainerClasses.overflow
+            } ${
                 cardImageContainerClasses.width
             }`}
             className={`${
