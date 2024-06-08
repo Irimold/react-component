@@ -31,6 +31,8 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         } ${
             buttonClasses.display
         } ${
+            buttonClasses.flex
+        } ${
             buttonClasses.font
         } ${
             buttonClasses.outline
