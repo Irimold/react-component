@@ -108,7 +108,7 @@ export const Select : FC<SelectProps> = ({
     ...props
 }) => {
 
-    const [search, setSearch] = useState(value as string)
+    const [search, setSearch] = useState(options.find(option => option.value == value)?.label || '')
     const [filteredOptions, setFilteredOptions] = useState(options)
     const [open, setOpen] = useState(false)
 
@@ -215,6 +215,7 @@ export const Select : FC<SelectProps> = ({
                             <SelectOption
                                 key={`option-${option.value}-${index}`}
                                 onClick={handleChange}
+                                selected={option.value == value}
                                 {...option}
                             />
                         )) }
