@@ -33,6 +33,7 @@ export const optionClasses = {
 }
 
 export const optionIconClasses = {
+    color   : 'text-secondary',
     margin  : 'me-iri-1',
     opacity : {
         [Idle]  : 'opacity-0',

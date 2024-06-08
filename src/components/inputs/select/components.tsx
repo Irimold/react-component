@@ -53,6 +53,8 @@ const SelectOption : FC<SelectOptionProps> = ({
             <FilledCheck 
                 size="1.5em"
                 className={`${
+                    optionIconClasses.color
+                } ${
                     optionIconClasses.margin
                 } ${
                     optionIconClasses.opacity[ selected ? Active : Idle ]
@@ -84,6 +86,8 @@ const SelectOptionCreate : FC<SelectOptionProps> = ({
             <FilledPlus 
                 size="1.5em"
                 className={`${
+                    optionIconClasses.color
+                } ${
                     optionIconClasses.margin
                 }`}
             />
@@ -131,6 +135,8 @@ export const Select : FC<SelectProps> = ({
                 value   : value
             })
         }
+
+        setDisplay(value)
     }
 
     const handleSearch : InputChangeHandler = ({value}) => {
