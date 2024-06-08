@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.5](https://github.com/Irimold/react-component/compare/v0.8.4...v0.8.5) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Select:** Add delay to blur ([df4b522](https://github.com/Irimold/react-component/commit/df4b522603c2036a37d6f821bbd39a319f2be9fb))
+
 ## [0.8.4](https://github.com/Irimold/react-component/compare/v0.8.3...v0.8.4) (2024-06-08)
 
 
