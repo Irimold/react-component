@@ -120,9 +120,8 @@ export const Select : FC<SelectProps> = ({
     const searchTimeoutRef  = useRef<TimeoutType>()
     const changeRef         = useRef(false)
 
-    const setDisplayText = () => {
-        const selectedVal = value || display
-        const selected = options.find(option => option.value == selectedVal)
+    const setDisplayText = (val : typeof value) => {
+        const selected = options.find(option => option.value == val)
         setDisplay(selected?.label || selected?.value || '')
     }
     
@@ -132,7 +131,7 @@ export const Select : FC<SelectProps> = ({
 
     const handleChange : GenericStringCallback = (value) => {
 
-        setDisplay(value)
+        setDisplayText(value)
         changeRef.current = false
 
         if (typeof onChange == 'function') {
@@ -167,7 +166,7 @@ export const Select : FC<SelectProps> = ({
             setOpen(false)
             setSearch('')
             if (changeRef.current) {
-                setDisplayText()
+                setDisplayText(value)
                 changeRef.current = false
             }
         }, 300)
@@ -195,7 +194,7 @@ export const Select : FC<SelectProps> = ({
 
     useEffect(() => {
         if (display != value) {
-            setDisplayText()
+            setDisplayText(value)
         }
     }, [value])
 
