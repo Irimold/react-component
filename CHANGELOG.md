@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.6](https://github.com/Irimold/react-component/compare/v0.8.5...v0.8.6) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Select:** Race condition after selecting an option ([f9d5cb1](https://github.com/Irimold/react-component/commit/f9d5cb149cb653d0dcbfa0f35c008ee2e7573da4))
+
 ## [0.8.5](https://github.com/Irimold/react-component/compare/v0.8.4...v0.8.5) (2024-06-08)
 
 
