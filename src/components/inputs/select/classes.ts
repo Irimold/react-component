@@ -24,6 +24,7 @@ export const optionContainerClasses = {
 export const optionClasses = {
     background  : 'bg-white hover:bg-grey-100',
     border      : 'border-0',
+    borderRadius: 'rounded',
     display     : 'flex',
     flex        : 'items-center',
     margin      : 'mb-iri-1 last:mb-0',

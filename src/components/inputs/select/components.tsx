@@ -17,6 +17,8 @@ const OptionButton : FC<SelectOptionButtonProps> = (props) => (
         } ${
             optionClasses.border
         } ${
+            optionClasses.borderRadius
+        } ${
             optionClasses.display
         } ${
             optionClasses.flex
