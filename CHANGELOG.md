@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.4](https://github.com/Irimold/react-component/compare/v0.8.3...v0.8.4) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Loader:** Animation timing & color ([6c1bb2c](https://github.com/Irimold/react-component/commit/6c1bb2c93afa8982c3657fddf4625fcf9040b3ab))
+* **Select:** Icon color & set display ([b6d499e](https://github.com/Irimold/react-component/commit/b6d499e839cb90023a3692156be4b2b2dad1c88e))
+
 ## [0.8.3](https://github.com/Irimold/react-component/compare/v0.8.2...v0.8.3) (2024-06-08)
 
 
