@@ -8,6 +8,7 @@ export const containerClasses = {
 export const optionContainerClasses = {
     background  : 'bg-white',
     borderRadius: 'rounded',
+    boxShadow   : 'shadow',
     display     : {
         [Idle]  : 'hidden',
         [Active]: 'block',
@@ -17,6 +18,7 @@ export const optionContainerClasses = {
     position    : 'absolute bottom-0',
     transform   : 'translate-y-full',
     width       : 'w-full',
+    zIndex      : 'z-30',
 }
 
 export const optionClasses = {

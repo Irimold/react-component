@@ -188,6 +188,8 @@ export const Select : FC<SelectProps> = ({
                 } ${
                     optionContainerClasses.borderRadius
                 } ${
+                    optionContainerClasses.boxShadow
+                } ${
                     optionContainerClasses.display[open ? Active : Idle]
                 } ${
                     optionContainerClasses.font
@@ -199,6 +201,8 @@ export const Select : FC<SelectProps> = ({
                     optionContainerClasses.transform
                 } ${
                     optionContainerClasses.width
+                } ${
+                    optionContainerClasses.zIndex
                 }`}
             >
                 { isLoading ? (
