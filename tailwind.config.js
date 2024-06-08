@@ -15,6 +15,9 @@ export default {
     ],
     theme: {
         extend: {
+            animation: {
+                'counter-spin': 'counter-spin 1.5s infinite'
+            },
             borderRadius: {
                 DEFAULT: "8px",
             },
@@ -81,6 +84,12 @@ export default {
                 'navigation'    : ['1.5rem'],
                 'body'          : ['1rem'],
                 'information'   : ['.875rem'],
+            },
+            keyframes: {
+                'counter-spin' : {
+                    '0%'    : { transform: 'rotate(0deg)' },
+                    '100%'  : { transform: 'rotate(-360deg)' }
+                }
             },
             margin: () => {
                 const output = {}

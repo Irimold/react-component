@@ -1,3 +1,3 @@
 export const loaderClasses = {
-    animation: 'animate-spin'
+    animation: 'animate-counter-spin'
 }
