@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.8.0](https://github.com/Irimold/react-component/compare/v0.7.2...v0.8.0) (2024-06-08)
+
+
+### Features
+
+* Global types ([e0aee44](https://github.com/Irimold/react-component/commit/e0aee4464fd1a2560092436c48b15f015e70d115))
+* Loader ([02f8dcf](https://github.com/Irimold/react-component/commit/02f8dcf0b9a0743b484771b7748437375d396bd1))
+* Select ([93ea3ad](https://github.com/Irimold/react-component/commit/93ea3adbd8a6baa272592615f375a1acd16e6f79))
+
+
+### Bug Fixes
+
+* **Input:** Incorrect style ([6089e16](https://github.com/Irimold/react-component/commit/6089e16d99c468431925542b829d19b15b6e36cb))
+
 ## [0.7.2](https://github.com/Irimold/react-component/compare/v0.7.1...v0.7.2) (2024-06-03)
 
 
