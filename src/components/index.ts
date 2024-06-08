@@ -13,12 +13,15 @@ export type {
 
 export { 
     FileInput, 
-    Input, 
+    Input,
+    Select,
     TextArea
 } from "./inputs"
 export type { 
     FileInputProps, 
     InputProps, 
+    SelectOptionType,
+    SelectProps,
     TextAreaProps, 
     InputChangeHandler
 } from "./inputs"

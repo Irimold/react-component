@@ -11,6 +11,7 @@ export {
     // Inputs
     FileInput,
     Input,
+    Select,
     TextArea,
 
     // Misc
@@ -38,6 +39,8 @@ export type {
     // Inputs
     FileInputProps,
     InputProps,
+    SelectOptionType,
+    SelectProps,
     TextAreaProps,
     InputChangeHandler,
 
