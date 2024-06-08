@@ -1,9 +1,10 @@
+import { Active, Hover, Idle } from "@/constants";
 import { navigation } from "@/typography";
 
 export const sidebarItemClasses = {
     color   : {
-        active  : '!text-primary-600',
-        inactive: 'text-gray-500 hover:text-primary-600',
+        [Active]: '!text-primary-600',
+        [Idle]  : 'text-gray-500 hover:text-primary-600',
     },
     cursor  : 'cursor-pointer',
     display : 'flex',
@@ -15,9 +16,9 @@ export const sidebarItemClasses = {
 
 export const sidebarItemIconClasses = {
     display : {
-        active      : 'block',
-        idle        : 'block group-hover/sidebar-item:hidden',
-        interacted  : 'hidden group-hover/sidebar-item:block',
+        [Active]: 'block',
+        [Idle]  : 'block group-hover/sidebar-item:hidden',
+        [Hover] : 'hidden group-hover/sidebar-item:block',
     },
     margin  : 'me-2',
 }

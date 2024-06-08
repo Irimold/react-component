@@ -2,6 +2,7 @@ import { forwardRef } from "react";
 import { DefaultSidebarComponentProps, SidebarItemProps } from "./props";
 import { FilledHome, OutlineHome } from "@irimold/react-icons";
 import { sidebarItemClasses, sidebarItemIconClasses } from "./classes";
+import { Active, Hover, Idle } from "@/constants";
 
 const DefaultSidebarComponent = forwardRef<HTMLAnchorElement, DefaultSidebarComponentProps>((props, ref) => (
     <a ref={ref} {...props}/>
@@ -27,7 +28,7 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
         <AnchorComponent
             ref={ref}
             className={`${
-                sidebarItemClasses.color[isActive ? 'active' : 'inactive']
+                sidebarItemClasses.color[isActive ? Active : Idle]
             } ${
                 sidebarItemClasses.cursor
             } ${
@@ -49,7 +50,7 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
                 <>
                     <span 
                         className={`${
-                            sidebarItemIconClasses.display.interacted
+                            sidebarItemIconClasses.display[Hover]
                         } ${
                             sidebarItemIconClasses.margin
                         }`}
@@ -58,7 +59,7 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
                     </span>
                     <span 
                         className={`${
-                            sidebarItemIconClasses.display.idle
+                            sidebarItemIconClasses.display[Idle]
                         } ${
                             sidebarItemIconClasses.margin
                         }`}
@@ -69,7 +70,7 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
             ) : (
                 <span 
                     className={`${
-                        sidebarItemIconClasses.display.active
+                        sidebarItemIconClasses.display[Active]
                     } ${
                         sidebarItemIconClasses.margin
                     }`}

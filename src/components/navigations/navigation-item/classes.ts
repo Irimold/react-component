@@ -1,3 +1,4 @@
+import { Active, Idle } from "@/constants";
 import { navigation } from "@/typography";
 
 export const navItemClasses = {
@@ -19,7 +20,7 @@ export const navItemLineClasses = {
     transform   : '-translate-x-full',
     transition  : 'transition-all',
     width       : {
-        active  : 'w-full',
-        inactive: 'w-0 group-hover/nav-item:w-full',
+        [Active]: 'w-full',
+        [Idle]  : 'w-0 group-hover/nav-item:w-full',
     }
 }

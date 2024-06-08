@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { NavigationButtonProps } from "./props";
 import { navBtnBarClasses, navBtnClasses } from "./classes";
+import { Active, Idle } from "@/constants";
 
 export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonProps>(({
     className,
@@ -53,7 +54,7 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
                     } ${
                         navBtnBarClasses.position
                     } ${
-                        navBtnBarClasses.transform[btnSize][isActive ? 'active' : 'inactive']
+                        navBtnBarClasses.transform[btnSize][isActive ? Active : Idle]
                     } ${
                         navBtnBarClasses.transition
                     } ${

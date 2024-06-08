@@ -1,6 +1,7 @@
 import { FC, Fragment } from "react";
 import { BreadcrumbProps, DefaultBreadcrumbItemProps } from "./props";
 import { breadcrumbClasses, breadcrumbItemClasses } from "./classes";
+import { Active, Idle } from "@/constants";
 
 const DefaultBreadcrumbItem : FC<DefaultBreadcrumbItemProps> = (props) => (
     <a {...props}/>
@@ -30,7 +31,7 @@ export const Breadcrumb : FC<BreadcrumbProps> = ({
                 <Fragment key={`breadcrumb-${index}`}>
                     <Component
                         className={`${
-                            breadcrumbItemClasses.color[item.active ? 'active' : 'inactive']
+                            breadcrumbItemClasses.color[item.active ? Active : Idle]
                         } ${
                             breadcrumbItemClasses.display
                         } ${

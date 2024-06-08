@@ -1,6 +1,7 @@
 import { FC, forwardRef } from "react";
 import { DefaultAnchorProps, NavigationItemLineProps, NavigationItemProps } from "./props";
 import { navItemClasses, navItemLineClasses } from "./classes";
+import { Active, Idle } from "@/constants";
 
 const DefaultAnchor = forwardRef<HTMLAnchorElement, DefaultAnchorProps>((props, ref) => (
     <a ref={ref} {...props}/>
@@ -25,7 +26,7 @@ const NavigationItemLine : FC<NavigationItemLineProps> = ({
         } ${
             navItemLineClasses.transition
         } ${
-            navItemLineClasses.width[isActive ? 'active' : 'inactive']
+            navItemLineClasses.width[isActive ? Active : Idle]
         }`}
     />
 )
