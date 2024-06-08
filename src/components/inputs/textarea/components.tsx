@@ -14,6 +14,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     maxLength,
     disableAutoResize = false,
     minHeight = 80,
+    placeholder='placeholder',
     ...props
 }, ref) => {
     const [count, setCount] = useState(0)
@@ -94,6 +95,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
                 name={name}
                 maxLength={maxLength}
                 onChange={handleChange}
+                placeholder={placeholder}
                 {...props}
             />
             <label
