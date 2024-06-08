@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, FocusEventHandler, MouseEventHandler, useEffect, useRef, useState } from "react";
-import { SelectOptionProps, SelectProps } from "./props";
+import { SelectOptionButtonProps, SelectOptionProps, SelectProps } from "./props";
 import { containerClasses, optionClasses, optionContainerClasses, optionIconClasses } from "./classes";
 import { FilledCheck, FilledPlus } from "@irimold/react-icons";
 import { Active, Idle } from "@/constants";
@@ -9,6 +9,27 @@ import { GenericStringCallback, TimeoutType } from "@/types";
 import { InputChangeHandler } from "../types";
 import { Input } from "../input";
 import { Loader } from "@/components/misc";
+
+const OptionButton : FC<SelectOptionButtonProps> = (props) => (
+    <button
+        className={`${
+            optionClasses.background
+        } ${
+            optionClasses.border
+        } ${
+            optionClasses.display
+        } ${
+            optionClasses.flex
+        } ${
+            optionClasses.margin
+        } ${
+            optionClasses.padding
+        } ${
+            optionClasses.width
+        }`}
+        {...props}
+    />
+) 
 
 const SelectOption : FC<SelectOptionProps> = ({
     label,
@@ -24,20 +45,7 @@ const SelectOption : FC<SelectOptionProps> = ({
     }
 
     return(
-        <button
-            className={`${
-                optionClasses.background
-            } ${
-                optionClasses.border
-            } ${
-                optionClasses.display
-            } ${
-                optionClasses.flex
-            } ${
-                optionClasses.margin
-            } ${
-                optionClasses.padding
-            }`}
+        <OptionButton
             onClick={handleClick}
         >
             <FilledCheck 
@@ -51,7 +59,7 @@ const SelectOption : FC<SelectOptionProps> = ({
             <span>
                 { label || value }
             </span>
-        </button>
+        </OptionButton>
     )
 
 }
@@ -68,20 +76,7 @@ const SelectOptionCreate : FC<SelectOptionProps> = ({
     }
 
     return(
-        <button
-            className={`${
-                optionClasses.background
-            } ${
-                optionClasses.border
-            } ${
-                optionClasses.display
-            } ${
-                optionClasses.flex
-            } ${
-                optionClasses.margin
-            } ${
-                optionClasses.padding
-            }`}
+        <OptionButton
             onClick={handleClick}
         >
             <FilledPlus 
@@ -93,7 +88,7 @@ const SelectOptionCreate : FC<SelectOptionProps> = ({
             <span>
                 Create {'"'}{value}{'"'}
             </span>
-        </button>
+        </OptionButton>
     )
 
 }
@@ -187,45 +182,45 @@ export const Select : FC<SelectProps> = ({
                 value={search}
                 {...props}
             />
-            { open ? (
-                <div
-                    className={`${
-                        optionContainerClasses.background
-                    } ${
-                        optionContainerClasses.borderRadius
-                    } ${
-                        optionContainerClasses.font
-                    } ${
-                        optionContainerClasses.padding
-                    } ${
-                        optionContainerClasses.position
-                    } ${
-                        optionContainerClasses.transform
-                    } ${
-                        optionContainerClasses.width
-                    }`}
-                >
-                    { isLoading ? (
-                        <Loader/>
-                    ) : (
-                        <>
-                            { filteredOptions.map((option, index) => (
-                                <SelectOption
-                                    key={`option-${option.value}-${index}`}
-                                    onClick={handleChange}
-                                    {...option}
-                                />
-                            )) }
-                            { typeof onCreate == 'function' && search && !filteredOptions.length ? (
-                                <SelectOptionCreate
-                                    value={search}
-                                    onClick={onCreate}
-                                />
-                            ) : (<></>) }
-                        </>
-                    ) }
-                </div>
-            ) : (<></>) }
+            <div
+                className={`${
+                    optionContainerClasses.background
+                } ${
+                    optionContainerClasses.borderRadius
+                } ${
+                    optionContainerClasses.display[open ? Active : Idle]
+                } ${
+                    optionContainerClasses.font
+                } ${
+                    optionContainerClasses.padding
+                } ${
+                    optionContainerClasses.position
+                } ${
+                    optionContainerClasses.transform
+                } ${
+                    optionContainerClasses.width
+                }`}
+            >
+                { isLoading ? (
+                    <Loader/>
+                ) : (
+                    <>
+                        { filteredOptions.map((option, index) => (
+                            <SelectOption
+                                key={`option-${option.value}-${index}`}
+                                onClick={handleChange}
+                                {...option}
+                            />
+                        )) }
+                        { typeof onCreate == 'function' && search && !filteredOptions.length ? (
+                            <SelectOptionCreate
+                                value={search}
+                                onClick={onCreate}
+                            />
+                        ) : (<></>) }
+                    </>
+                ) }
+            </div>
         </div>
     )
 }

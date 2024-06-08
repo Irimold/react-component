@@ -8,10 +8,14 @@ export const containerClasses = {
 export const optionContainerClasses = {
     background  : 'bg-white',
     borderRadius: 'rounded',
+    display     : {
+        [Idle]  : 'hidden',
+        [Active]: 'block',
+    },
     font        : body,
     padding     : 'p-no-border-2',
     position    : 'absolute bottom-0',
-    transform   : 'translate-y-1/2',
+    transform   : 'translate-y-full',
     width       : 'w-full',
 }
 
@@ -22,6 +26,7 @@ export const optionClasses = {
     flex        : 'items-center',
     margin      : 'mb-iri-1 last:mb-0',
     padding     : 'p-no-border-2',
+    width       : 'w-full',
 }
 
 export const optionIconClasses = {
