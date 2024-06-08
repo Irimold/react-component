@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.1](https://github.com/Irimold/react-component/compare/v0.8.0...v0.8.1) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Input:** make sure the floating label works even without adding placeholder props ([b7cea03](https://github.com/Irimold/react-component/commit/b7cea0371a4e5f099571dc918bff8f4920119a6c))
+* **Select:** Option width ([561ebe5](https://github.com/Irimold/react-component/commit/561ebe5503d920115a803543375883649e6a4ac7))
+
 ## [0.8.0](https://github.com/Irimold/react-component/compare/v0.7.2...v0.8.0) (2024-06-08)
 
 
