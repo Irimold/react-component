@@ -1,0 +1,1 @@
+export type GenericStringCallback = (value : string) => any
