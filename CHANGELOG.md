@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.8.3](https://github.com/Irimold/react-component/compare/v0.8.2...v0.8.3) (2024-06-08)
+
+
+### Bug Fixes
+
+* Add border radius ([30730eb](https://github.com/Irimold/react-component/commit/30730eb33618b5029e02f61dde7ccb7c269f1f11))
+* **Loader:** change rotation direction ([1c466e1](https://github.com/Irimold/react-component/commit/1c466e1aeb33ae1b4113cca6a1b0355fd01828ee))
+* Select indicator not working ([e2431a1](https://github.com/Irimold/react-component/commit/e2431a11b519bbb3378efab67235cebb7af9d287))
+* separate display and search ([a934340](https://github.com/Irimold/react-component/commit/a9343402f40518226610f522690cbe5024e3e03d))
+
 ## [0.8.2](https://github.com/Irimold/react-component/compare/v0.8.1...v0.8.2) (2024-06-08)
 
 
