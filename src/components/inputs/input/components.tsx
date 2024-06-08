@@ -11,6 +11,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
     id = '',
     onChange,
     className = '',
+    placeholder = 'placeholder',
     ...props
 }, ref) => {
 
@@ -75,6 +76,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
                 id={inputId}
                 name={name}
                 onChange={handleChange}
+                placeholder={placeholder}
                 { ...props }
             />
             <label
