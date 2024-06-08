@@ -7,6 +7,7 @@ export const Loader : FC<LoaderProps> = ({
     size = "1.5rem",
     className = "",
     variant = 1,
+    removeColor = false,
     ...props
 }) => {
     let Element : ElementType<IconProps>
@@ -40,6 +41,8 @@ export const Loader : FC<LoaderProps> = ({
         <Element
             className={`${
                 loaderClasses.animation
+            } ${
+                !removeColor ? loaderClasses.color : ''
             } ${
                 className
             }`}

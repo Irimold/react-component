@@ -16,7 +16,7 @@ export default {
     theme: {
         extend: {
             animation: {
-                'counter-spin': 'counter-spin 1.5s infinite'
+                'counter-spin': 'counter-spin 1.5s linear infinite'
             },
             borderRadius: {
                 DEFAULT: "8px",

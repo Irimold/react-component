@@ -1,5 +1,6 @@
 import { IconProps } from "@irimold/react-icons";
 
 export interface LoaderProps extends IconProps {
-    variant?: number
+    variant?    : number
+    removeColor?: boolean
 }
