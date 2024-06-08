@@ -120,7 +120,8 @@ export const Select : FC<SelectProps> = ({
     const searchTimeoutRef = useRef<TimeoutType>()
 
     const setDisplayText = () => {
-        const selected = options.find(option => option.value == value)
+        const selectedVal = value || display
+        const selected = options.find(option => option.value == selectedVal)
         setDisplay(selected?.label || selected?.value || '')
     }
     
@@ -153,13 +154,15 @@ export const Select : FC<SelectProps> = ({
     }
 
     const handleBlur : FocusEventHandler<HTMLInputElement> = (event) => {
-        if (typeof onBlur == 'function') {
-            onBlur(event)
-        }
-
-        setOpen(false)
-        setSearch('')
-        setDisplayText()
+        setTimeout(() => {
+            if (typeof onBlur == 'function') {
+                onBlur(event)
+            }
+    
+            setOpen(false)
+            setSearch('')
+            setDisplayText()
+        }, 300)
     }
 
     useEffect(() => {
