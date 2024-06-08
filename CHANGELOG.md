@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.2](https://github.com/Irimold/react-component/compare/v0.8.1...v0.8.2) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Select:** Add shadow and z-index ([19f3a93](https://github.com/Irimold/react-component/commit/19f3a93379123edf9388c04d0f1d79e70e7cfe65))
+* **Textarea:** make sure the floating label work if placeholder is not defined ([e57809f](https://github.com/Irimold/react-component/commit/e57809f2270b84a511d71b1595049a1ebc8c4f2a))
+
 ## [0.8.1](https://github.com/Irimold/react-component/compare/v0.8.0...v0.8.1) (2024-06-08)
 
 
