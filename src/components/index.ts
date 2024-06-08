@@ -23,6 +23,9 @@ export type {
     InputChangeHandler
 } from "./inputs"
 
+export { Loader } from "./misc"
+export type { LoaderProps } from "./misc"
+
 export { Image } from "./multimedias"
 export type { 
     ImageProps, 

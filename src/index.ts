@@ -13,6 +13,9 @@ export {
     Input,
     TextArea,
 
+    // Misc
+    Loader,
+
     // Multimedias
     Image,
 
@@ -37,6 +40,9 @@ export type {
     InputProps,
     TextAreaProps,
     InputChangeHandler,
+
+    // Misc
+    LoaderProps,
 
     // Multimedias
     ImageProps,
