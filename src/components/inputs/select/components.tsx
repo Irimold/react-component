@@ -108,11 +108,21 @@ export const Select : FC<SelectProps> = ({
     ...props
 }) => {
 
-    const [search, setSearch] = useState(options.find(option => option.value == value)?.label || '')
+    const [display, setDisplay] = useState('')
+    const [search, setSearch] = useState('')
     const [filteredOptions, setFilteredOptions] = useState(options)
     const [open, setOpen] = useState(false)
 
     const searchTimeoutRef = useRef<TimeoutType>()
+
+    const setDisplayText = () => {
+        const selected = options.find(option => option.value == value)
+        setDisplay(selected?.label || selected?.value || '')
+    }
+    
+    const filterOptions = () => {
+        return options.filter(item => item.label?.includes(search) || item.value?.includes(search))
+    }
 
     const handleChange : GenericStringCallback = (value) => {
         if (typeof onChange == 'function') {
@@ -125,6 +135,7 @@ export const Select : FC<SelectProps> = ({
 
     const handleSearch : InputChangeHandler = ({value}) => {
         setSearch(value)
+        setDisplay(value)
     }
 
     const handleFocus : FocusEventHandler<HTMLInputElement> = (event) => {
@@ -141,11 +152,8 @@ export const Select : FC<SelectProps> = ({
         }
 
         setOpen(false)
-        setSearch(value as string)
-    }
-
-    const filterOptions = () => {
-        return options.filter(item => item.label?.includes(search) || item.value?.includes(search))
+        setSearch('')
+        setDisplayText()
     }
 
     useEffect(() => {
@@ -168,6 +176,12 @@ export const Select : FC<SelectProps> = ({
         setFilteredOptions(filterOptions())
     }, [options])
 
+    useEffect(() => {
+        if (display != value) {
+            setDisplayText()
+        }
+    }, [value])
+
     console.count('Select Rerender')
 
     return (
@@ -181,7 +195,7 @@ export const Select : FC<SelectProps> = ({
                 onChange={handleSearch}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                value={search}
+                value={display}
                 {...props}
             />
             <div
