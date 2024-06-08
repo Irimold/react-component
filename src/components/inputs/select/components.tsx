@@ -112,12 +112,13 @@ export const Select : FC<SelectProps> = ({
     ...props
 }) => {
 
-    const [display, setDisplay] = useState('')
-    const [search, setSearch] = useState('')
     const [filteredOptions, setFilteredOptions] = useState(options)
-    const [open, setOpen] = useState(false)
+    const [display, setDisplay] = useState('')
+    const [search, setSearch]   = useState('')
+    const [open, setOpen]       = useState(false)
 
-    const searchTimeoutRef = useRef<TimeoutType>()
+    const searchTimeoutRef  = useRef<TimeoutType>()
+    const changeRef         = useRef(false)
 
     const setDisplayText = () => {
         const selectedVal = value || display
@@ -130,6 +131,10 @@ export const Select : FC<SelectProps> = ({
     }
 
     const handleChange : GenericStringCallback = (value) => {
+
+        setDisplay(value)
+        changeRef.current = false
+
         if (typeof onChange == 'function') {
             onChange({
                 name    : name,
@@ -137,12 +142,12 @@ export const Select : FC<SelectProps> = ({
             })
         }
 
-        setDisplay(value)
     }
 
-    const handleSearch : InputChangeHandler = ({value}) => {
-        setSearch(value)
-        setDisplay(value)
+    const handleSearch : InputChangeHandler = (result) => {
+        setSearch(result.value)
+        setDisplay(result.value)
+        changeRef.current = value != result.value
     }
 
     const handleFocus : FocusEventHandler<HTMLInputElement> = (event) => {
@@ -161,7 +166,10 @@ export const Select : FC<SelectProps> = ({
     
             setOpen(false)
             setSearch('')
-            setDisplayText()
+            if (changeRef.current) {
+                setDisplayText()
+                changeRef.current = false
+            }
         }, 300)
     }
 
@@ -190,8 +198,6 @@ export const Select : FC<SelectProps> = ({
             setDisplayText()
         }
     }, [value])
-
-    console.count('Select Rerender')
 
     return (
         <div 
