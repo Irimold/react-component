@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.7](https://github.com/Irimold/react-component/compare/v0.8.6...v0.8.7) (2024-06-08)
+
+
+### Bug Fixes
+
+* **Select:** Incorrect display text set if value is not the same as label ([f9ddf4b](https://github.com/Irimold/react-component/commit/f9ddf4b88938af6b7e956f3d9474f7004bd18929))
+
 ## [0.8.6](https://github.com/Irimold/react-component/compare/v0.8.5...v0.8.6) (2024-06-08)
 
 
