@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.10.0](https://github.com/Irimold/react-component/compare/v0.9.0...v0.10.0) (2024-06-15)
+
+
+### Features
+
+* **Input:** Readonly state ([1733a90](https://github.com/Irimold/react-component/commit/1733a90dfa7d5f9f34433ae5296e059949adddb2))
+* **Textarea:** Readonly state ([9615397](https://github.com/Irimold/react-component/commit/96153972ff9dfa9647dbea139ac6021f18e3ab1d))
+
+
+### Bug Fixes
+
+* **TextArea:** text count doesn't work if setting value from props ([12cd2b9](https://github.com/Irimold/react-component/commit/12cd2b9ab7b08e85247009c34c191d3d8c8bf4e2))
+
 ## [0.9.0](https://github.com/Irimold/react-component/compare/v0.8.7...v0.9.0) (2024-06-15)
 
 
