@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.1](https://github.com/Irimold/react-component/compare/v0.12.0...v0.12.1) (2024-06-15)
+
+
+### Bug Fixes
+
+* **Preset:** Add alternate export other than default ([58aec73](https://github.com/Irimold/react-component/commit/58aec731f48c7e5c28ac0f1dba46a709a748b376))
+
 ## [0.12.0](https://github.com/Irimold/react-component/compare/v0.11.1...v0.12.0) (2024-06-15)
 
 
