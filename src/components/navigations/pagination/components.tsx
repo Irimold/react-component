@@ -52,7 +52,7 @@ export const Pagination : FC<PaginationProps> = ({
                 >...</Button>
             )
         } else if (pageNumber > page + 2) {
-            pageNumber = max = 1;
+            pageNumber = max - 1;
             items.push(
                 <Button
                     key={`pagination-item-${pageNumber}`}
