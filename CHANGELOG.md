@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.3](https://github.com/Irimold/react-component/compare/v0.12.2...v0.12.3) (2024-06-15)
+
+
+### Bug Fixes
+
+* forgot to export preset default ([e01f8d1](https://github.com/Irimold/react-component/commit/e01f8d139dc85b874551b37070537e55ed782944))
+
 ## [0.12.2](https://github.com/Irimold/react-component/compare/v0.12.1...v0.12.2) (2024-06-15)
 
 
