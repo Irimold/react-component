@@ -51,12 +51,12 @@ export const labelClasses = {
 }
 
 export const inputClasses = {
-    background  : 'file:bg-primary-600 file:hover:bg-primary-700 file:active:bg-primary-800',
-    border      : 'file:border file:border-solid file:border-primary-600 file:hover:border-primary-700 file:active:border-primary-800',
+    background  : 'file:bg-primary-600 file:hover:bg-primary-700 file:active:bg-primary-800 file:disabled:bg-grey-200',
+    border      : 'file:border file:border-solid file:border-primary-600 file:hover:border-primary-700 file:active:border-primary-800 file:disabled:border-grey-200',
     borderRadius: 'rounded file:rounded',
-    color       : 'text-dark file:text-primary-100',
+    color       : 'text-dark file:text-primary-100 file:disabled:text-grey-400',
     display     : 'block',
-    margin      : 'file:mr-iri-2',
+    margin      : 'file:me-iri-2',
     padding     : 'file:px-with-border-6 file:py-with-border-4',
     width       : 'w-full',
 }
