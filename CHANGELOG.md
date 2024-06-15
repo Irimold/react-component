@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/Irimold/react-component/compare/v0.11.1...v0.12.0) (2024-06-15)
+
+
+### Features
+
+* Turn tailwind configs into a preset ([72e1350](https://github.com/Irimold/react-component/commit/72e1350901203a9099c913c2be74f7d9f153059d))
+
 ## [0.11.1](https://github.com/Irimold/react-component/compare/v0.11.0...v0.11.1) (2024-06-15)
 
 
