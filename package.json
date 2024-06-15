@@ -3,8 +3,10 @@
     "version": "0.12.1",
     "description": "Irimold React Component",
     "type": "module",
-    "main": "dist/index.umd.js",
-    "module": "dist/index.es.js",
+    "main": "dist/index.js",
+    "exports": {
+        "./tailwindcss-config": "./dist/tailwindcss-config.js"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Irimold/react-component.git"

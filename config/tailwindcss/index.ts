@@ -1,6 +1,6 @@
 import { Config } from "tailwindcss";
 import { ThemeConf } from "./theme";
 
-export default {
+export const IrimoldTailwindPreset : Partial<Config> = {
     theme: ThemeConf
-} satisfies Partial<Config>
+}

@@ -12,10 +12,13 @@ export default defineConfig({
     ],
     build: {
         lib: {
-            entry : ['./config/tailwindcss-config.ts', './src/index.ts'],
+            entry : {
+                'tailwindcss-config': './config/tailwindcss/index.ts', 
+                'index'             : './src/index.ts'
+            },
             name : 'IriReactComponent',
             formats: ['es'],
-            fileName: (format, name) => `${name}.${format}.js`,
+            fileName: (format, name) => `${name}.js`,
         },
         rollupOptions: {
             external: [

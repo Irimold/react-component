@@ -1,6 +1,6 @@
-import { IrimoldTailwindPreset } from "./config/tailwindcss-config"
+import { Config } from "tailwindcss"
+import { IrimoldTailwindPreset } from "./config/tailwindcss"
 
-/** @type {import('tailwindcss').Config} */
 export default {
     content: [
         './src/**/*.{js,ts,jsx,tsx,mdx}'
@@ -9,5 +9,5 @@ export default {
         IrimoldTailwindPreset
     ],
     plugins: [],
-}
+} satisfies Config
 
