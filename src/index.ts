@@ -26,6 +26,7 @@ export {
     NavigationButton,
     NavItem,
     NavigationItem,
+    Pagination,
     SidebarItem,
 } from "./components"
 
@@ -56,5 +57,6 @@ export type {
     BreadcrumbProps,
     NavigationButtonProps,
     NavigationItemProps,
+    PaginationProps,
     SidebarItemProps,
 } from "./components"

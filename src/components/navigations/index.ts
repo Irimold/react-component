@@ -7,5 +7,8 @@ export type { NavigationButtonProps } from "./navigation-button"
 export { NavItem, NavigationItem } from "./navigation-item"
 export type { NavigationItemProps } from "./navigation-item"
 
+export { Pagination } from "./pagination"
+export type { PaginationProps } from "./pagination"
+
 export { SidebarItem } from "./sidebar-item"
 export type { SidebarItemProps } from "./sidebar-item"

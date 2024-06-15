@@ -41,6 +41,7 @@ export {
     NavigationButton,
     NavItem,
     NavigationItem,
+    Pagination,
     SidebarItem,
 } from "./navigations"
 export type { 
@@ -48,5 +49,6 @@ export type {
     BreadcrumbProps,
     NavigationButtonProps,
     NavigationItemProps,
+    PaginationProps,
     SidebarItemProps,
 } from "./navigations"
