@@ -59,6 +59,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
                 } ${
                     inputClasses.borderRadius
                 } ${
+                    inputClasses.color
+                } ${
                     inputClasses.display
                 } ${
                     inputClasses.outline
