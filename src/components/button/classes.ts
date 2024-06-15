@@ -3,20 +3,20 @@ import { Solid, Outline, Link } from "./constants";
 
 export const buttonClasses = {
     background : {
-        [Solid]     : 'bg-primary-600 hover:bg-primary-700 active:bg-primary-800',
-        [Outline]   : 'bg-transparent hover:bg-primary-700 active:bg-primary-800',
-        [Link]      : 'bg-transparent hover:bg-transparent active:bg-primary-800',
+        [Solid]     : 'bg-primary-600 hover:bg-primary-700 active:bg-primary-800 disabled:bg-grey-200',
+        [Outline]   : 'bg-transparent hover:bg-primary-700 active:bg-primary-800 disabled:bg-transparent',
+        [Link]      : 'bg-transparent hover:bg-transparent active:bg-primary-800 disabled:bg-transparent',
     },
     border      : {
-        [Solid]     : 'border border-primary-600 hover:border-primary-700 active:border-primary-800',
-        [Outline]   : 'border border-primary-700 hover:border-primary-700 active:border-primary-800',
-        [Link]      : 'border border-transparent hover:border-primary-700 active:border-primary-800',
+        [Solid]     : 'border border-primary-600 hover:border-primary-700 active:border-primary-800 disabled:border-grey-200',
+        [Outline]   : 'border border-primary-700 hover:border-primary-700 active:border-primary-800 disabled:border-grey-300',
+        [Link]      : 'border border-transparent hover:border-primary-700 active:border-primary-800 disabled:border-transparent',
     },
     borderRadius: 'rounded',
     color       : {
-        [Solid]     : 'text-primary-100',
-        [Outline]   : 'text-primary-700 hover:text-primary-100 active:text-primary-100',
-        [Link]      : 'text-primary-700 hover:text-primary-700 active:text-primary-100',
+        [Solid]     : 'text-primary-100 disabled:text-grey-400',
+        [Outline]   : 'text-primary-700 hover:text-primary-100 active:text-primary-100 disabled:text-grey-300',
+        [Link]      : 'text-primary-700 hover:text-primary-700 active:text-primary-100 disabled:text-grey-300',
     },
     display     : 'inline-flex',
     flex        : 'justify-center items-center',
