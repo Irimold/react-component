@@ -1,4 +1,4 @@
-import IrimoldTailwindPreset from "./config/tailwindcss-config"
+import { IrimoldTailwindPreset } from "./config/tailwindcss-config"
 
 /** @type {import('tailwindcss').Config} */
 export default {
