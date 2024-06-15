@@ -5,6 +5,10 @@
     "type": "module",
     "main": "dist/index.umd.js",
     "module": "dist/index.es.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Irimold/react-component.git"
+    },
     "scripts": {
         "build": "tsc && vite build",
         "lint": "eslint src --max-warnings=0"
