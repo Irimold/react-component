@@ -5,6 +5,7 @@
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "skipLibCheck": true,
+        "allowJs": true,
 
         "jsx": "react-jsx",
         "module": "ESNext",
@@ -13,14 +14,13 @@
         "noImplicitAny": false,
         "moduleResolution":"Bundler",
         "paths": {
-            "@/*"           : ["./src/*"]
+            "@/*"       : ["./src/*"],
         },
     },
     "include": [
         "**/*.ts", 
         "**/*.tsx", 
-        "**/*.d.ts", 
-        "vite.config.js"
+        "**/*.d.ts"
     ],
     "exclude": [
         "node_modules",

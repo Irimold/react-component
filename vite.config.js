@@ -12,14 +12,13 @@ export default defineConfig({
     ],
     build: {
         lib: {
-            entry : './src/index.ts',
+            entry : ['./config/tailwindcss-config.ts', './src/index.ts'],
             name : 'IriReactComponent',
-            formats: ['es', 'umd'],
-            fileName: format => `index.${format}.js`,
+            formats: ['es'],
+            fileName: (format, name) => `${name}.${format}.js`,
         },
         rollupOptions: {
             external: [
-                '@next/font',
                 '@types/react',
                 'react', 
                 'autoprefixer', 
