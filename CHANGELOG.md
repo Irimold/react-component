@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.11.0](https://github.com/Irimold/react-component/compare/v0.10.0...v0.11.0) (2024-06-15)
+
+
+### Features
+
+* **Pagination:** Add pagination component ([1f46da9](https://github.com/Irimold/react-component/commit/1f46da99d31467f9d2c3787d5e9d123cb955d844))
+
+
+### Bug Fixes
+
+* Add package repository URL ([68944e4](https://github.com/Irimold/react-component/commit/68944e4827655833aa7679e394358a2bc8cd947c))
+* **Button:** move link component props ([8f13526](https://github.com/Irimold/react-component/commit/8f13526b8809542eed5212693f6cfbd3351f8dd8))
+* **Button:** remove margin if there is no children ([6dc2b11](https://github.com/Irimold/react-component/commit/6dc2b118c12dbaa869df1080544a5e1c81dad352))
+
 ## [0.10.0](https://github.com/Irimold/react-component/compare/v0.9.0...v0.10.0) (2024-06-15)
 
 
