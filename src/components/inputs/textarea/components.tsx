@@ -17,7 +17,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     placeholder='placeholder',
     ...props
 }, ref) => {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState((props.value as string)?.length || 0)
     const [content, setContent] = useState(props.value)
 
     const textAreaRef   = useRef<HTMLTextAreaElement|null>(null)
