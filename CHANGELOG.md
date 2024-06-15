@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.2](https://github.com/Irimold/react-component/compare/v0.12.1...v0.12.2) (2024-06-15)
+
+
+### Bug Fixes
+
+* Register presets to package.json ([39fdd81](https://github.com/Irimold/react-component/commit/39fdd817c83d000d379c3bc68e35a445f0431ba7))
+
 ## [0.12.1](https://github.com/Irimold/react-component/compare/v0.12.0...v0.12.1) (2024-06-15)
 
 
