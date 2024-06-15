@@ -6,9 +6,10 @@ export const containerClasses = {
 }
 
 export const textAreaClasses = {
-    background  : "bg-white",
-    border      : "border border-primary-600",
+    background  : "bg-white disabled:bg-grey-100",
+    border      : "border border-primary-600 disabled:border-grey-400",
     borderRadius: "rounded",
+    color       : "text-dark disabled:text-grey-600",
     display     : "block",
     outline     : "!outline-0",
     overflow    : "overflow-hidden",
@@ -20,7 +21,7 @@ export const textAreaClasses = {
 }
 
 export const labelClasses = {
-    color       : "text-primary-600 peer-placeholder-shown:text-dark",
+    color       : "text-primary-600 peer-placeholder-shown:text-dark peer-disabled:text-grey-600",
     display     : "block",
     padding     : "px-with-border-6 py-0 peer-placeholder-shown:py-with-border-6",
     position    : "absolute top-0 left-0",
@@ -29,7 +30,7 @@ export const labelClasses = {
 }
 
 export const counterClasses = {
-    color       : "text-tertiary-400",
+    color       : "text-tertiary-400 peer-disabled:text-grey-600",
     display     : "block peer-placeholder-shown:hidden",
     font        : information,
     padding     : "px-with-border-6",

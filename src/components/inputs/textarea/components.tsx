@@ -73,6 +73,8 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
                 } ${
                     textAreaClasses.borderRadius
                 } ${
+                    textAreaClasses.color
+                } ${
                     textAreaClasses.display
                 } ${
                     textAreaClasses.outline
