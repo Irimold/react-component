@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.1](https://github.com/Irimold/react-component/compare/v0.11.0...v0.11.1) (2024-06-15)
+
+
+### Bug Fixes
+
+* **Pagination:** Incorrect condition for skipping ([1d9cebe](https://github.com/Irimold/react-component/commit/1d9cebe7511672487156c2e8269b37d388c8a649))
+* **Pagination:** Incorrect Pagination props ([6168b03](https://github.com/Irimold/react-component/commit/6168b0375f9f6da491a21a2a522c0b1bc5d55560))
+
 ## [0.11.0](https://github.com/Irimold/react-component/compare/v0.10.0...v0.11.0) (2024-06-15)
 
 
