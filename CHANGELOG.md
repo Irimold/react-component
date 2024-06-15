@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.9.0](https://github.com/Irimold/react-component/compare/v0.8.7...v0.9.0) (2024-06-15)
+
+
+### Features
+
+* **Button:** Disabled state ([4db044e](https://github.com/Irimold/react-component/commit/4db044e3b9c3944986da0c0556ef84073f7b4535))
+* **File Input:** Disabled state ([4751380](https://github.com/Irimold/react-component/commit/4751380b3aca02436f239f96e4000aa98e40b6b1))
+* **Input:** Disabled state ([eb95164](https://github.com/Irimold/react-component/commit/eb95164f21067f598a2a80c76388137990b1fa0d))
+* **Textarea:** Disabled state ([6dd7cda](https://github.com/Irimold/react-component/commit/6dd7cda7f59f64ee2f473fa82ac4c9fca27ca844))
+
 ## [0.8.7](https://github.com/Irimold/react-component/compare/v0.8.6...v0.8.7) (2024-06-08)
 
 
