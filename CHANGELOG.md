@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.4](https://github.com/Irimold/react-component/compare/v0.13.3...v0.13.4) (2024-06-22)
+
+
+### Bug Fixes
+
+* **File Input:** Incorrect method called ([775e132](https://github.com/Irimold/react-component/commit/775e132c952cee591c042a2173196f58d2982578))
+* **File Input:** Truncate filename if too long ([323a35e](https://github.com/Irimold/react-component/commit/323a35ea79de28131eb092fd6ea04f3eeb7af81a))
+
 ## [0.13.3](https://github.com/Irimold/react-component/compare/v0.13.2...v0.13.3) (2024-06-22)
 
 
