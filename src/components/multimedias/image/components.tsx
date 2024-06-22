@@ -1,7 +1,60 @@
-import { forwardRef, memo } from "react";
-import { ImageProps } from "./props";
+"use client"
+
+import { FC, ReactEventHandler, forwardRef, memo, useState } from "react";
+import { BrokenImageProps, ImageProps } from "./props";
 import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";
+import { FilledDestroyed } from "@irimold/react-icons";
+import { brokenImageClasses, brokenImageIconClasses, brokenImageLabelClasses } from "./classes";
+
+const BrokenImage : FC<BrokenImageProps> = ({
+    className = ''
+}) => (
+    <div 
+        className={`${
+            brokenImageClasses.background
+        } ${
+            brokenImageClasses.borderRadius
+        } ${
+            brokenImageClasses.display
+        } ${
+            brokenImageClasses.flex
+        } ${
+            brokenImageClasses.padding
+        } ${
+            brokenImageClasses.width
+        } ${
+            className
+        }`}
+    >
+        <FilledDestroyed
+            className={`${
+                brokenImageIconClasses.color
+            } ${
+                brokenImageIconClasses.display
+            } ${
+                brokenImageIconClasses.margin
+            }`}
+        />
+        <p
+            className={`${
+                brokenImageLabelClasses.alignment
+            } ${
+                brokenImageLabelClasses.color
+            } ${
+                brokenImageLabelClasses.font
+            } ${
+                brokenImageLabelClasses.margin
+            } ${
+                brokenImageLabelClasses.padding
+            } ${
+                brokenImageLabelClasses.text
+            }`}
+        >
+            Unable to load image
+        </p>
+    </div>
+)
 
 export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     src,
@@ -9,10 +62,25 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     srcSetParser = ImageSrcSetParser,
     srcSetType,
     disableSrcSet = false,
+    onError,
     ...props
 }, ref) => {
-    if (!src) {
-        return <></>
+    const [failedToLoad, setFailedToLoad] = useState(false)
+
+    const handleError : ReactEventHandler<HTMLImageElement> = (event) => {
+        if (typeof onError == 'function') {
+            onError(event)
+        }
+
+        setFailedToLoad(true)
+    }
+
+    if (!src || failedToLoad) {
+        return (
+            <BrokenImage
+                className={props.className}
+            />
+        )
     }
 
     if (disableSrcSet) {
@@ -20,6 +88,7 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             <img
                 src={src}
                 ref={ref}
+                onError={handleError}
                 {...props}
             />
         )
@@ -58,6 +127,7 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             src={src}
             srcSet={srcSet}
             ref={ref}
+            onError={handleError}
             {...props}
         />
     )
