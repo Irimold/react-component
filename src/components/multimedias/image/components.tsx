@@ -51,6 +51,8 @@ const BrokenImage : FC<BrokenImageProps> = ({
                 brokenImageLabelClasses.padding
             } ${
                 brokenImageLabelClasses.text
+            } ${
+                brokenImageLabelClasses.width
             }`}
         >
             Unable to load image

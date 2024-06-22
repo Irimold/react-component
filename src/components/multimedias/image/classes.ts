@@ -22,4 +22,5 @@ export const brokenImageLabelClasses = {
     margin      : 'm-0',
     padding     : 'p-0',
     text        : 'truncate',
+    width       : 'w-full',
 }
