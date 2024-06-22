@@ -5,6 +5,7 @@
     "type": "module",
     "main": "dist/index.js",
     "exports": {
+        ".": "./dist/index.js",
         "./tailwindcss-config": "./dist/tailwindcss-config.js"
     },
     "repository": {
