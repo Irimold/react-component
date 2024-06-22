@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.13.0](https://github.com/Irimold/react-component/compare/v0.12.3...v0.13.0) (2024-06-22)
+
+
+### Features
+
+* **File Input:** Add file display placeholder ([4c783cc](https://github.com/Irimold/react-component/commit/4c783ccae5966263621580bc84eaed74316d677b))
+* **Image:** Add broken image placeholder ([d61fe99](https://github.com/Irimold/react-component/commit/d61fe9911f82fc28a3330858ee2426292d2540f9))
+
+
+### Bug Fixes
+
+* **Dependencies:** Update dependencies ([10eeed4](https://github.com/Irimold/react-component/commit/10eeed41731651d9521700dd1a2280119e2181aa))
+* **Image:** Add disable placeholder props ([c6f62d2](https://github.com/Irimold/react-component/commit/c6f62d2a006967a18f5131a3f829a6ad823b42aa))
+* **Image:** Add onClick ([f6d8ebf](https://github.com/Irimold/react-component/commit/f6d8ebffd4acf7f1f8cea5ec341007b1a28a3b4a))
+
 ## [0.12.3](https://github.com/Irimold/react-component/compare/v0.12.2...v0.12.3) (2024-06-15)
 
 
