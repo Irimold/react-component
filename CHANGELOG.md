@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.3](https://github.com/Irimold/react-component/compare/v0.13.2...v0.13.3) (2024-06-22)
+
+
+### Bug Fixes
+
+* **File Input:** Unable to click ([0eb7bd8](https://github.com/Irimold/react-component/commit/0eb7bd85bc142ee76620b82297c034662351bf1a))
+* **Image:** Change broken color ([a9901d0](https://github.com/Irimold/react-component/commit/a9901d0fcefa2872080b7c706837957b1caf9edd))
+
 ## [0.13.2](https://github.com/Irimold/react-component/compare/v0.13.1...v0.13.2) (2024-06-22)
 
 
