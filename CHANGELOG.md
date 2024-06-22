@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.5](https://github.com/Irimold/react-component/compare/v0.13.4...v0.13.5) (2024-06-22)
+
+
+### Bug Fixes
+
+* **File Input:** Add width to enable truncate ([c6588ad](https://github.com/Irimold/react-component/commit/c6588adb68dbd52ed16ce97af668d8191ac6a2d9))
+* **Image:** Add width to enable truncate ([637965f](https://github.com/Irimold/react-component/commit/637965f53186cf733a17fd0245ec60e61c2e2155))
+
 ## [0.13.4](https://github.com/Irimold/react-component/compare/v0.13.3...v0.13.4) (2024-06-22)
 
 
