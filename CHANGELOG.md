@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.1](https://github.com/Irimold/react-component/compare/v0.13.0...v0.13.1) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Package:** missing main export ([bde086b](https://github.com/Irimold/react-component/commit/bde086b049a13585eee5a9b9aa0e811e51c4a8e7))
+
 ## [0.13.0](https://github.com/Irimold/react-component/compare/v0.12.3...v0.13.0) (2024-06-22)
 
 
