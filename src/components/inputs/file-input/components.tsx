@@ -1,42 +1,102 @@
 'use client'
 
-import { ChangeEventHandler, FC, forwardRef, useEffect, useState } from "react"
-import { FileDisplayProps, FileInputProps, FileInputVariants } from "./props"
-import { containerClasses, displayClasses, imageClass, inputClasses, labelClasses } from "./classes"
+import { ChangeEventHandler, FC, MouseEventHandler, forwardRef, useEffect, useRef, useState } from "react"
+import { FileDisplayPlaceholderProps, FileDisplayProps, FileInputProps, FileInputVariants } from "./props"
+import { containerClasses, displayClasses, placeholderClass, imageClass, inputClasses, labelClasses, placeholderIconClass, placeholderLabelClass } from "./classes"
 import { Image } from "@/components/multimedias"
 import { Separate } from "./constants"
+import { FilledFile, FilledUpload } from "@irimold/react-icons"
+
+const FileDisplayPlaceholder : FC<FileDisplayPlaceholderProps> = ({
+    filename = '',
+    onClick,
+}) => {
+
+    const Icon = filename ? FilledFile : FilledUpload
+
+    return (
+        <div 
+            onClick={onClick}
+            className={`${
+                placeholderClass.display
+            } ${
+                placeholderClass.flex
+            } ${
+                placeholderClass.height
+            } ${
+                placeholderClass.padding
+            } ${
+                placeholderClass.width
+            }`}
+        >
+            <Icon
+                className={`${
+                    placeholderIconClass.color
+                } ${
+                    placeholderIconClass.display
+                } ${
+                    placeholderIconClass.margin
+                }`}
+            />
+            <p
+                className={`${
+                    placeholderLabelClass.color
+                } ${
+                    placeholderLabelClass.margin
+                } ${
+                    placeholderLabelClass.padding
+                }`}
+            >
+                { filename ? filename : 'Upload file' }
+            </p>
+        </div>
+    )
+}
 
 const FileDisplay : FC<FileDisplayProps> = ({
     src = '',
     variant = Separate,
-}) => (
-    <div
-        className={`${
-            displayClasses.height[variant]
-        } ${
-            displayClasses.maxWidth[variant]
-        } ${
-            displayClasses.position
-        } ${
-            displayClasses.width
-        }`}
-    >
-        { src ? (
-            <Image
-                disableSrcSet
-                src={src}
-                alt="Uploaded file"
-                className={`${
-                    imageClass.height
-                } ${
-                    imageClass.objectFit
-                } ${
-                    imageClass.width
-                }`}
-            />
-        ) : <></> }
-    </div>
-)
+    filename = '',
+    onClick,
+}) => {
+    const [failedToLoad, setFailedToLoad] = useState(false)
+
+    return (
+        <div
+            className={`${
+                displayClasses.height[variant]
+            } ${
+                displayClasses.maxWidth[variant]
+            } ${
+                displayClasses.position
+            } ${
+                displayClasses.width
+            }`}
+        >
+            { src && !failedToLoad ? (
+                <Image
+                    disableSrcSet
+                    src={src}
+                    alt="Uploaded file"
+                    className={`${
+                        imageClass.height
+                    } ${
+                        imageClass.objectFit
+                    } ${
+                        imageClass.width
+                    }`}
+                    onClick={onClick}
+                    onError={() => { setFailedToLoad(true) }}
+                />
+            ) : (
+                <FileDisplayPlaceholder
+                    onClick={onClick}
+                    filename={filename || src}
+                />
+            ) }
+        </div>
+    )
+}
 
 export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
     onChange,
@@ -50,7 +110,10 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
     ...props
 }, ref) => {
     const [fileUrl, setFileUrl] = useState<string>(src)
+    const [filename, setFilename] = useState<string>('')
     const inputId = `file-input${name ? `-${name}` : ''}${id ? `-${id}` : ''}`
+
+    const inputRef = useRef<HTMLInputElement|null>(null)
 
     const handleChange : ChangeEventHandler<HTMLInputElement> = (event) => {
         const input = event.target
@@ -58,11 +121,14 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
         let uploadedFile : File | undefined
         if (input.files?.length) {
             uploadedFile = input.files[0]
+            setFilename(uploadedFile.name)
 
             const source = URL.createObjectURL(uploadedFile)
             setFileUrl(source)
         } else {
             uploadedFile = undefined
+            setFilename('')
+
             URL.revokeObjectURL(fileUrl)
             setFileUrl('')
         }
@@ -73,6 +139,14 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
                 value   : uploadedFile
             })
         }
+    }
+
+    const handleClickDisplay : MouseEventHandler = () => {
+        if (!inputRef.current || !readOnly) {
+            return
+        }
+
+        inputRef.current.focus()
     }
 
     useEffect(() => {
@@ -104,6 +178,8 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
         >
             { (!withoutDisplay || readOnly) ? (
                 <FileDisplay
+                    filename={filename}
+                    onClick={handleClickDisplay}
                     src={fileUrl}
                     variant={variant as FileInputVariants}
                 />
@@ -150,7 +226,15 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
                         disabled={readOnly}
                         multiple={false}
                         onChange={handleChange}
-                        ref={ref}
+                        ref={(instance) => {
+                            inputRef.current = instance
+
+                            if (typeof ref == 'function') {
+                                ref(instance)
+                            } else if (ref) {
+                                ref.current = instance
+                            }
+                        }}
                         {...props}
                     />
                 </label>

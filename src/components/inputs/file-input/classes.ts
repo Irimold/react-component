@@ -35,6 +35,27 @@ export const imageClass = {
     width       : 'w-full',
 }
 
+export const placeholderClass = {
+    background  : 'bg-white',
+    display     : 'flex',
+    flex        : 'flex-col justify-center items-center',
+    height      : 'h-full',
+    padding     : 'p-no-border-4',
+    width       : 'w-full',
+}
+
+export const placeholderIconClass = {
+    color   : 'text-secondary',
+    display : 'block',
+    margin  : 'mb-iri-6',
+}
+
+export const placeholderLabelClass = {
+    color   : 'text-dark',
+    margin  : 'mb-0',
+    padding : 'pb-0',
+}
+
 export const labelClasses = {
     background  : {
         [Hovering]  : 'bg-white/75',
