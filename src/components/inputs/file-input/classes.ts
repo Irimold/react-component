@@ -52,11 +52,12 @@ export const placeholderIconClass = {
 }
 
 export const placeholderLabelClass = {
-    color   : 'text-dark',
-    margin  : 'mb-0',
-    padding : 'pb-0',
-    text    : 'truncate',
-    width   : 'w-full',
+    alignment   : 'text-center', 
+    color       : 'text-dark',
+    margin      : 'mb-0',
+    padding     : 'pb-0',
+    text        : 'truncate',
+    width       : 'w-full',
 }
 
 export const labelClasses = {

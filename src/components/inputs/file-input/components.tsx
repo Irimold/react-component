@@ -44,6 +44,8 @@ const FileDisplayPlaceholder : FC<FileDisplayPlaceholderProps> = ({
             />
             <p
                 className={`${
+                    placeholderLabelClass.alignment
+                } ${
                     placeholderLabelClass.color
                 } ${
                     placeholderLabelClass.margin
