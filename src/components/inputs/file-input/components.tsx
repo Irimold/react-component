@@ -49,6 +49,8 @@ const FileDisplayPlaceholder : FC<FileDisplayPlaceholderProps> = ({
                     placeholderLabelClass.margin
                 } ${
                     placeholderLabelClass.padding
+                } ${
+                    placeholderLabelClass.text
                 }`}
             >
                 { filename ? filename : 'Upload file' }
