@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.7](https://github.com/Irimold/react-component/compare/v0.13.6...v0.13.7) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Workflows:** Add codecov to check coverage ([41b6f30](https://github.com/Irimold/react-component/commit/41b6f30061218bded109cb86ce3aefcab9d290ac))
+* **Workflows:** Typo for codecov action ([4ee2111](https://github.com/Irimold/react-component/commit/4ee2111e9cde1fd8d480179059ef103fd8011367))
+
 ## [0.13.6](https://github.com/Irimold/react-component/compare/v0.13.5...v0.13.6) (2024-06-22)
 
 
