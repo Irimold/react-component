@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.6](https://github.com/Irimold/react-component/compare/v0.13.5...v0.13.6) (2024-06-22)
+
+
+### Bug Fixes
+
+* **File input:** Placeholder label is not on center ([f327cd8](https://github.com/Irimold/react-component/commit/f327cd8cfb70d4a04817fd608da71977c729e6e4))
+
 ## [0.13.5](https://github.com/Irimold/react-component/compare/v0.13.4...v0.13.5) (2024-06-22)
 
 
