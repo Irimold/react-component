@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.2](https://github.com/Irimold/react-component/compare/v0.13.1...v0.13.2) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Package:** Export style ([72c6fe4](https://github.com/Irimold/react-component/commit/72c6fe421146919a2dc989cdd044925084c89948))
+
 ## [0.13.1](https://github.com/Irimold/react-component/compare/v0.13.0...v0.13.1) (2024-06-22)
 
 
