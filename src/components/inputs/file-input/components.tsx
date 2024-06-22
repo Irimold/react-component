@@ -18,6 +18,10 @@ const FileDisplayPlaceholder : FC<FileDisplayPlaceholderProps> = ({
         <div 
             onClick={onClick}
             className={`${
+                placeholderClass.background
+            } ${
+                placeholderClass.borderRadius
+            } ${
                 placeholderClass.display
             } ${
                 placeholderClass.flex
@@ -76,6 +80,7 @@ const FileDisplay : FC<FileDisplayProps> = ({
             { src && !failedToLoad ? (
                 <Image
                     disableSrcSet
+                    disablePlaceholder
                     src={src}
                     alt="Uploaded file"
                     className={`${
@@ -142,7 +147,7 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
     }
 
     const handleClickDisplay : MouseEventHandler = () => {
-        if (!inputRef.current || !readOnly) {
+        if (!inputRef.current || readOnly) {
             return
         }
 

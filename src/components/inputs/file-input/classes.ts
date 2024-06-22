@@ -37,6 +37,7 @@ export const imageClass = {
 
 export const placeholderClass = {
     background  : 'bg-white',
+    borderRadius: 'rounded',
     display     : 'flex',
     flex        : 'flex-col justify-center items-center',
     height      : 'h-full',
