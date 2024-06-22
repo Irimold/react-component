@@ -10,14 +10,14 @@ export const brokenImageClasses = {
 }
 
 export const brokenImageIconClasses = {
-    color   : 'text-secondary',
+    color   : 'text-grey-200',
     display : 'block',
     margin  : 'mb-iri-6'
 }
 
 export const brokenImageLabelClasses = {
     alignment   : 'text-center',
-    color       : 'text-dark',
+    color       : 'text-grey-400',
     font        : cardTitle,
     margin      : 'm-0',
     padding     : 'p-0',
