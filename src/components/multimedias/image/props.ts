@@ -10,4 +10,5 @@ export interface ImageProps extends Omit<ComponentPropsWithoutRef<"img">, 'srcSe
     srcSetType?         : SrcSetType
     availableSrcSets?   : number[]
     disableSrcSet?      : boolean
+    disablePlaceholder? : boolean
 }

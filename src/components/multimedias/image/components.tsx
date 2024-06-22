@@ -62,6 +62,7 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     srcSetParser = ImageSrcSetParser,
     srcSetType,
     disableSrcSet = false,
+    disablePlaceholder = false,
     onError,
     ...props
 }, ref) => {
@@ -72,15 +73,19 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             onError(event)
         }
 
+        if (disablePlaceholder) {
+            return
+        }
+
         setFailedToLoad(true)
     }
 
     if (!src || failedToLoad) {
-        return (
+        return ( !disablePlaceholder ? (
             <BrokenImage
                 className={props.className}
             />
-        )
+        ) : (<></>) )
     }
 
     if (disableSrcSet) {
