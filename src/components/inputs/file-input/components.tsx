@@ -151,7 +151,7 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
             return
         }
 
-        inputRef.current.focus()
+        inputRef.current.click()
     }
 
     useEffect(() => {
