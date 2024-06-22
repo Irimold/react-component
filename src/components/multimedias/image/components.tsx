@@ -8,7 +8,8 @@ import { FilledDestroyed } from "@irimold/react-icons";
 import { brokenImageClasses, brokenImageIconClasses, brokenImageLabelClasses } from "./classes";
 
 const BrokenImage : FC<BrokenImageProps> = ({
-    className = ''
+    className = '',
+    onClick,
 }) => (
     <div 
         className={`${
@@ -26,6 +27,7 @@ const BrokenImage : FC<BrokenImageProps> = ({
         } ${
             className
         }`}
+        onClick={onClick}
     >
         <FilledDestroyed
             className={`${
@@ -64,6 +66,8 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     disableSrcSet = false,
     disablePlaceholder = false,
     onError,
+    onClick,
+    className,
     ...props
 }, ref) => {
     const [failedToLoad, setFailedToLoad] = useState(false)
@@ -83,7 +87,8 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     if (!src || failedToLoad) {
         return ( !disablePlaceholder ? (
             <BrokenImage
-                className={props.className}
+                className={className}
+                onClick={onClick}
             />
         ) : (<></>) )
     }
@@ -93,7 +98,9 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             <img
                 src={src}
                 ref={ref}
+                className={className}
                 onError={handleError}
+                onClick={onClick}
                 {...props}
             />
         )
@@ -132,6 +139,8 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             src={src}
             srcSet={srcSet}
             ref={ref}
+            className={className}
+            onClick={onClick}
             onError={handleError}
             {...props}
         />

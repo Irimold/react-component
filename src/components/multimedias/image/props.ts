@@ -1,8 +1,9 @@
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, MouseEventHandler } from "react";
 import { ImageSrcSetParserType, SrcSetType } from "./types";
 
 export interface BrokenImageProps {
-    className? : string
+    className?  : string
+    onClick?    : MouseEventHandler
 }
 
 export interface ImageProps extends Omit<ComponentPropsWithoutRef<"img">, 'srcSet'> {
