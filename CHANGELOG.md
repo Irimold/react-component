@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.8](https://github.com/Irimold/react-component/compare/v0.13.7...v0.13.8) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Tailwind:** Export content path ([2cb4328](https://github.com/Irimold/react-component/commit/2cb4328774e6378ef1c5155267e683d682a1638b))
+
 ## [0.13.7](https://github.com/Irimold/react-component/compare/v0.13.6...v0.13.7) (2024-06-22)
 
 
