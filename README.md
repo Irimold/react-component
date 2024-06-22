@@ -52,7 +52,7 @@ export default {
 ```
 
 ## Changelog
-The [changelog](https://github.com/Irimold/react-component/blob/main/CHANGELOG.md) os regularly updated to reflect what's changed in each new release.
+The [changelog](https://github.com/Irimold/react-component/blob/main/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
 
 ## License
 This project is licensed under the term of the [MIT license](https://github.com/Irimold/react-component/blob/main/LICENSE).
