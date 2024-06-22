@@ -6,6 +6,7 @@
     "main": "dist/index.js",
     "exports": {
         ".": "./dist/index.js",
+        "./style": "./dist/style.css",
         "./tailwindcss-config": "./dist/tailwindcss-config.js"
     },
     "repository": {
