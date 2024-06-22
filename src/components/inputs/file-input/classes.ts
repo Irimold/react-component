@@ -56,6 +56,7 @@ export const placeholderLabelClass = {
     margin  : 'mb-0',
     padding : 'pb-0',
     text    : 'truncate',
+    width   : 'w-full',
 }
 
 export const labelClasses = {
