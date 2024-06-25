@@ -16,7 +16,6 @@ export default defineConfig({
                 'tailwindcss-config': './config/tailwindcss/index.ts', 
                 'index'             : './src/index.ts'
             },
-            name : 'IriReactComponent',
             formats: ['es'],
             fileName: (format, name) => `${name}.js`,
         },
