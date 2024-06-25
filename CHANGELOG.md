@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.14.0](https://github.com/Irimold/react-component/compare/v0.13.8...v0.14.0) (2024-06-25)
+
+
+### Features
+
+* **Tailwind:** Export colors ([5cac2f8](https://github.com/Irimold/react-component/commit/5cac2f8efe844e9e759607f7353adf908238c974))
+
+
+### Bug Fixes
+
+* **Vite:** Remove name ([a9f5347](https://github.com/Irimold/react-component/commit/a9f5347536158f400de679fe34944cd06fc4b14c))
+
 ## [0.13.8](https://github.com/Irimold/react-component/compare/v0.13.7...v0.13.8) (2024-06-22)
 
 
