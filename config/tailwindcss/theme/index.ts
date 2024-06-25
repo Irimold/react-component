@@ -6,3 +6,12 @@ type ThemeConfType = Partial<CustomThemeConfig & {extend : Partial<CustomThemeCo
 export const ThemeConf : ThemeConfType = {
     extend: ExtendThemeConf
 }
+
+export {
+    PrimaryColor,
+    SecondaryColor,
+    TertiaryColor,
+    GreyColor,
+    DarkColor,
+    Colors
+} from "./extend/colors"

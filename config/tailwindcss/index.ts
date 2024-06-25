@@ -8,3 +8,12 @@ export const IrimoldTailwindPreset : Partial<Config> = {
 export const IrimoldTailwindContent = './node_modules/@irimold/react-component/dist/index.js'
 
 export default IrimoldTailwindPreset
+
+export {
+    PrimaryColor,
+    SecondaryColor,
+    TertiaryColor,
+    GreyColor,
+    DarkColor,
+    Colors
+} from "./theme"
