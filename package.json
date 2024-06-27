@@ -5,9 +5,10 @@
     "type": "module",
     "main": "dist/index.js",
     "exports": {
-        ".": "./dist/index.js",
-        "./style": "./dist/style.css",
-        "./tailwindcss-config": "./dist/tailwindcss-config.js"
+        "."                     : "./dist/index.js",
+        "./classes"             : "./dist/classes.js",
+        "./style"               : "./dist/style.css",
+        "./tailwindcss-config"  : "./dist/tailwindcss-config.js"
     },
     "repository": {
         "type": "git",
