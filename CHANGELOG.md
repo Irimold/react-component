@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.1](https://github.com/Irimold/react-component/compare/v0.14.0...v0.14.1) (2024-06-27)
+
+
+### Bug Fixes
+
+* Update icon ([055bcd5](https://github.com/Irimold/react-component/commit/055bcd54b6383072b291cc8ae4257d3d6e71d38f))
+
 ## [0.14.0](https://github.com/Irimold/react-component/compare/v0.13.8...v0.14.0) (2024-06-25)
 
 
