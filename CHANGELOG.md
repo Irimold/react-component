@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.0](https://github.com/Irimold/react-component/compare/v0.14.1...v0.15.0) (2024-06-27)
+
+
+### Features
+
+* Export typography classes ([200ba35](https://github.com/Irimold/react-component/commit/200ba3587e95016ab15f7ba540c79687218088c4))
+
 ## [0.14.1](https://github.com/Irimold/react-component/compare/v0.14.0...v0.14.1) (2024-06-27)
 
 
