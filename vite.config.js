@@ -14,6 +14,7 @@ export default defineConfig({
         lib: {
             entry : {
                 'tailwindcss-config': './config/tailwindcss/index.ts', 
+                'classes'           : './src/classes.ts',
                 'index'             : './src/index.ts'
             },
             formats: ['es'],
