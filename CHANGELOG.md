@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.1](https://github.com/Irimold/react-component/compare/v0.15.0...v0.15.1) (2024-06-27)
+
+
+### Bug Fixes
+
+* Forgot to add classes into exports ([bf102b4](https://github.com/Irimold/react-component/commit/bf102b41e126bcf458de7145cb2642af7e8ac1a1))
+
 ## [0.15.0](https://github.com/Irimold/react-component/compare/v0.14.1...v0.15.0) (2024-06-27)
 
 
