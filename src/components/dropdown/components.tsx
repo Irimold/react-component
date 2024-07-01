@@ -9,6 +9,7 @@ import { isIconVariant } from "@/types";
 
 export const Dropdown : FC<DropdownProps> = ({
     togglerElement = FilledUser,
+    togglerProps = {},
     children
 }) => {
     const [open, setOpen] = useState(false)
@@ -68,7 +69,7 @@ export const Dropdown : FC<DropdownProps> = ({
                 dropdownClasses.position
             }`}
         >
-            <Toggler onClick={handleClick} />
+            <Toggler onClick={handleClick} {...togglerProps} />
             <div 
                 className={`${
                     dropdownListClasses.background
@@ -148,6 +149,7 @@ export const DropdownItem : FC<DropdownItemProps> = ({
                 } ${
                     dropdownItemIconClasses.margin
                 }`}
+                size="1.5em"
             />
             <IdleIcon
                 className={`${
@@ -155,6 +157,7 @@ export const DropdownItem : FC<DropdownItemProps> = ({
                 } ${
                     dropdownItemIconClasses.margin
                 }`}
+                size="1.5em"
             />
             <span>
                 { children }

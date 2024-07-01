@@ -3,6 +3,7 @@ import { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 
 export interface DropdownProps {
     togglerElement? : ElementType
+    togglerProps?   : Record<string, any>
     children?       : ReactNode
 }
 
