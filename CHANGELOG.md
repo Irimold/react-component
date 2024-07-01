@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.10](https://github.com/Irimold/react-component/compare/v0.16.9...v0.16.10) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Add debug option ([53c7da2](https://github.com/Irimold/react-component/commit/53c7da246ff71a1a945ecf1a2a10a3ad79d13a49))
+
 ## [0.16.9](https://github.com/Irimold/react-component/compare/v0.16.8...v0.16.9) (2024-07-01)
 
 
