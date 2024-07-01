@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.11](https://github.com/Irimold/react-component/compare/v0.16.10...v0.16.11) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Position should work as intended ([ba2809c](https://github.com/Irimold/react-component/commit/ba2809c2d3ec35955a0f45f3f2ebc60a744b9bef))
+
 ## [0.16.10](https://github.com/Irimold/react-component/compare/v0.16.9...v0.16.10) (2024-07-01)
 
 
