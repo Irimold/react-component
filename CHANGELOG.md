@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.9](https://github.com/Irimold/react-component/compare/v0.16.8...v0.16.9) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Log:** Check position setter ([7665e2d](https://github.com/Irimold/react-component/commit/7665e2d125fd4d1ac9073dd922e05c16c850498a))
+
 ## [0.16.8](https://github.com/Irimold/react-component/compare/v0.16.7...v0.16.8) (2024-07-01)
 
 
