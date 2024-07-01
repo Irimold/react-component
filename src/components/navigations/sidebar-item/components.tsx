@@ -25,8 +25,8 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
     let IdleIcon : ElementType = OutlineHome
     let ActiveIcon : ElementType = FilledHome
     if (isIconVariant(icon)) {
-        IdleIcon = icon[Idle]
-        ActiveIcon = icon[Active]
+        IdleIcon    = icon[Idle] ? icon[Idle] : OutlineHome
+        ActiveIcon  = icon[Active] ? icon[Active] : FilledHome
     } else if (typeof icon != 'undefined') {
         IdleIcon = icon
         ActiveIcon = icon
