@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.16.4](https://github.com/Irimold/react-component/compare/v0.16.3...v0.16.4) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Adjust style ([373f39f](https://github.com/Irimold/react-component/commit/373f39faa4a8c3c4c6b282485bfddbde366b54b2))
+* **Icon Type:** make attribute optional ([24eaa53](https://github.com/Irimold/react-component/commit/24eaa53f2a27a40dc398bd15bae5601405f8e4e9))
+
 ## [0.16.3](https://github.com/Irimold/react-component/compare/v0.16.2...v0.16.3) (2024-07-01)
 
 
