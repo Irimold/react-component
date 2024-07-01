@@ -1,5 +1,11 @@
-export {
-    GenericStringCallback
+export { 
+    isIconVariant
+} from "./generics"
+
+export type {
+    GenericStringCallback,
+    IconVariants,
+    PassableIconElement,
 } from "./generics"
 
 export {
