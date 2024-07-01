@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.16.2](https://github.com/Irimold/react-component/compare/v0.16.1...v0.16.2) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Add fallback for icons ([0114d50](https://github.com/Irimold/react-component/commit/0114d50257cc7f8ed53b044d561f2bc8732de45d))
+* **Sidebar:** Add fallback if a variant is undefined ([6e44f3f](https://github.com/Irimold/react-component/commit/6e44f3fab30cf4cd979f522a01b0221a4cda8afe))
+
 ## [0.16.1](https://github.com/Irimold/react-component/compare/v0.16.0...v0.16.1) (2024-07-01)
 
 
