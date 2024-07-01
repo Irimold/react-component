@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.8](https://github.com/Irimold/react-component/compare/v0.16.7...v0.16.8) (2024-07-01)
+
+
+### Bug Fixes
+
+* **dropdown:** Prevent closing dropdown caused by global event listener ([5f1758f](https://github.com/Irimold/react-component/commit/5f1758f11f8e055012572aae9b6d3e03386c3b9a))
+
 ## [0.16.7](https://github.com/Irimold/react-component/compare/v0.16.6...v0.16.7) (2024-07-01)
 
 
