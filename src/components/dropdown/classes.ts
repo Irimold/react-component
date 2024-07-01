@@ -38,14 +38,17 @@ export const dropdownListClasses = {
 export const dropdownItemClasses = {
     background  : 'bg-white hover:bg-grey-100',
     borderRadius: 'rounded',
+    display     : 'flex',
+    flex        : 'justify-start items-center',
     group       : 'group/dropdown-item',
     padding     : 'p-no-border-2',
 }
 
 export const dropdownItemIconClasses = {
+    color: 'text-secondary',
     display : {
-        [Idle]  : 'inline-block group-hover/dropdown-item:hidden',
-        [Active]: 'hidden group-hover/dropdown-item:inline-block'
+        [Idle]  : 'block group-hover/dropdown-item:hidden',
+        [Active]: 'hidden group-hover/dropdown-item:block'
     },
     margin  : 'me-iri-2',
 }

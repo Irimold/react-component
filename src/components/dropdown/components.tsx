@@ -135,6 +135,10 @@ export const DropdownItem : FC<DropdownItemProps> = ({
             } ${
                 dropdownItemClasses.borderRadius
             } ${
+                dropdownItemClasses.display
+            } ${
+                dropdownItemClasses.flex
+            } ${
                 dropdownItemClasses.group
             } ${
                 dropdownItemClasses.padding
@@ -145,6 +149,8 @@ export const DropdownItem : FC<DropdownItemProps> = ({
         >
             <ActiveIcon 
                 className={`${
+                    dropdownItemIconClasses.color
+                } ${
                     dropdownItemIconClasses.display[Active]
                 } ${
                     dropdownItemIconClasses.margin
@@ -153,6 +159,8 @@ export const DropdownItem : FC<DropdownItemProps> = ({
             />
             <IdleIcon
                 className={`${
+                    dropdownItemIconClasses.color
+                } ${
                     dropdownItemIconClasses.display[Idle]
                 } ${
                     dropdownItemIconClasses.margin
