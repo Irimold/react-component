@@ -5,12 +5,11 @@ import { DropdownItemProps, DropdownProps } from "./props";
 import { FilledPen, FilledUser, OutlinePen } from "@irimold/react-icons";
 import { dropdownClasses, dropdownItemClasses, dropdownItemIconClasses, dropdownListClasses } from "./classes";
 import { Active, Bottom, DefaultPosition, Idle, Left, Right, Top } from "@/constants";
-import { isIconVariant } from "@/types";
+import { TimeoutType, isIconVariant } from "@/types";
 
 export const Dropdown : FC<DropdownProps> = ({
     togglerElement = FilledUser,
     togglerProps = {},
-    enableDebug = false,
     children
 }) => {
     const [open, setOpen] = useState(false)
@@ -18,43 +17,38 @@ export const Dropdown : FC<DropdownProps> = ({
     const [hPosition, setHPosition] = useState(Left)
 
     const elementRef = useRef<HTMLDivElement>(null)
+    const timeoutRef = useRef<TimeoutType>(0)
 
     const Toggler = togglerElement
 
     const handleSetPosition = useCallback(() => {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+        }
+
         const boundingRect  = elementRef.current?.getBoundingClientRect()
-        console.log(boundingRect)
         if (!boundingRect) {
             return
         }
 
-        const windowHeight  = Math.min(window.innerHeight, document.documentElement.clientHeight)
-        const windowWidth   = Math.min(window.innerWidth, document.documentElement.clientWidth)
+        const halfWindowWidth   = Math.min(window.innerWidth, document.documentElement.clientWidth) / 2
+        const halfWindowHeight  = Math.min(window.innerHeight, document.documentElement.clientHeight) / 2
+        const xCenterPoint      = boundingRect.width / 2
+        const yCenterPoint      = boundingRect.height / 2
 
-        if (enableDebug) {
-            console.log({
-                windowHeight, 
-                windowWidth,
-                halfHeight : windowHeight / 2,
-                halfWidth : windowWidth / 2,
-                isLeft : boundingRect.left < windowWidth / 2,
-                isRight : boundingRect.right < windowWidth / 2,
-                isTop: boundingRect.top < windowHeight / 2,
-                isBottom: boundingRect.bottom < windowHeight / 2,
-            })
-        }
-
-        if (boundingRect.left < windowWidth / 2) {
-            setHPosition(Left)
-        } else if (boundingRect.right < windowWidth / 2) {
-            setHPosition(Right)
-        }
-
-        if (boundingRect.top < windowHeight / 2) {
-            setVPosition(Top)
-        } else if (boundingRect.bottom < windowHeight / 2) {
-            setVPosition(Bottom)
-        }
+        timeoutRef.current = setTimeout(() => {
+            if (xCenterPoint < halfWindowWidth) {
+                setHPosition(Left)
+            } else {
+                setHPosition(Right)
+            }
+    
+            if (yCenterPoint < halfWindowHeight) {
+                setVPosition(Top)
+            } else {
+                setVPosition(Bottom)
+            }
+        }, 300)
     }, [])
 
     const handleClick : MouseEventHandler = () => {
@@ -70,6 +64,10 @@ export const Dropdown : FC<DropdownProps> = ({
             window.removeEventListener('DOMContentLoaded', handleSetPosition)
             window.removeEventListener('resize', handleSetPosition)
             window.removeEventListener('scroll', handleSetPosition)
+
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current)
+            }
         }
     }, [handleSetPosition])
 
@@ -91,6 +89,10 @@ export const Dropdown : FC<DropdownProps> = ({
 
         return () => {
             window.removeEventListener('click', closeDropdown)
+            
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current)
+            }
         }
     }, [])
 
