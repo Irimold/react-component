@@ -45,8 +45,7 @@ export const Dropdown : FC<DropdownProps> = ({
         }
     }, [])
 
-    const handleClick : MouseEventHandler = (event) => {
-        event.preventDefault()
+    const handleClick : MouseEventHandler = () => {
         setOpen(prevState => !prevState)
     }
 
@@ -63,7 +62,16 @@ export const Dropdown : FC<DropdownProps> = ({
     }, [handleSetPosition])
 
     useEffect(() => {
-        const closeDropdown = () => {
+        const closeDropdown = (event) => {
+            const target = event.target
+            if (target == elementRef.current) {
+                return
+            }
+
+            if (elementRef.current?.contains(target)) {
+                return
+            }
+
             setOpen(false)
         }
 
