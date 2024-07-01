@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.16.1](https://github.com/Irimold/react-component/compare/v0.16.0...v0.16.1) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Icon Type:** Allow a property to be undefined ([60a0efa](https://github.com/Irimold/react-component/commit/60a0efaf19dd5da8035d1d33cbd78e25d8a1259e))
+* **Type validation:** Add checking if value is undefined ([69b94a9](https://github.com/Irimold/react-component/commit/69b94a96a586ffe3022bf0b99f4b49626616148b))
+
 ## [0.16.0](https://github.com/Irimold/react-component/compare/v0.15.1...v0.16.0) (2024-07-01)
 
 
