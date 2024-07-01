@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.6](https://github.com/Irimold/react-component/compare/v0.16.5...v0.16.6) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Adjust style and behavior ([ded30ea](https://github.com/Irimold/react-component/commit/ded30eaa867d39414837f6e30df9aab7e853d564))
+
 ## [0.16.5](https://github.com/Irimold/react-component/compare/v0.16.4...v0.16.5) (2024-07-01)
 
 
