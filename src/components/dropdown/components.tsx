@@ -1,6 +1,6 @@
 "use client"
 
-import { ElementType, FC, useCallback, useEffect, useRef, useState } from "react";
+import { ElementType, FC, MouseEventHandler, useCallback, useEffect, useRef, useState } from "react";
 import { DropdownItemProps, DropdownProps } from "./props";
 import { FilledPen, FilledUser, OutlinePen } from "@irimold/react-icons";
 import { dropdownClasses, dropdownItemClasses, dropdownItemIconClasses, dropdownListClasses } from "./classes";
@@ -30,6 +30,8 @@ export const Dropdown : FC<DropdownProps> = ({
         const windowHeight  = Math.min(window.innerHeight, document.documentElement.clientHeight)
         const windowWidth   = Math.min(window.innerWidth, document.documentElement.clientWidth)
 
+        console.log({windowHeight, windowWidth})
+
         if (boundingRect.left < windowWidth / 2) {
             setHPosition(Left)
         } else if (boundingRect.right < windowWidth / 2) {
@@ -43,7 +45,8 @@ export const Dropdown : FC<DropdownProps> = ({
         }
     }, [])
 
-    const handleClick = () => {
+    const handleClick : MouseEventHandler = (event) => {
+        event.preventDefault()
         setOpen(prevState => !prevState)
     }
 
