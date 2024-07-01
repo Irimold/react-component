@@ -10,6 +10,7 @@ import { isIconVariant } from "@/types";
 export const Dropdown : FC<DropdownProps> = ({
     togglerElement = FilledUser,
     togglerProps = {},
+    enableDebug = false,
     children
 }) => {
     const [open, setOpen] = useState(false)
@@ -30,16 +31,18 @@ export const Dropdown : FC<DropdownProps> = ({
         const windowHeight  = Math.min(window.innerHeight, document.documentElement.clientHeight)
         const windowWidth   = Math.min(window.innerWidth, document.documentElement.clientWidth)
 
-        console.log({
-            windowHeight, 
-            windowWidth,
-            halfHeight : windowHeight / 2,
-            halfWidth : windowWidth / 2,
-            isLeft : boundingRect.left < windowWidth / 2,
-            isRight : boundingRect.right < windowWidth / 2,
-            isTop: boundingRect.top < windowHeight / 2,
-            isBottom: boundingRect.bottom < windowHeight / 2,
-        })
+        if (enableDebug) {
+            console.log({
+                windowHeight, 
+                windowWidth,
+                halfHeight : windowHeight / 2,
+                halfWidth : windowWidth / 2,
+                isLeft : boundingRect.left < windowWidth / 2,
+                isRight : boundingRect.right < windowWidth / 2,
+                isTop: boundingRect.top < windowHeight / 2,
+                isBottom: boundingRect.bottom < windowHeight / 2,
+            })
+        }
 
         if (boundingRect.left < windowWidth / 2) {
             setHPosition(Left)
