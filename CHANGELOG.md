@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.7](https://github.com/Irimold/react-component/compare/v0.16.6...v0.16.7) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Prevent event listener to dropdown element ([82f0595](https://github.com/Irimold/react-component/commit/82f0595f8b80b4a91d0557b85034b321b791720d))
+
 ## [0.16.6](https://github.com/Irimold/react-component/compare/v0.16.5...v0.16.6) (2024-07-01)
 
 
