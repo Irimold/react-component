@@ -120,8 +120,8 @@ export const DropdownItem : FC<DropdownItemProps> = ({
     let ActiveIcon  : ElementType = FilledPen
     let IdleIcon    : ElementType = OutlinePen
     if (isIconVariant(icon)) {
-        ActiveIcon  = icon[Active]
-        IdleIcon    = icon[Idle]
+        ActiveIcon  = icon[Active] ? icon[Active] : FilledPen
+        IdleIcon    = icon[Idle] ? icon[Idle] : OutlinePen
     } else if (typeof icon != 'undefined') {
         ActiveIcon  = icon
         IdleIcon    = icon
