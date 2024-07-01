@@ -22,6 +22,7 @@ export const Dropdown : FC<DropdownProps> = ({
 
     const handleSetPosition = useCallback(() => {
         const boundingRect  = elementRef.current?.getBoundingClientRect()
+        console.log(boundingRect)
         if (!boundingRect) {
             return
         }
@@ -47,22 +48,36 @@ export const Dropdown : FC<DropdownProps> = ({
     }
 
     useEffect(() => {
-        addEventListener('DOMContentLoaded', handleSetPosition)
-        addEventListener('resize', handleSetPosition)
-        addEventListener('scroll', handleSetPosition)
+        window.addEventListener('DOMContentLoaded', handleSetPosition)
+        window.addEventListener('resize', handleSetPosition)
+        window.addEventListener('scroll', handleSetPosition)
 
         return () => {
-            removeEventListener('DOMContentLoaded', handleSetPosition)
-            removeEventListener('resize', handleSetPosition)
-            removeEventListener('scroll', handleSetPosition)
+            window.removeEventListener('DOMContentLoaded', handleSetPosition)
+            window.removeEventListener('resize', handleSetPosition)
+            window.removeEventListener('scroll', handleSetPosition)
         }
     }, [handleSetPosition])
+
+    useEffect(() => {
+        const closeDropdown = () => {
+            setOpen(false)
+        }
+
+        window.addEventListener('click', closeDropdown)
+
+        return () => {
+            window.removeEventListener('click', closeDropdown)
+        }
+    }, [])
 
     return (
         <div
             ref={elementRef} 
             className={`${
                 dropdownClasses.cursor
+            } ${
+                dropdownClasses.display
             } ${
                 dropdownClasses.identifier
             } ${

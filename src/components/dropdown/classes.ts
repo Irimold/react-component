@@ -2,6 +2,7 @@ import { Active, Bottom, DefaultPosition, Idle, Left, Right, Top } from "@/const
 
 export const dropdownClasses = {
     cursor      : 'cursor-pointer',
+    display     : 'inline-block',
     identifier  : 'dropdown',
     position    : 'relative',
 }
