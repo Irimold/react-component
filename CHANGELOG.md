@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.3](https://github.com/Irimold/react-component/compare/v0.16.2...v0.16.3) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Adjust icon size and add toggler props to make toggler customizable ([3225139](https://github.com/Irimold/react-component/commit/3225139f1b1e12f864d3d327983a16c8cf4d2113))
+
 ## [0.16.2](https://github.com/Irimold/react-component/compare/v0.16.1...v0.16.2) (2024-07-01)
 
 
