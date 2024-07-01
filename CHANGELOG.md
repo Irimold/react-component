@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.5](https://github.com/Irimold/react-component/compare/v0.16.4...v0.16.5) (2024-07-01)
+
+
+### Bug Fixes
+
+* **Dropdown:** Add z-index and adjust height ([7fcfc25](https://github.com/Irimold/react-component/commit/7fcfc250840783c5bf3ad07cff66046364274b88))
+
 ## [0.16.4](https://github.com/Irimold/react-component/compare/v0.16.3...v0.16.4) (2024-07-01)
 
 
