@@ -6,10 +6,23 @@ export {
     ClassicCard,
     LongCard,
 } from "./cards"
+
 export type { 
     CardProps,
     ClassicCardProps
 } from "./cards"
+
+
+export {
+    Dropdown,
+    DropdownItem
+} from "./dropdown"
+
+export type {
+    DropdownProps,
+    DropdownItemProps
+} from "./dropdown"
+
 
 export { 
     FileInput, 
@@ -17,6 +30,7 @@ export {
     Select,
     TextArea
 } from "./inputs"
+
 export type { 
     FileInputProps, 
     InputProps, 
@@ -26,14 +40,19 @@ export type {
     InputChangeHandler
 } from "./inputs"
 
+
 export { Loader } from "./misc"
+
 export type { LoaderProps } from "./misc"
 
+
 export { Image } from "./multimedias"
+
 export type { 
     ImageProps, 
     ImageSrcSetParserType
 } from "./multimedias"
+
 
 export { 
     Breadcrumb,
@@ -44,6 +63,7 @@ export {
     Pagination,
     SidebarItem,
 } from "./navigations"
+
 export type { 
     BreadcrumbObject,
     BreadcrumbProps,

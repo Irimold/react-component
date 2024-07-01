@@ -8,6 +8,10 @@ export {
     ClassicCard,
     LongCard,
 
+    // Dropdown
+    Dropdown,
+    DropdownItem,
+
     // Inputs
     FileInput,
     Input,
@@ -36,6 +40,10 @@ export type {
     // Cards
     CardProps,
     ClassicCardProps,
+
+    // Dropdown
+    DropdownProps,
+    DropdownItemProps,
 
     // Inputs
     FileInputProps,
