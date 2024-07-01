@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.16.0](https://github.com/Irimold/react-component/compare/v0.15.1...v0.16.0) (2024-07-01)
+
+
+### Features
+
+* Add icon type ([efd1061](https://github.com/Irimold/react-component/commit/efd1061ee6286ad3a1e5c64b4ccdf34df5832163))
+* **Constant:** Add "default" state ([0bef241](https://github.com/Irimold/react-component/commit/0bef2414564665b81116d444a1e919a952f520e5))
+* **Constant:** Add position constant ([739fe2f](https://github.com/Irimold/react-component/commit/739fe2f3b21cd6da0713f822bdab57c40f250c18))
+* **Dropdown:** Add new dropdown component ([851946e](https://github.com/Irimold/react-component/commit/851946ef8d80595074bed3269ab47f8716cb3391))
+
+
+### Bug Fixes
+
+* Index not committed ([22001ef](https://github.com/Irimold/react-component/commit/22001ef2c368dc731c6b1da2af943c2cbe2fea1f))
+
 ## [0.15.1](https://github.com/Irimold/react-component/compare/v0.15.0...v0.15.1) (2024-06-27)
 
 
