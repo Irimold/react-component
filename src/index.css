@@ -11,3 +11,12 @@
 .open-sans {
     font-family: 'Open Sans';
 }
+
+.dropdown {
+    .dropdown-list {
+        @starting-style {
+            display: block;
+            height: 0;
+        }
+    }
+}
