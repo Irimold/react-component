@@ -97,6 +97,8 @@ export const Dropdown : FC<DropdownProps> = ({
                     dropdownListClasses.transition
                 } ${
                     dropdownListClasses.translate[vPosition]
+                } ${
+                    dropdownListClasses.zIndex
                 }`}
             >
                 { children }

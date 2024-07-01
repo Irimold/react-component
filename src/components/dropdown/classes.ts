@@ -14,6 +14,10 @@ export const dropdownListClasses = {
         [Idle]  : 'hidden',
         [Active]: 'block',
     },
+    height: {
+        [Idle]: 'max-h-0',
+        [Active]: 'max-h-screen'
+    },
     identifier: 'dropdown-list',
     overflow: 'overflow-hidden',
     padding: 'p-no-border-1',
@@ -29,10 +33,7 @@ export const dropdownListClasses = {
         [Bottom]: 'translate-y-full',
         [Top]   : '-translate-y-full'
     },
-    height: {
-        [Idle]: 'max-h-0',
-        [Active]: 'max-h-full'
-    }
+    zIndex: 'z-30',
 }
 
 export const dropdownItemClasses = {
