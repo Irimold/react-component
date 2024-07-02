@@ -33,8 +33,8 @@ export const Dropdown : FC<DropdownProps> = ({
 
         const halfWindowWidth   = Math.min(window.innerWidth, document.documentElement.clientWidth) / 2
         const halfWindowHeight  = Math.min(window.innerHeight, document.documentElement.clientHeight) / 2
-        const xCenterPoint      = boundingRect.width / 2
-        const yCenterPoint      = boundingRect.height / 2
+        const xCenterPoint      = boundingRect.left + boundingRect.width / 2
+        const yCenterPoint      = boundingRect.top + boundingRect.height / 2
 
         timeoutRef.current = setTimeout(() => {
             if (xCenterPoint < halfWindowWidth) {
