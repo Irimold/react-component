@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.12](https://github.com/Irimold/react-component/compare/v0.16.11...v0.16.12) (2024-07-02)
+
+
+### Bug Fixes
+
+* **Dropdown:** Missing top and left calculation ([86126b1](https://github.com/Irimold/react-component/commit/86126b15b26376d2f0159f3a6027d51b483481bf))
+
 ## [0.16.11](https://github.com/Irimold/react-component/compare/v0.16.10...v0.16.11) (2024-07-01)
 
 
