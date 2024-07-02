@@ -43,7 +43,7 @@ export const Dropdown : FC<DropdownProps> = ({
                 setHPosition(Right)
             }
     
-            if (yCenterPoint < halfWindowHeight) {
+            if (yCenterPoint > halfWindowHeight) {
                 setVPosition(Top)
             } else {
                 setVPosition(Bottom)
