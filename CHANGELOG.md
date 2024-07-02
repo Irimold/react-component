@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.13](https://github.com/Irimold/react-component/compare/v0.16.12...v0.16.13) (2024-07-02)
+
+
+### Bug Fixes
+
+* **Dropdown:** incorrect vertical position ([35bb0d6](https://github.com/Irimold/react-component/commit/35bb0d6d928cd05cb92053c4e03de46d34e53278))
+
 ## [0.16.12](https://github.com/Irimold/react-component/compare/v0.16.11...v0.16.12) (2024-07-02)
 
 
