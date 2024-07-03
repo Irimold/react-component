@@ -7,9 +7,9 @@ export const descriptionClasses = {
 export const buttonContainerClasses = {
     display : 'flex',
     flex    : {
-        default         : 'justify-end items-center',
-        [PositiveFlow]  : 'flex-row-reverse',
-        [NegativeFlow]  : 'flex-row',
+        default         : 'items-center',
+        [PositiveFlow]  : 'justify-start flex-row-reverse',
+        [NegativeFlow]  : 'justify-end flex-row',
     }
 }
 
