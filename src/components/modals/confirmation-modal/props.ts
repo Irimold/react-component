@@ -4,8 +4,8 @@ import { FlowTypes } from "./types";
 import { ElementType } from "react";
 
 export interface ConfirmationModalProps extends ModalProps {
-    onConfirm   : GenericVoidCallback
-    onCancel    : GenericVoidCallback
-    flow        : FlowTypes
-    icon        : ElementType
+    onConfirm?  : GenericVoidCallback
+    onCancel?   : GenericVoidCallback
+    flow?       : FlowTypes
+    icon?       : ElementType
 }
