@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.1](https://github.com/Irimold/react-component/compare/v0.17.0...v0.17.1) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Modal:** Props not optional ([aa0c3c0](https://github.com/Irimold/react-component/commit/aa0c3c06d9a3d33498951c938b0d43e59c19fdb0))
+
 ## [0.17.0](https://github.com/Irimold/react-component/compare/v0.16.13...v0.17.0) (2024-07-03)
 
 
