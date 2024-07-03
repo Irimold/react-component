@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.6](https://github.com/Irimold/react-component/compare/v0.17.5...v0.17.6) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Modal:** Add allow discrete ([03b67a1](https://github.com/Irimold/react-component/commit/03b67a11b73830aff3faa58615038182c8d77616))
+
 ## [0.17.5](https://github.com/Irimold/react-component/compare/v0.17.4...v0.17.5) (2024-07-03)
 
 
