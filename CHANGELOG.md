@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.17.0](https://github.com/Irimold/react-component/compare/v0.16.13...v0.17.0) (2024-07-03)
+
+
+### Features
+
+* **Generic type:** Add void callback type ([b8f67e5](https://github.com/Irimold/react-component/commit/b8f67e54a97e21c6058e50337e821069968e9b28))
+* **Modal:** Add confirmation modal ([409563e](https://github.com/Irimold/react-component/commit/409563e5d59ae2d54b75e52047a7c49f8d839174))
+* **Modal:** Add modal ([962cca1](https://github.com/Irimold/react-component/commit/962cca1aa4ed1baed24267c1c4657b638fa16be9))
+
 ## [0.16.13](https://github.com/Irimold/react-component/compare/v0.16.12...v0.16.13) (2024-07-02)
 
 
