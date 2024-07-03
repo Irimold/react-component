@@ -24,6 +24,8 @@
 
 .modal {
     transform: translateX(100%);
+    transition-behavior: allow-discrete;
+
     opacity: 0;
     &[open] {
         transform: translateX(0);
@@ -32,6 +34,7 @@
 
     @starting-style {
         opacity: 0;
+        display: block;
         transform: translateX(-100%);
     }
 }
