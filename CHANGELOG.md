@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.2](https://github.com/Irimold/react-component/compare/v0.17.1...v0.17.2) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Modal:** Close button not appearing ([d7fbd37](https://github.com/Irimold/react-component/commit/d7fbd37a295e54118d3491acbdce1986948e3a73))
+
 ## [0.17.1](https://github.com/Irimold/react-component/compare/v0.17.0...v0.17.1) (2024-07-03)
 
 
