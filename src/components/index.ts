@@ -46,6 +46,17 @@ export { Loader } from "./misc"
 export type { LoaderProps } from "./misc"
 
 
+export {
+    Modal,
+    ConfirmationModal
+} from "./modals"
+
+export type {
+    ModalProps,
+    ConfirmationModalProps,
+} from "./modals"
+
+
 export { Image } from "./multimedias"
 
 export type { 

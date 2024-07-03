@@ -21,6 +21,10 @@ export {
     // Misc
     Loader,
 
+    // Modals
+    Modal,
+    ConfirmationModal,
+
     // Multimedias
     Image,
 
@@ -55,6 +59,10 @@ export type {
 
     // Misc
     LoaderProps,
+
+    // Modals
+    ModalProps,
+    ConfirmationModalProps,
 
     // Multimedias
     ImageProps,
