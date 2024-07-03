@@ -16,7 +16,7 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
     component = DefaultSidebarComponent,
     icon,
     isActive,
-    className,
+    className = '',
     children,
     ...props
 }, ref) => {

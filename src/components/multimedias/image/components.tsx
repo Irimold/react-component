@@ -69,7 +69,7 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     disablePlaceholder = false,
     onError,
     onClick,
-    className,
+    className = '',
     ...props
 }, ref) => {
     const [failedToLoad, setFailedToLoad] = useState(false)
