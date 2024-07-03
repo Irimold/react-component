@@ -4,6 +4,7 @@ import { FC, useEffect, useRef } from "react";
 import { ModalProps } from "./props";
 import { modalBodyClasses, modalClasses, modalHeaderClasses } from "./classes";
 import { NavBtn } from "@/components/navigations";
+import { Dark } from "@/components/navigations/navigation-button/constants";
 
 export const Modal : FC<ModalProps> = ({
     onOpen,
@@ -92,6 +93,7 @@ export const Modal : FC<ModalProps> = ({
                 <NavBtn
                     showOnLarge
                     isActive
+                    color={Dark}
                     onClick={handleClose}
                 />
             </header>
