@@ -74,6 +74,7 @@ export const Modal : FC<ModalProps> = ({
                 className
             }`}
             title={title}
+            onClose={handleClose}
             {...props}
         >
             <header
