@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.17.5](https://github.com/Irimold/react-component/compare/v0.17.4...v0.17.5) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Dropdown:** Fix Animation ([8eb0971](https://github.com/Irimold/react-component/commit/8eb0971d8ade448c6d85150bcaffe9bf57968073))
+* **Modal:** Add animation ([1e3ae4b](https://github.com/Irimold/react-component/commit/1e3ae4b5e03d062b7e2bf2685acc5154b709dc1b))
+
 ## [0.17.4](https://github.com/Irimold/react-component/compare/v0.17.3...v0.17.4) (2024-07-03)
 
 
