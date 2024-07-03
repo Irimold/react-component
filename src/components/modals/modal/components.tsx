@@ -90,6 +90,7 @@ export const Modal : FC<ModalProps> = ({
             >
                 <h3>{ title }</h3>
                 <NavBtn
+                    showOnLarge
                     isActive
                     onClick={handleClose}
                 />
