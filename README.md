@@ -26,7 +26,8 @@ After that you can import the CSS
 ```js
 import "@irimold/react-component/style"
 ```
-Or if you are using Tailwind, you can add the existing preset to your tailwind.config.js
+Or if you are using Tailwind, you can add the existing preset to your tailwind.config.js.<br/>
+**But you will need to manually add some classes and fonts**
 ```js
 ...
 import { 
