@@ -71,6 +71,10 @@ export const Modal : FC<ModalProps> = ({
             } ${
                 modalClasses.boxShadow
             } ${
+                modalClasses.identifier
+            } ${
+                modalClasses.transition
+            } ${
                 className
             }`}
             title={title}

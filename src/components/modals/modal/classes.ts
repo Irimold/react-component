@@ -6,6 +6,8 @@ export const modalClasses = {
     border      : 'border-0',
     borderRadius: 'rounded',
     boxShadow   : 'shadow',
+    identifier  : 'modal',
+    transition  : 'transition-all duration-300',
 }
 
 export const modalHeaderClasses = {
