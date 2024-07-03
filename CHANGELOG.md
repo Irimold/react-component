@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.17.3](https://github.com/Irimold/react-component/compare/v0.17.2...v0.17.3) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Components:** Add className default ([f7d3c32](https://github.com/Irimold/react-component/commit/f7d3c32ceceee453d7f602c6682b41fa75e69d9b))
+* **Modal:** Adjust modal close button color ([093bc45](https://github.com/Irimold/react-component/commit/093bc45b77663fb0653465a0968828d68df1dff0))
+* **Modal:** Confirm modal buttons alignment ([c266c06](https://github.com/Irimold/react-component/commit/c266c0648dc389015ab960cc1efee4199eb54017))
+
 ## [0.17.2](https://github.com/Irimold/react-component/compare/v0.17.1...v0.17.2) (2024-07-03)
 
 
