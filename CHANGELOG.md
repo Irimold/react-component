@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.4](https://github.com/Irimold/react-component/compare/v0.17.3...v0.17.4) (2024-07-03)
+
+
+### Bug Fixes
+
+* **Modal:** Add on close listener to dialog ([d2d0e99](https://github.com/Irimold/react-component/commit/d2d0e99ba27346a5e6c741574dbf1e8de23bc74e))
+
 ## [0.17.3](https://github.com/Irimold/react-component/compare/v0.17.2...v0.17.3) (2024-07-03)
 
 
