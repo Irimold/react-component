@@ -4,6 +4,7 @@ export {
 
 export type {
     GenericStringCallback,
+    GenericVoidCallback,
     IconVariants,
     PassableIconElement,
 } from "./generics"

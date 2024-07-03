@@ -1,5 +1,6 @@
 export type {
-    GenericStringCallback
+    GenericStringCallback,
+    GenericVoidCallback
 } from "./callbacks"
 
 

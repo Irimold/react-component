@@ -1,1 +1,1 @@
-export type { GenericStringCallback } from "./types"
+export type { GenericStringCallback, GenericVoidCallback } from "./types"
