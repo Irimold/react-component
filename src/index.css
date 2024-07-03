@@ -14,9 +14,10 @@
 
 .dropdown {
     .dropdown-list {
+        transition-behavior: allow-discrete;
         @starting-style {
             display: block;
-            height: 0;
+            max-height: 0;
         }
     }
 }
