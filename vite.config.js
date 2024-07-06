@@ -15,6 +15,7 @@ export default defineConfig({
             entry : {
                 'tailwindcss-config': './config/tailwindcss/index.ts', 
                 'classes'           : './src/classes.ts',
+                'constants'         : './src/constants/index.ts',
                 'index'             : './src/index.ts'
             },
             formats: ['es'],
