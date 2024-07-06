@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.2](https://github.com/Irimold/react-component/compare/v0.18.1...v0.18.2) (2024-07-06)
+
+
+### Bug Fixes
+
+* **Package:** Expose types ([8c6a946](https://github.com/Irimold/react-component/commit/8c6a94607029b1b98b608cda32b09647b40bddbe))
+
 ## [0.18.1](https://github.com/Irimold/react-component/compare/v0.18.0...v0.18.1) (2024-07-06)
 
 
