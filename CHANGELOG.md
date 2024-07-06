@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.1](https://github.com/Irimold/react-component/compare/v0.18.0...v0.18.1) (2024-07-06)
+
+
+### Bug Fixes
+
+* **Package:** add types to exports ([7014b21](https://github.com/Irimold/react-component/commit/7014b21a5888ed032365d2bfebcefce1c6fa8ef4))
+
 ## [0.18.0](https://github.com/Irimold/react-component/compare/v0.17.6...v0.18.0) (2024-07-06)
 
 

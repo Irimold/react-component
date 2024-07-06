@@ -1,27 +1,27 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.18.0",
+    "version": "0.18.1",
     "description": "Irimold React Component",
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "exports": {
         ".": {
-            "types"     : "./dist/index.d.ts",
-            "default"   : "./dist/index.js"
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
         },
         "./classes": {
-            "types"     : "./dist/classes.d.ts",
-            "default"   : "./dist/classes.js"
+            "types": "./dist/classes.d.ts",
+            "default": "./dist/classes.js"
         },
         "./constants": {
-            "types"     : "./dist/constants.d.ts",
-            "default"   : "./dist/constants.js"
+            "types": "./dist/constants.d.ts",
+            "default": "./dist/constants.js"
         },
         "./style": "./dist/style.css",
         "./tailwindcss-config": {
-            "types"     : "./dist/tailwindcss-config.d.ts",
-            "default"   : "./dist/tailwindcss-config.js"
+            "types": "./dist/tailwindcss-config.d.ts",
+            "default": "./dist/tailwindcss-config.js"
         }
     },
     "repository": {
