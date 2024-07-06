@@ -19,6 +19,9 @@
             "default": "./dist/constants.js"
         },
         "./style": "./dist/style.css",
+        "./types": {
+            "types": "./dist/src/types/index.d.ts"
+        },
         "./tailwindcss-config": {
             "types": "./dist/tailwindcss-config.d.ts",
             "default": "./dist/tailwindcss-config.js"
