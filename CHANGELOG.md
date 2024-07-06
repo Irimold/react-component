@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.0](https://github.com/Irimold/react-component/compare/v0.17.6...v0.18.0) (2024-07-06)
+
+
+### Features
+
+* **Constants:** Expose constants ([0530c7f](https://github.com/Irimold/react-component/commit/0530c7f4c769bc44a2d82b0bb57730776e79d908))
+
 ## [0.17.6](https://github.com/Irimold/react-component/compare/v0.17.5...v0.17.6) (2024-07-03)
 
 
