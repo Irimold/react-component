@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.3](https://github.com/Irimold/react-component/compare/v0.18.2...v0.18.3) (2024-07-08)
+
+
+### Bug Fixes
+
+* **Dropdown:** Add toggler default props ([6f6d928](https://github.com/Irimold/react-component/commit/6f6d9283de2692ffe7aa762399c162b45d283e92))
+
 ## [0.18.2](https://github.com/Irimold/react-component/compare/v0.18.1...v0.18.2) (2024-07-06)
 
 
