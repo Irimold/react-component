@@ -9,7 +9,7 @@ import { TimeoutType, isIconVariant } from "@/types";
 
 export const Dropdown : FC<DropdownProps> = ({
     togglerElement = FilledUser,
-    togglerProps = {},
+    togglerProps = {size: '2.25em', className: 'text-secondary'},
     children
 }) => {
     const [open, setOpen] = useState(false)
