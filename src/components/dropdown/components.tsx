@@ -56,12 +56,10 @@ export const Dropdown : FC<DropdownProps> = ({
     }
 
     useEffect(() => {
-        window.addEventListener('DOMContentLoaded', handleSetPosition)
         window.addEventListener('resize', handleSetPosition)
         window.addEventListener('scroll', handleSetPosition)
 
         return () => {
-            window.removeEventListener('DOMContentLoaded', handleSetPosition)
             window.removeEventListener('resize', handleSetPosition)
             window.removeEventListener('scroll', handleSetPosition)
 
@@ -86,6 +84,7 @@ export const Dropdown : FC<DropdownProps> = ({
         }
 
         window.addEventListener('click', closeDropdown)
+        handleSetPosition()
 
         return () => {
             window.removeEventListener('click', closeDropdown)
