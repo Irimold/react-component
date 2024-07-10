@@ -118,6 +118,7 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
     src             = '',
     withoutDisplay  = false,
     variant         = Separate,
+    className       = '',
     ...props
 }, ref) => {
     const [fileUrl, setFileUrl] = useState<string>(src)
@@ -229,6 +230,8 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
                             inputClasses.padding
                         } ${
                             inputClasses.width
+                        } ${
+                            className
                         }`}
                         type="file"
                         name={name}
