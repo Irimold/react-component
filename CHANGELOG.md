@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.5](https://github.com/Irimold/react-component/compare/v0.18.4...v0.18.5) (2024-07-10)
+
+
+### Bug Fixes
+
+* **Input file:** Classname gets overwritten ([c44b203](https://github.com/Irimold/react-component/commit/c44b20310a614ac28cde593a753422e4b7aad6ac))
+
 ## [0.18.4](https://github.com/Irimold/react-component/compare/v0.18.3...v0.18.4) (2024-07-09)
 
 
