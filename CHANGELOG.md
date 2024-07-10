@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.4](https://github.com/Irimold/react-component/compare/v0.18.3...v0.18.4) (2024-07-09)
+
+
+### Bug Fixes
+
+* **Dropdown:** Location ([e22a2fe](https://github.com/Irimold/react-component/commit/e22a2fef0a1bb094739bb284554f5fe2c9d15ae1))
+
 ## [0.18.3](https://github.com/Irimold/react-component/compare/v0.18.2...v0.18.3) (2024-07-08)
 
 
