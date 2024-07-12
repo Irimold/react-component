@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.6](https://github.com/Irimold/react-component/compare/v0.18.5...v0.18.6) (2024-07-12)
+
+
+### Bug Fixes
+
+* **Typography:** Font weight ([3e8a3e9](https://github.com/Irimold/react-component/commit/3e8a3e988675b081c29f366c12cee7ede7e91722))
+
 ## [0.18.5](https://github.com/Irimold/react-component/compare/v0.18.4...v0.18.5) (2024-07-10)
 
 
