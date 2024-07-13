@@ -12,6 +12,7 @@ DefaultLink.displayName = 'DefaultLink'
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
     variant         = Solid,
     functionality   = 'button',
+    display         = 'inline',
     className       = '',
     children,
     leftIcon,
@@ -29,7 +30,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         } ${
             buttonClasses.color[variant]
         } ${
-            buttonClasses.display
+            buttonClasses.display[display]
         } ${
             buttonClasses.flex
         } ${

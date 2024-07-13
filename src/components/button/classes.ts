@@ -1,5 +1,5 @@
 import { body } from "@/typography";
-import { Solid, Outline, Link } from "./constants";
+import { Solid, Outline, Link, Inline, Block } from "./constants";
 
 export const buttonClasses = {
     background : {
@@ -18,7 +18,10 @@ export const buttonClasses = {
         [Outline]   : 'text-primary-700 hover:text-primary-100 active:text-primary-100 disabled:text-grey-300',
         [Link]      : 'text-primary-700 hover:text-primary-700 active:text-primary-100 disabled:text-grey-300',
     },
-    display     : 'inline-flex',
+    display     : {
+        [Inline]    : 'inline-flex',
+        [Block]     : 'flex',
+    },
     flex        : 'justify-center items-center',
     font        : body,
     outline     : '!outline-0',
