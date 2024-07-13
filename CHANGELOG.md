@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.7](https://github.com/Irimold/react-component/compare/v0.18.6...v0.18.7) (2024-07-13)
+
+
+### Bug Fixes
+
+* **Button:** Display ([fe7188a](https://github.com/Irimold/react-component/commit/fe7188ab42785ba7da43d98a84972a2cac2bc270))
+
 ## [0.18.6](https://github.com/Irimold/react-component/compare/v0.18.5...v0.18.6) (2024-07-12)
 
 
