@@ -37,7 +37,7 @@ export const ConfirmationModal : FC<ConfirmationModalProps> = ({
                 }`}
             >
                 <Button
-                    variant="solid"
+                    variant={ flow == PositiveFlow ? "solid" : "outline" }
                     leftIcon={ flow == PositiveFlow ? icon : undefined }
                     onClick={onConfirm}
                     className={`${
@@ -47,7 +47,7 @@ export const ConfirmationModal : FC<ConfirmationModalProps> = ({
                     Yes
                 </Button>
                 <Button
-                    variant="outline"
+                    variant={ flow == NegativeFlow ? "solid" : "outline" }
                     leftIcon={ flow == NegativeFlow ? icon : undefined }
                     onClick={onCancel}
                     className={`${
