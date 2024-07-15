@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, useEffect, useRef } from "react";
+import { FC, ReactEventHandler, useEffect, useRef } from "react";
 import { ModalProps } from "./props";
 import { modalBodyClasses, modalClasses, modalHeaderClasses } from "./classes";
 import { NavBtn } from "@/components/navigations";
@@ -13,6 +13,8 @@ export const Modal : FC<ModalProps> = ({
     className = '',
     title = '',
     children,
+    preventEscKey = false,
+    onCancel,
     ...props
 }) => {
     const dialogRef = useRef<HTMLDialogElement>(null)
@@ -41,6 +43,16 @@ export const Modal : FC<ModalProps> = ({
 
         if (typeof onClose == 'function') {
             onClose()
+        }
+    }
+
+    const handleCancel : ReactEventHandler<HTMLDialogElement> = (event) => {
+        if (preventEscKey) {
+            event.preventDefault()
+        }
+
+        if (typeof onCancel == 'function') {
+            onCancel(event)
         }
     }
 
@@ -79,6 +91,7 @@ export const Modal : FC<ModalProps> = ({
             }`}
             title={title}
             onClose={handleClose}
+            onCancel={handleCancel}
             {...props}
         >
             <header
