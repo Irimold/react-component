@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.8](https://github.com/Irimold/react-component/compare/v0.18.7...v0.18.8) (2024-07-13)
+
+
+### Bug Fixes
+
+* **Modal:** Button style not changed ([0791458](https://github.com/Irimold/react-component/commit/07914585a30ba6cff6f41c66b29efcfc8702b7a3))
+
 ## [0.18.7](https://github.com/Irimold/react-component/compare/v0.18.6...v0.18.7) (2024-07-13)
 
 
