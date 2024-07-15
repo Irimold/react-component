@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.9](https://github.com/Irimold/react-component/compare/v0.18.8...v0.18.9) (2024-07-15)
+
+
+### Bug Fixes
+
+* **Modal:** Prevent esc key ([453abd9](https://github.com/Irimold/react-component/commit/453abd965dae33325f8227f039d12aa75a9e11f7))
+
 ## [0.18.8](https://github.com/Irimold/react-component/compare/v0.18.7...v0.18.8) (2024-07-13)
 
 
