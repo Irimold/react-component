@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.19.1](https://github.com/Irimold/react-component/compare/v0.19.0...v0.19.1) (2024-09-30)
+
+
+### Bug Fixes
+
+* **Dependencies:** Update dts plugin ([059749d](https://github.com/Irimold/react-component/commit/059749daee353e5df07f38882560689a17d25820))
+* **Dependency:** Update dependencies ([c016363](https://github.com/Irimold/react-component/commit/c01636362e6f0c9aff0000b0fbba6431e259582e))
+
 ## [0.19.0](https://github.com/Irimold/react-component/compare/v0.18.10...v0.19.0) (2024-09-30)
 
 
