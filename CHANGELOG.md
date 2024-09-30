@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.0](https://github.com/Irimold/react-component/compare/v0.18.10...v0.19.0) (2024-09-30)
+
+
+### Features
+
+* **Tailwind:** Add more spacings ([6fe9076](https://github.com/Irimold/react-component/commit/6fe9076169212ea206187146b3acbb8d8157d95e))
+
 ## [0.18.10](https://github.com/Irimold/react-component/compare/v0.18.9...v0.18.10) (2024-07-16)
 
 
