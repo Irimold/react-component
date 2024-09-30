@@ -5,7 +5,10 @@ export const Spacings = [
     ".75rem",   // 12px | 4
     ".875rem",  // 14px | 5
     "1rem",     // 16px | 6
-    "1.25rem"   // 20px | 7
+    "1.25rem",  // 20px | 7
+    "1.5rem",   // 24px | 8
+    "1.75rem",  // 28px | 9
+    "2rem",     // 32px | 10
 ]
 
 export const MarginSetup = () => {
