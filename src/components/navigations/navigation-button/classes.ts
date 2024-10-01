@@ -49,7 +49,7 @@ export const navBtnBarClasses = {
             [Idle]  : 'first:translate-y-[6px] even:translate-y-[16px] last:translate-y-[26px]',
         },
     },
-    transition  : 'transition-all duration-500 ease-out',
+    transition  : 'transition duration-500 ease-out',
     width   : {
         [Small] : 'w-[24px]',
         [Medium]: 'w-[30px]',
