@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.2](https://github.com/Irimold/react-component/compare/v0.19.1...v0.19.2) (2024-10-01)
+
+
+### Bug Fixes
+
+* **SidebarItem:** Adjust size and hover behavior ([dc8e814](https://github.com/Irimold/react-component/commit/dc8e81467dacc8810a4d629546abd25403b15c5f))
+
 ## [0.19.1](https://github.com/Irimold/react-component/compare/v0.19.0...v0.19.1) (2024-09-30)
 
 
