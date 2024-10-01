@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.6](https://github.com/Irimold/react-component/compare/v0.19.5...v0.19.6) (2024-10-01)
+
+
+### Bug Fixes
+
+* **Breadcrumb:** Add passable className ([19ac544](https://github.com/Irimold/react-component/commit/19ac544d3d4e2fec9385809822d3601da5c46118))
+
 ## [0.19.5](https://github.com/Irimold/react-component/compare/v0.19.4...v0.19.5) (2024-10-01)
 
 
