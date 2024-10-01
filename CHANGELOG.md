@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.19.3](https://github.com/Irimold/react-component/compare/v0.19.2...v0.19.3) (2024-10-01)
+
+
+### Bug Fixes
+
+* **Breadcrumb:** Adjust breadcrumb size ([6791a57](https://github.com/Irimold/react-component/commit/6791a571176a5cc5ba8ce084126a066339c9b723))
+* **Typography:** Adjust font sizes ([512afab](https://github.com/Irimold/react-component/commit/512afab3bef372eff009fa3fbc95b298998b7288))
+
 ## [0.19.2](https://github.com/Irimold/react-component/compare/v0.19.1...v0.19.2) (2024-10-01)
 
 
