@@ -1,10 +1,10 @@
 import { Active, Idle } from "@/constants";
-import { cardTitle } from "@/typography";
+import { smallNavigation } from "@/typography";
 
 export const breadcrumbClasses = {
     display : 'flex',
     flex    : 'items-center',
-    font    : cardTitle,
+    font    : smallNavigation,
 }
 
 export const breadcrumbItemClasses = {
