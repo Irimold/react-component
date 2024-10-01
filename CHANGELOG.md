@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.5](https://github.com/Irimold/react-component/compare/v0.19.4...v0.19.5) (2024-10-01)
+
+
+### Bug Fixes
+
+* **NavBtn:** Make sure the transition work as intended ([dc8923e](https://github.com/Irimold/react-component/commit/dc8923e91534c13a023a83917bc62bc25c26ba33))
+
 ## [0.19.4](https://github.com/Irimold/react-component/compare/v0.19.3...v0.19.4) (2024-10-01)
 
 
