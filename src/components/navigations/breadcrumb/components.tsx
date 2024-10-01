@@ -12,6 +12,7 @@ const BreadcrumbSeparator : FC = () => (
 )
 
 export const Breadcrumb : FC<BreadcrumbProps> = ({
+    className = '',
     items,
     itemComponent = DefaultBreadcrumbItem,
 }) => {
@@ -25,6 +26,8 @@ export const Breadcrumb : FC<BreadcrumbProps> = ({
                 breadcrumbClasses.flex
             } ${
                 breadcrumbClasses.font
+            } ${
+                className
             }`}
         >
             { items.map((item, index) => (
