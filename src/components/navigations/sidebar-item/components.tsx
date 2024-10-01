@@ -36,6 +36,10 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
         <AnchorComponent
             ref={ref}
             className={`${
+                sidebarItemClasses.background
+            } ${
+                sidebarItemClasses.borderRadius
+            } ${
                 sidebarItemClasses.color[isActive ? Active : Idle]
             } ${
                 sidebarItemClasses.cursor
@@ -45,6 +49,8 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
                 sidebarItemClasses.flex
             } ${
                 sidebarItemClasses.font
+            } ${
+                sidebarItemClasses.gap
             } ${
                 sidebarItemClasses.group
             } ${
@@ -59,31 +65,25 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
                     <span 
                         className={`${
                             sidebarItemIconClasses.display[Hover]
-                        } ${
-                            sidebarItemIconClasses.margin
                         }`}
                     >
-                        <ActiveIcon size="1.5em"/>
+                        <ActiveIcon size="1.25em"/>
                     </span>
                     <span 
                         className={`${
                             sidebarItemIconClasses.display[Idle]
-                        } ${
-                            sidebarItemIconClasses.margin
                         }`}
                     >
-                        <IdleIcon size="1.5em"/>
+                        <IdleIcon size="1.25em"/>
                     </span>
                 </>
             ) : (
                 <span 
                     className={`${
                         sidebarItemIconClasses.display[Active]
-                    } ${
-                        sidebarItemIconClasses.margin
                     }`}
                 >
-                    <ActiveIcon size="1.5em"/>
+                    <ActiveIcon size="1.25em"/>
                 </span>
             ) }
             <span>
