@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.4](https://github.com/Irimold/react-component/compare/v0.19.3...v0.19.4) (2024-10-01)
+
+
+### Bug Fixes
+
+* **NavBtn:** Adjust transition speed ([46ec378](https://github.com/Irimold/react-component/commit/46ec378a660a3a3451c6c82b9739fb9c1060100f))
+
 ## [0.19.3](https://github.com/Irimold/react-component/compare/v0.19.2...v0.19.3) (2024-10-01)
 
 
