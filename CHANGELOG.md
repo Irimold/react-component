@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.1](https://github.com/Irimold/react-component/compare/v0.20.0...v0.20.1) (2024-10-07)
+
+
+### Bug Fixes
+
+* **Confirmation Modal:** Adjust layout ([974d957](https://github.com/Irimold/react-component/commit/974d957f8b574d9df267e18006c0ef9c9efc7bf5))
+
 ## [0.20.0](https://github.com/Irimold/react-component/compare/v0.19.6...v0.20.0) (2024-10-07)
 
 
