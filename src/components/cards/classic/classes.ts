@@ -18,7 +18,7 @@ export const cardImageClasses = {
 }
 
 export const cardDetailClasses = {
-    padding : 'px-no-border-4 py-no-border-2'
+    padding : 'px-borderless-4 py-borderless-2'
 }
 
 export const cardBodyClasses = {

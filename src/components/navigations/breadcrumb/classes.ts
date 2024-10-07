@@ -13,5 +13,5 @@ export const breadcrumbItemClasses = {
         [Idle]  : 'text-dark',
     },
     display : 'block',
-    padding : 'px-no-border-2 py-no-border-1',
+    padding : 'px-borderless-2 py-borderless-1',
 }

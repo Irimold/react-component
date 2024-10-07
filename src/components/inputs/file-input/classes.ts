@@ -41,7 +41,7 @@ export const placeholderClass = {
     display     : 'flex',
     flex        : 'flex-col justify-center items-center',
     height      : 'h-full',
-    padding     : 'p-no-border-4',
+    padding     : 'p-borderless-4',
     width       : 'w-full',
 }
 
@@ -82,6 +82,6 @@ export const inputClasses = {
     color       : 'text-dark file:text-primary-100 file:disabled:text-grey-400',
     display     : 'block',
     margin      : 'file:me-iri-2',
-    padding     : 'file:px-with-border-6 file:py-with-border-4',
+    padding     : 'file:px-bordered-6 file:py-bordered-4',
     width       : 'w-full',
 }

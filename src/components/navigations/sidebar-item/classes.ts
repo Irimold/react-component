@@ -14,7 +14,7 @@ export const sidebarItemClasses = {
     font        : navigation,
     gap         : 'gap-4',
     group       : 'group/sidebar-item',
-    padding     : 'p-no-border-2',
+    padding     : 'p-borderless-2',
 }
 
 export const sidebarItemIconClasses = {

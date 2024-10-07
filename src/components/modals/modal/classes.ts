@@ -15,9 +15,9 @@ export const modalHeaderClasses = {
     display : 'flex',
     flex    : 'justify-between items-center',
     font    : subTitle,
-    padding : 'px-no-border-6 pt-no-border-6 pb-with-border-6',
+    padding : 'px-borderless-7 pt-borderless-7 pb-bordered-7',
 }
 
 export const modalBodyClasses = {
-    padding : 'p-no-border-6',
+    padding : 'p-borderless-7',
 }

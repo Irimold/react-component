@@ -25,7 +25,7 @@ export const buttonClasses = {
     flex        : 'justify-center items-center',
     font        : body,
     outline     : '!outline-0',
-    padding     : 'px-with-border-6 py-with-border-4',
+    padding     : 'px-bordered-6 py-bordered-4',
     textAlign   : 'center',
 }
 

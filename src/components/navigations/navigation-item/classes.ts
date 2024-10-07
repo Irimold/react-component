@@ -8,7 +8,7 @@ export const navItemClasses = {
     font    : navigation,
     group   : 'group/nav-item',
     margin  : 'mx-auto lg:mx-iri-7 lg:my-iri-5',
-    padding : 'px-no-border-7 py-no-border-5 lg:p-0',
+    padding : 'px-borderless-7 py-borderless-5 lg:p-0',
     position: 'relative',
 }
 

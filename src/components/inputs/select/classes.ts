@@ -14,7 +14,7 @@ export const optionContainerClasses = {
         [Active]: 'block',
     },
     font        : body,
-    padding     : 'p-no-border-2',
+    padding     : 'p-borderless-2',
     position    : 'absolute bottom-0',
     transform   : 'translate-y-full',
     width       : 'w-full',
@@ -28,7 +28,7 @@ export const optionClasses = {
     display     : 'flex',
     flex        : 'items-center',
     margin      : 'mb-iri-1 last:mb-0',
-    padding     : 'p-no-border-2',
+    padding     : 'p-borderless-2',
     width       : 'w-full',
 }
 

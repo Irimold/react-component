@@ -38,8 +38,8 @@ export const PaddingSetup = () => {
 
     Spacings.forEach((spacing, index) => {
         const number = index + 1;
-        output[`no-border-${number}`] = spacing
-        output[`with-border-${number}`] = `calc(${spacing} - 1px)`
+        output[`borderless-${number}`] = spacing
+        output[`bordered-${number}`] = `calc(${spacing} - 1px)`
     })
 
     return output

@@ -12,5 +12,5 @@ export const cardImageContainerClasses = {
 
 export const cardDetailClasses = {
     width   : 'w-3/4',
-    padding : 'px-no-border-4 py-no-border-2'
+    padding : 'px-borderless-4 py-borderless-2'
 }

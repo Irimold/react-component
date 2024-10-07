@@ -21,7 +21,7 @@ export const dropdownListClasses = {
     },
     identifier: 'dropdown-list',
     overflow: 'overflow-hidden',
-    padding: 'p-no-border-1',
+    padding: 'p-borderless-1',
     position: {
         [DefaultPosition]   : 'absolute',
         [Bottom]            : 'bottom-0',
@@ -43,7 +43,7 @@ export const dropdownItemClasses = {
     display     : 'flex',
     flex        : 'justify-start items-center',
     group       : 'group/dropdown-item',
-    padding     : 'p-no-border-2',
+    padding     : 'p-borderless-2',
 }
 
 export const dropdownItemIconClasses = {
