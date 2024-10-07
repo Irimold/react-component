@@ -11,6 +11,17 @@ export const Spacings = [
     "2rem",     // 32px | 10
 ]
 
+export const GapSetup = () => {
+    const output = {}
+
+    Spacings.forEach((spacing, index) => {
+        const number = index + 1;
+        output[`iri-${number}`] = spacing
+    })
+
+    return output
+}
+
 export const MarginSetup = () => {
     const output = {}
 

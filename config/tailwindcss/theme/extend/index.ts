@@ -4,7 +4,7 @@ import { BorderRadiuses } from "./border-radiuses";
 import { BoxShadows } from "./box-shadows";
 import { Colors } from "./colors";
 import { FontSizes } from "./fonts";
-import { MarginSetup, PaddingSetup } from "./spacings";
+import { GapSetup, MarginSetup, PaddingSetup } from "./spacings";
 
 export const ExtendThemeConf : Partial<CustomThemeConfig> = {
     animation: Animations,
@@ -12,6 +12,7 @@ export const ExtendThemeConf : Partial<CustomThemeConfig> = {
     boxShadow: BoxShadows,
     colors: Colors,
     fontSize: FontSizes,
+    gap: GapSetup,
     keyframes: KeyFrames,
     margin: MarginSetup,
     padding: PaddingSetup
