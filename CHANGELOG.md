@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.20.0](https://github.com/Irimold/react-component/compare/v0.19.6...v0.20.0) (2024-10-07)
+
+
+### Features
+
+* **Gap:** Add custom gap ([7fd294e](https://github.com/Irimold/react-component/commit/7fd294e76718081a261b92d97fa75bfde8e525ed))
+
+
+### Bug Fixes
+
+* **Padding:** Rename padding to borderless and bordered ([ea356a0](https://github.com/Irimold/react-component/commit/ea356a0fade7159c6b10447d51afd8deaf654c84))
+
 ## [0.19.6](https://github.com/Irimold/react-component/compare/v0.19.5...v0.19.6) (2024-10-01)
 
 
