@@ -1,7 +1,7 @@
 import { NegativeFlow, PositiveFlow } from "./constants"
 
 export const descriptionClasses = {
-    margin: 'mb-iri-6'
+    margin: 'mb-iri-7'
 }
 
 export const buttonContainerClasses = {
@@ -10,19 +10,6 @@ export const buttonContainerClasses = {
         default         : 'items-center',
         [PositiveFlow]  : 'justify-start flex-row-reverse',
         [NegativeFlow]  : 'justify-end flex-row',
-    }
-}
-
-export const confirmButtonClasses = {
-    margin: {
-        [PositiveFlow] : '',
-        [NegativeFlow] : 'me-iri-2',
-    }
-}
-
-export const cancelButtonClasses = {
-    margin: {
-        [PositiveFlow] : 'me-iri-2',
-        [NegativeFlow] : '',
-    }
+    },
+    gap     : 'gap-iri-2'
 }

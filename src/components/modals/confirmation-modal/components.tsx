@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ConfirmationModalProps } from "./props";
 import { Modal } from "../modal";
-import { buttonContainerClasses, cancelButtonClasses, confirmButtonClasses, descriptionClasses } from "./classes";
+import { buttonContainerClasses, descriptionClasses } from "./classes";
 import { NegativeFlow, PositiveFlow } from "./constants";
 import { Button } from "@/components/button";
 import { OutlineCheck } from "@irimold/react-icons";
@@ -34,15 +34,14 @@ export const ConfirmationModal : FC<ConfirmationModalProps> = ({
                     buttonContainerClasses.flex.default
                 } ${
                     buttonContainerClasses.flex[flow]
+                } ${
+                    buttonContainerClasses.gap
                 }`}
             >
                 <Button
                     variant={ flow == PositiveFlow ? "solid" : "outline" }
                     leftIcon={ flow == PositiveFlow ? icon : undefined }
                     onClick={onConfirm}
-                    className={`${
-                        confirmButtonClasses.margin[flow]
-                    }`}
                 >
                     Yes
                 </Button>
@@ -50,9 +49,6 @@ export const ConfirmationModal : FC<ConfirmationModalProps> = ({
                     variant={ flow == NegativeFlow ? "solid" : "outline" }
                     leftIcon={ flow == NegativeFlow ? icon : undefined }
                     onClick={onCancel}
-                    className={`${
-                        cancelButtonClasses.margin[flow]
-                    }`}
                 >
                     No
                 </Button>
