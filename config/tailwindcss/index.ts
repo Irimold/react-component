@@ -5,7 +5,7 @@ export const IrimoldTailwindPreset : Partial<Config> = {
     theme: ThemeConf
 }
 
-export const IrimoldTailwindContent = './node_modules/@irimold/react-component/dist/index.js'
+export const IrimoldTailwindContent = './node_modules/@irimold/react-component/dist/src/**/*.js'
 
 export default IrimoldTailwindPreset
 
