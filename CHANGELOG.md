@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.3](https://github.com/Irimold/react-component/compare/v0.20.2...v0.20.3) (2024-10-23)
+
+
+### Bug Fixes
+
+* **Image:** Change logic inside Image ([7843287](https://github.com/Irimold/react-component/commit/7843287138c65a6f26cb981e6176c52a442712d6))
+
 ## [0.20.2](https://github.com/Irimold/react-component/compare/v0.20.1...v0.20.2) (2024-10-23)
 
 
