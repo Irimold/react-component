@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.20.4](https://github.com/Irimold/react-component/compare/v0.20.3...v0.20.4) (2024-10-23)
+
+
+### Bug Fixes
+
+* **Dependency:** Update dependencies ([2ffc393](https://github.com/Irimold/react-component/commit/2ffc393f22a7a72a6b012a1d3aad859fc39f454c))
+* Prevent use directive from getting erased ([47c33ae](https://github.com/Irimold/react-component/commit/47c33aefd8bb1de00346d452b504ebc08eb1fda6))
+
 ## [0.20.3](https://github.com/Irimold/react-component/compare/v0.20.2...v0.20.3) (2024-10-23)
 
 
