@@ -28,6 +28,8 @@ import "@irimold/react-component/style"
 ```
 Or if you are using Tailwind, you can add the existing preset to your tailwind.config.js.<br/>
 **But you will need to manually add some classes and fonts**
+
+tailwind.config.js
 ```js
 ...
 import { 
@@ -50,6 +52,52 @@ export default {
     ],
     ...
 }
+```
+
+Your main css file
+```css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.open-sans {
+    font-family: 'Open Sans';
+}
+
+.dropdown {
+    .dropdown-list {
+        transition-behavior: allow-discrete;
+        @starting-style {
+            display: block;
+            max-height: 0;
+        }
+    }
+}
+
+.modal {
+    transform: translateX(100%);
+    transition-behavior: allow-discrete;
+    opacity: 0;
+
+    &[open] {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    @starting-style {
+        opacity: 0;
+        display: block;
+        transform: translateX(-100%);
+    }
+}
+
+...
 ```
 
 ## Changelog
