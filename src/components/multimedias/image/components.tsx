@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, ReactEventHandler, forwardRef, memo, useState } from "react";
+import { FC, ReactEventHandler, forwardRef, useMemo, useState } from "react";
 import { BrokenImageProps, ImageProps } from "./props";
 import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";
@@ -60,7 +60,7 @@ const BrokenImage : FC<BrokenImageProps> = ({
     </div>
 )
 
-export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
+export const Image = forwardRef<HTMLImageElement, ImageProps>(({
     src,
     availableSrcSets,
     srcSetParser = ImageSrcSetParser,
@@ -73,6 +73,46 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
     ...props
 }, ref) => {
     const [failedToLoad, setFailedToLoad] = useState(false)
+
+    const srcSet = useMemo(() => {
+        if (disableSrcSet) {
+            return ''
+        }
+
+        if (!src) {
+            return ''
+        }
+
+        const separated = src.split('.')
+        const extension = separated[separated.length - 1]
+        const path = src.replace(`.${extension}`, '')
+    
+        let output = ''
+        const srcSets = availableSrcSets || DefaultAvailableSrcSets[srcSetType || Width]
+        srcSets.forEach((size, index) => {
+            output += srcSetParser(path, size, extension)
+            
+            switch (srcSetType) {
+                case Width:
+                    output += `${size}w`
+                    break
+            
+                case PixelDensity:
+                    output += `${size}x`
+                    break
+                
+                default:
+                    output += `${size}w`
+                    break
+            }
+    
+            if (index < srcSets.length - 1) {
+                output += ', '
+            }
+        })
+
+        return output
+    }, [disableSrcSet, src, srcSetParser, availableSrcSets, srcSetType])
 
     const handleError : ReactEventHandler<HTMLImageElement> = (event) => {
         if (typeof onError == 'function') {
@@ -95,47 +135,6 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
         ) : (<></>) )
     }
 
-    if (disableSrcSet) {
-        return (
-            <img
-                src={src}
-                ref={ref}
-                className={className}
-                onError={handleError}
-                onClick={onClick}
-                {...props}
-            />
-        )
-    }
-
-    const separated = src.split('.')
-    const extension = separated[separated.length - 1]
-    const path = src.replace(`.${extension}`, '')
-
-    let srcSet = ''
-    const srcSets = availableSrcSets || DefaultAvailableSrcSets[srcSetType || Width]
-    srcSets.forEach((size, index) => {
-        srcSet += srcSetParser(path, size, extension)
-        
-        switch (srcSetType) {
-            case Width:
-                srcSet += `${size}w`
-                break
-        
-            case PixelDensity:
-                srcSet += `${size}x`
-                break
-            
-            default:
-                srcSet += `${size}w`
-                break
-        }
-
-        if (index < srcSets.length - 1) {
-            srcSet += ', '
-        }
-    })
-
     return (
         <img
             src={src}
@@ -147,6 +146,6 @@ export const Image = memo(forwardRef<HTMLImageElement, ImageProps>(({
             {...props}
         />
     )
-}))
+})
 
 Image.displayName = 'Image'
