@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.5](https://github.com/Irimold/react-component/compare/v0.20.4...v0.20.5) (2024-10-23)
+
+
+### Bug Fixes
+
+* **Dependency:** Update invalid dependency ([d517617](https://github.com/Irimold/react-component/commit/d517617819172cabd4c5a73ce4e983fc96cded79))
+
 ## [0.20.4](https://github.com/Irimold/react-component/compare/v0.20.3...v0.20.4) (2024-10-23)
 
 
