@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.6](https://github.com/Irimold/react-component/compare/v0.20.5...v0.20.6) (2024-10-23)
+
+
+### Bug Fixes
+
+* **Tailwind:** Update Tailwind content path ([bff0ec2](https://github.com/Irimold/react-component/commit/bff0ec235cdf1f348f56020adae86971c82bb075))
+
 ## [0.20.5](https://github.com/Irimold/react-component/compare/v0.20.4...v0.20.5) (2024-10-23)
 
 
