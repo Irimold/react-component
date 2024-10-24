@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.7](https://github.com/Irimold/react-component/compare/v0.20.6...v0.20.7) (2024-10-24)
+
+
+### Bug Fixes
+
+* **Dependencies:** Update dependencies ([3e06366](https://github.com/Irimold/react-component/commit/3e06366bba62c2df69c2b49c18c715b6a57881ba))
+
 ## [0.20.6](https://github.com/Irimold/react-component/compare/v0.20.5...v0.20.6) (2024-10-23)
 
 
