@@ -117,7 +117,7 @@ export const Select : FC<SelectProps> = ({
     const [search, setSearch]   = useState('')
     const [open, setOpen]       = useState(false)
 
-    const searchTimeoutRef  = useRef<TimeoutType>()
+    const searchTimeoutRef  = useRef<TimeoutType>(null)
     const changeRef         = useRef(false)
 
     const setDisplayText = (val : typeof value) => {
