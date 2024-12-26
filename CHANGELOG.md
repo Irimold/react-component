@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.21.0](https://github.com/Irimold/react-component/compare/v0.20.7...v0.21.0) (2024-12-26)
+
+
+### Features
+
+* Update dependencies to latest versions ([74364d9](https://github.com/Irimold/react-component/commit/74364d94513f03805d6a6e47a29ef9deb11db8dd))
+* Update ESLint ([45780aa](https://github.com/Irimold/react-component/commit/45780aa563f24690b4797403f55144577c5967ee))
+
+
+### Bug Fixes
+
+* Ref now can't be empty ([c592e9e](https://github.com/Irimold/react-component/commit/c592e9e7b076894c53fa8b12a04ff4c9c6e0f203))
+
 ## [0.20.7](https://github.com/Irimold/react-component/compare/v0.20.6...v0.20.7) (2024-10-24)
 
 
