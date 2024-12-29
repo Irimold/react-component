@@ -41,9 +41,15 @@ export type {
 } from "./inputs"
 
 
-export { Loader } from "./misc"
+export { 
+    Backdrop, 
+    Loader
+} from "./misc"
 
-export type { LoaderProps } from "./misc"
+export type { 
+    BackdropProps, 
+    LoaderProps
+} from "./misc"
 
 
 export {
@@ -64,7 +70,6 @@ export type {
     ImageSrcSetParserType
 } from "./multimedias"
 
-
 export { 
     Breadcrumb,
     NavBtn,
@@ -72,6 +77,9 @@ export {
     NavItem,
     NavigationItem,
     Pagination,
+    Sidebar,
+    SidebarContext,
+    SidebarProvider,
     SidebarItem,
 } from "./navigations"
 
@@ -81,5 +89,8 @@ export type {
     NavigationButtonProps,
     NavigationItemProps,
     PaginationProps,
+    SidebarContextType,
+    SidebarItemType,
     SidebarItemProps,
+    SidebarProps,
 } from "./navigations"

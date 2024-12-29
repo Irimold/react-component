@@ -19,6 +19,7 @@ export {
     TextArea,
 
     // Misc
+    Backdrop,
     Loader,
 
     // Modals
@@ -35,6 +36,9 @@ export {
     NavItem,
     NavigationItem,
     Pagination,
+    Sidebar,
+    SidebarContext,
+    SidebarProvider,
     SidebarItem,
 } from "./components"
 
@@ -58,6 +62,7 @@ export type {
     InputChangeHandler,
 
     // Misc
+    BackdropProps,
     LoaderProps,
 
     // Modals
@@ -74,5 +79,8 @@ export type {
     NavigationButtonProps,
     NavigationItemProps,
     PaginationProps,
+    SidebarContextType,
+    SidebarItemType,
     SidebarItemProps,
+    SidebarProps,
 } from "./components"
