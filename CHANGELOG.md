@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.22.0](https://github.com/Irimold/react-component/compare/v0.21.0...v0.22.0) (2024-12-29)
+
+
+### Features
+
+* Backdrop component ([09b6075](https://github.com/Irimold/react-component/commit/09b607517167812390e851b1cd4443987088b0a8))
+* **Navigation:** Add sidebar component ([d5d27b0](https://github.com/Irimold/react-component/commit/d5d27b07c6ca38e423c968f956c55a60b0f16f50))
+
 ## [0.21.0](https://github.com/Irimold/react-component/compare/v0.20.7...v0.21.0) (2024-12-26)
 
 
