@@ -10,5 +10,8 @@ export type { NavigationItemProps } from "./navigation-item"
 export { Pagination } from "./pagination"
 export type { PaginationProps } from "./pagination"
 
+export { Sidebar, SidebarContext, SidebarProvider } from "./sidebar"
+export type { SidebarContextType, SidebarItemType, SidebarProps } from "./sidebar"
+
 export { SidebarItem } from "./sidebar-item"
 export type { SidebarItemProps } from "./sidebar-item"
