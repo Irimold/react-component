@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.1](https://github.com/Irimold/react-component/compare/v0.22.0...v0.22.1) (2024-12-29)
+
+
+### Bug Fixes
+
+* Forgot to add new components to index ([1d7cb22](https://github.com/Irimold/react-component/commit/1d7cb228a11c39df29803cd18bf47f65bd5012a7))
+
 ## [0.22.0](https://github.com/Irimold/react-component/compare/v0.21.0...v0.22.0) (2024-12-29)
 
 
