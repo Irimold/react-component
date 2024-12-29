@@ -1,6 +1,6 @@
 {
     "name": "@irimold/react-component",
-    "version": "0.22.0",
+    "version": "0.22.1",
     "description": "Irimold React Component",
     "type": "module",
     "main": "dist/index.js",
