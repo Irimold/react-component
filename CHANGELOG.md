@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.2](https://github.com/Irimold/react-component/compare/v0.22.1...v0.22.2) (2025-01-01)
+
+
+### Bug Fixes
+
+* **Deps:** Update peer dependency ([47392a8](https://github.com/Irimold/react-component/commit/47392a88f9f9a5cbcf4bf87ab4b2b0d86f05f6d6))
+
 ## [0.22.1](https://github.com/Irimold/react-component/compare/v0.22.0...v0.22.1) (2024-12-29)
 
 
