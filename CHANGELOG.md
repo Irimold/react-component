@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.3](https://github.com/Irimold/react-component/compare/v0.22.2...v0.22.3) (2025-01-07)
+
+
+### Bug Fixes
+
+* Make sure peer deps are external ([1c681f2](https://github.com/Irimold/react-component/commit/1c681f2da30a9805e49fa832f36a404628e98002))
+
 ## [0.22.2](https://github.com/Irimold/react-component/compare/v0.22.1...v0.22.2) (2025-01-01)
 
 
