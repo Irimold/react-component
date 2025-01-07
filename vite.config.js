@@ -29,9 +29,18 @@ export default defineConfig({
                 'react', 
                 'autoprefixer', 
                 'postcss', 
-                'tailwindcss'
+                'tailwindcss',
+                'react-dom',
+                'react/jsx-runtime',
+                '@irimold/react-hooks',
+                '@irimold/react-icons',
             ],
             output: {
+                globals: {
+                    'react'             : 'react',
+                    'react-dom'         : 'ReactDOM',
+                    'react/jsx-runtime' : 'react/jsx-runtime',
+                },
                 preserveModules: true
             }
         },
