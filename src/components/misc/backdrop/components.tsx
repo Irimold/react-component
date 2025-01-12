@@ -5,6 +5,7 @@ import { backdropClasses } from "./classes";
 export const Backdrop : FC<BackdropProps> = ({
     className = '',
     state,
+    hideOnLarge,
     ...props
 }) => (
     <div
@@ -14,6 +15,8 @@ export const Backdrop : FC<BackdropProps> = ({
             backdropClasses.display[state]
         } ${
             backdropClasses.identifier
+        } ${
+            hideOnLarge ? backdropClasses.opacity.default : ''
         } ${
             backdropClasses.opacity[state]
         } ${

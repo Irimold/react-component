@@ -1,4 +1,4 @@
-import { Active, Idle } from "@/constants";
+import { Active, DefaultState, Idle } from "@/constants";
 
 export const backdropClasses = {
     background  : 'bg-dark',
@@ -9,7 +9,8 @@ export const backdropClasses = {
     identifier  : 'sidebar-backdrop',
     opacity     : {
         [Idle]  : 'opacity-0',
-        [Active]: 'opacity-25 lg:opacity-0'
+        [Active]: 'opacity-25',
+        [DefaultState]: 'lg:opacity-0',
     },
     position    : 'fixed inset-0',
     transition  : 'transition-all duration-300',

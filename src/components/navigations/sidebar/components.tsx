@@ -24,6 +24,7 @@ export const Sidebar : FC<SidebarProps> = ({
             <Backdrop
                 state={open ? Active : Idle}
                 onClick={() => setOpen(false)}
+                hideOnLarge
             />
             <nav
                 className={`${
