@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.4](https://github.com/Irimold/react-component/compare/v0.22.3...v0.22.4) (2025-01-12)
+
+
+### Bug Fixes
+
+* **Misc:** Add option to make backdrop doesn't get hidden on large screen ([d86a030](https://github.com/Irimold/react-component/commit/d86a03098766611fe9c9496f27b3797f76a81fe8))
+
 ## [0.22.3](https://github.com/Irimold/react-component/compare/v0.22.2...v0.22.3) (2025-01-07)
 
 
