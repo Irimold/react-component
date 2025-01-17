@@ -3,8 +3,9 @@ import { Active, DefaultState, Idle } from "@/constants";
 export const backdropClasses = {
     background  : 'bg-dark',
     display     : {
-        [Idle]  : 'hidden',
-        [Active]: 'block lg:hidden'
+        [Idle]          : 'hidden',
+        [Active]        : 'block',
+        [DefaultState]  : 'lg:hidden'
     },
     identifier  : 'sidebar-backdrop',
     opacity     : {

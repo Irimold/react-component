@@ -12,6 +12,8 @@ export const Backdrop : FC<BackdropProps> = ({
         className={`${
             backdropClasses.background
         } ${
+            hideOnLarge ? backdropClasses.display.default : ''
+        } ${
             backdropClasses.display[state]
         } ${
             backdropClasses.identifier
