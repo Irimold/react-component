@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.5](https://github.com/Irimold/react-component/compare/v0.22.4...v0.22.5) (2025-01-17)
+
+
+### Bug Fixes
+
+* **Backdrop:** Backdrop not showing on large screen ([b725e0b](https://github.com/Irimold/react-component/commit/b725e0b28fe2791e24ad92cce9f016db3ac17524))
+
 ## [0.22.4](https://github.com/Irimold/react-component/compare/v0.22.3...v0.22.4) (2025-01-12)
 
 
