@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.23.0](https://github.com/Irimold/react-component/compare/v0.22.5...v0.23.0) (2025-01-18)
+
+
+### Features
+
+* **Nav:** Add tab ([5f8ee21](https://github.com/Irimold/react-component/commit/5f8ee216177962a3266bd95019815d5e07a40b4c))
+
 ## [0.22.5](https://github.com/Irimold/react-component/compare/v0.22.4...v0.22.5) (2025-01-17)
 
 
