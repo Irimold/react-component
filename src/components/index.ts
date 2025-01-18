@@ -81,6 +81,7 @@ export {
     SidebarContext,
     SidebarProvider,
     SidebarItem,
+    Tab,
 } from "./navigations"
 
 export type { 
@@ -93,4 +94,6 @@ export type {
     SidebarItemType,
     SidebarItemProps,
     SidebarProps,
+    TabItemType,
+    TabProps,
 } from "./navigations"

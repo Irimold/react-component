@@ -15,3 +15,6 @@ export type { SidebarContextType, SidebarItemType, SidebarProps } from "./sideba
 
 export { SidebarItem } from "./sidebar-item"
 export type { SidebarItemProps } from "./sidebar-item"
+
+export { Tab } from "./tab"
+export type { TabItemType, TabProps } from "./tab"

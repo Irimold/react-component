@@ -40,6 +40,7 @@ export {
     SidebarContext,
     SidebarProvider,
     SidebarItem,
+    Tab,
 } from "./components"
 
 export type {
@@ -83,4 +84,6 @@ export type {
     SidebarItemType,
     SidebarItemProps,
     SidebarProps,
+    TabItemType,
+    TabProps,
 } from "./components"
