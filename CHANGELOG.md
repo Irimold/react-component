@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.23.2](https://github.com/Irimold/react-component/compare/v0.23.1...v0.23.2) (2025-01-21)
+
+
+### Bug Fixes
+
+* **Tab:** Incorrect border ([926b69c](https://github.com/Irimold/react-component/commit/926b69cd08f9a1d41c015c036b9688db852f95b3))
+
 ## [0.23.1](https://github.com/Irimold/react-component/compare/v0.23.0...v0.23.1) (2025-01-21)
 
 
