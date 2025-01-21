@@ -5,6 +5,7 @@ export const brokenImageClasses = {
     borderRadius: 'rounded',
     display     : 'flex',
     flex        : 'flex-col justify-center items-center',
+    overflow    : 'overflow-hidden',
     padding     : 'p-borderless-4',
     width       : 'w-full',
 }

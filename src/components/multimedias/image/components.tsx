@@ -23,6 +23,8 @@ const BrokenImage : FC<BrokenImageProps> = ({
         } ${
             brokenImageClasses.flex
         } ${
+            brokenImageClasses.overflow
+        } ${
             brokenImageClasses.padding
         } ${
             brokenImageClasses.width
@@ -43,6 +45,7 @@ const BrokenImage : FC<BrokenImageProps> = ({
             } ${
                 brokenImageIconClasses.margin
             }`}
+            size={typeof width == 'number' ? width * 2/3 : width}
         />
         <p
             className={`${
