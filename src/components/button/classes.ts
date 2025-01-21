@@ -1,5 +1,6 @@
 import { body } from "@/typography";
 import { Solid, Outline, Link, Inline, Block } from "./constants";
+import { Large, Medium, Small } from "@/constants";
 
 export const buttonClasses = {
     background : {
@@ -25,7 +26,11 @@ export const buttonClasses = {
     flex        : 'justify-center items-center',
     font        : body,
     outline     : '!outline-0',
-    padding     : 'px-bordered-6 py-bordered-4',
+    padding     : {
+        [Small]     : 'px-bordered-2 py-bordered-1',
+        [Medium]    : 'px-bordered-4 py-bordered-2',
+        [Large]     : 'px-bordered-6 py-bordered-4',
+    },
     textAlign   : 'center',
 }
 

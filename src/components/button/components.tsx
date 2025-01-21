@@ -2,6 +2,7 @@ import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, DefaultLinkProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
 import { Solid } from "./constants";
+import { Large } from "@/constants";
 
 const DefaultLink = forwardRef<HTMLAnchorElement, DefaultLinkProps>((props, ref) => (
     <a ref={ref} {...props}/>
@@ -13,6 +14,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     variant         = Solid,
     functionality   = 'button',
     display         = 'inline',
+    size            = Large,
     className       = '',
     children,
     leftIcon,
@@ -38,7 +40,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         } ${
             buttonClasses.outline
         } ${
-            buttonClasses.padding
+            buttonClasses.padding[size]
         } ${
             buttonClasses.textAlign
         } ${
