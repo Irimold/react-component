@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.0](https://github.com/Irimold/react-component/compare/v0.23.2...v0.24.0) (2025-01-21)
+
+
+### Features
+
+* **Button:** Add button size ([bbcd5c2](https://github.com/Irimold/react-component/commit/bbcd5c2beece3e6a7a4c76bf8e9ba70eaabdabe8))
+
 ## [0.23.2](https://github.com/Irimold/react-component/compare/v0.23.1...v0.23.2) (2025-01-21)
 
 
