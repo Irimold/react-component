@@ -1,21 +1,4 @@
 import {
-    Active,
-    AvailableStates,
-    Default as DefaultState,
-    Hover,
-    Idle,
-} from "./state"
-
-export { 
-    Active,
-    AvailableStates,
-    DefaultState,
-    Hover,
-    Idle,
-}
-export type { AvailableStateTypes } from "./state"
-
-import {
     AvailablePositions,
     Bottom,
     Center,
@@ -38,3 +21,28 @@ export {
     Top,
 }
 export type { AvailablePositionType } from "./position"
+
+export {
+    AvailableSizes,
+    Small,
+    Medium,
+    Large
+} from "./size"
+export type { AvailableSizesType } from "./size"
+
+import {
+    Active,
+    AvailableStates,
+    Default as DefaultState,
+    Hover,
+    Idle,
+} from "./state"
+
+export { 
+    Active,
+    AvailableStates,
+    DefaultState,
+    Hover,
+    Idle,
+}
+export type { AvailableStateTypes } from "./state"
