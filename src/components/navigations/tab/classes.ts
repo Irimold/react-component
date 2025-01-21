@@ -7,6 +7,8 @@ export const containerClasses = {
 }
 
 export const itemClasses = {
-    flex    : 'grow-0 shrink-0',
-    snap    : 'snap-end'
+    border      : '!border-x-transparent !border-b-transparent',
+    borderRadius: '!rounded-none',
+    flex        : 'grow-0 shrink-0',
+    snap        : 'snap-end',
 }

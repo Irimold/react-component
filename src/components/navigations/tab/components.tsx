@@ -42,9 +42,13 @@ export const Tab : FC<TabProps> = ({
             { items.map((item, index) => (
                 <Button
                     key={`tab-${item.value}-${index}`}
-                    variant={selected == item.value ? 'solid' : 'link'}
+                    variant={selected == item.value ? 'outline' : 'link'}
                     onClick={handleSelect(item.value)}
                     className={`${
+                        itemClasses.border
+                    } ${
+                        itemClasses.borderRadius
+                    } ${
                         itemClasses.flex
                     } ${
                         itemClasses.snap
