@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.2](https://github.com/Irimold/react-component/compare/v0.24.1...v0.24.2) (2025-01-21)
+
+
+### Bug Fixes
+
+* **Image:** Adjust broken icon size and add overflow ([362c8fd](https://github.com/Irimold/react-component/commit/362c8fde20fe00c526ec7266f6f49d351c21e8fa))
+
 ## [0.24.1](https://github.com/Irimold/react-component/compare/v0.24.0...v0.24.1) (2025-01-21)
 
 
