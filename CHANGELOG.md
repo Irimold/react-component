@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.1](https://github.com/Irimold/react-component/compare/v0.24.0...v0.24.1) (2025-01-21)
+
+
+### Bug Fixes
+
+* **Image:** Broken image width based on image width ([8c1d880](https://github.com/Irimold/react-component/commit/8c1d88051ec2c2387b977f843592f6d9e9c119ea))
+
 ## [0.24.0](https://github.com/Irimold/react-component/compare/v0.23.2...v0.24.0) (2025-01-21)
 
 
