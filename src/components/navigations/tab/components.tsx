@@ -10,7 +10,7 @@ export const Tab : FC<TabProps> = ({
     className = '',
     onSelect,
 }) => {
-    const [selected, setSelected] = useState<any>('')
+    const [selected, setSelected] = useState<any>(items[0].value)
 
     const handleSelect = useCallback((value: any) => {
         return (event: MouseEvent) => {
