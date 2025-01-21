@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.23.1](https://github.com/Irimold/react-component/compare/v0.23.0...v0.23.1) (2025-01-21)
+
+
+### Bug Fixes
+
+* **Tab:** Change active state to outline and override some styles ([8731a01](https://github.com/Irimold/react-component/commit/8731a0175c7c3f0631b17209841070e2a12ce649))
+* **Tab:** Set default value to first item ([69ed192](https://github.com/Irimold/react-component/commit/69ed192a59d4fb33c2d6006bc13e613111dca972))
+
 ## [0.23.0](https://github.com/Irimold/react-component/compare/v0.22.5...v0.23.0) (2025-01-18)
 
 
