@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
 import { NavigationButtonProps } from "./props";
 import { navBtnBarClasses, navBtnClasses } from "./classes";
-import { Active, Idle } from "@/constants";
-import { Large, Light } from "./constants";
+import { Active, Idle, Large } from "@/constants";
+import { Light } from "./constants";
 
 export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonProps>(({
     className = '',

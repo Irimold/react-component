@@ -1,5 +1,5 @@
-import { Active, Idle } from "@/constants";
-import { Dark, Large, Light, Medium, Primary, Small } from "./constants";
+import { Active, Idle, Large, Medium, Small } from "@/constants";
+import { Dark, Light, Primary } from "./constants";
 
 export const navBtnClasses = {
     background  : 'bg-transparent',
