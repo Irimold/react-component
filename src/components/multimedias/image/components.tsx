@@ -10,6 +10,8 @@ import { brokenImageClasses, brokenImageIconClasses, brokenImageLabelClasses } f
 const BrokenImage : FC<BrokenImageProps> = ({
     className = '',
     onClick,
+    width,
+    height
 }) => (
     <div 
         className={`${
@@ -28,6 +30,10 @@ const BrokenImage : FC<BrokenImageProps> = ({
             className
         }`}
         onClick={onClick}
+        style={{
+            width   : typeof width == 'number' ? `${width}px` : width,
+            height  : typeof height == 'number' ? `${height}px` : height,
+        }}
     >
         <FilledDestroyed
             className={`${
@@ -131,6 +137,8 @@ export const Image = forwardRef<HTMLImageElement, ImageProps>(({
             <BrokenImage
                 className={className}
                 onClick={onClick}
+                width={props.width}
+                height={props.height}
             />
         ) : (<></>) )
     }

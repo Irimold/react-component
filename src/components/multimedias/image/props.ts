@@ -4,6 +4,8 @@ import { ImageSrcSetParserType, SrcSetType } from "./types";
 export interface BrokenImageProps {
     className?  : string
     onClick?    : MouseEventHandler
+    width?      : number | string
+    height?     : number | string
 }
 
 export interface ImageProps extends Omit<ComponentPropsWithoutRef<"img">, 'srcSet'> {
