@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.4](https://github.com/Irimold/react-component/compare/v0.24.3...v0.24.4) (2025-04-16)
+
+
+### Bug Fixes
+
+* Button small size adjustment ([5cf49ee](https://github.com/Irimold/react-component/commit/5cf49ee1c70e234fc0d42fcc887881442d5dc17e))
+
 ## [0.24.3](https://github.com/Irimold/react-component/compare/v0.24.2...v0.24.3) (2025-04-16)
 
 
