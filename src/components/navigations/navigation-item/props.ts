@@ -1,8 +1,8 @@
-import { ComponentPropsWithoutRef, ElementType } from "react";
+import { ComponentPropsWithRef, ElementType } from "react";
 
-export type DefaultAnchorProps = ComponentPropsWithoutRef<'a'>
+export type DefaultAnchorProps = ComponentPropsWithRef<'a'>
 
-export interface NavigationItemProps extends ComponentPropsWithoutRef<'a'> {
+export interface NavigationItemProps extends ComponentPropsWithRef<'a'> {
     isActive?   : boolean
     component?  : ElementType
 }

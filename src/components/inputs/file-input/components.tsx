@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEventHandler, FC, MouseEventHandler, forwardRef, useEffect, useRef, useState } from "react"
+import { ChangeEventHandler, FC, MouseEventHandler, useEffect, useRef, useState } from "react"
 import { FileDisplayPlaceholderProps, FileDisplayProps, FileInputProps, FileInputVariants } from "./props"
 import { containerClasses, displayClasses, placeholderClass, imageClass, inputClasses, labelClasses, placeholderIconClass, placeholderLabelClass } from "./classes"
 import { Image } from "@/components/multimedias"
@@ -109,7 +109,7 @@ const FileDisplay : FC<FileDisplayProps> = ({
     )
 }
 
-export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
+export const FileInput : FC<FileInputProps> = ({
     onChange,
     name,
     label           = '',
@@ -119,8 +119,9 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
     withoutDisplay  = false,
     variant         = Separate,
     className       = '',
+    ref,
     ...props
-}, ref) => {
+}) => {
     const [fileUrl, setFileUrl] = useState<string>(src)
     const [filename, setFilename] = useState<string>('')
     const inputId = `file-input${name ? `-${name}` : ''}${id ? `-${id}` : ''}`
@@ -255,6 +256,6 @@ export const FileInput = forwardRef<HTMLInputElement, FileInputProps>(({
             ) : (<></>) }
         </div>
     )
-})
+}
 
 FileInput.displayName = 'FileInput'

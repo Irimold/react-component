@@ -1,9 +1,9 @@
 import { PassableIconElement } from "@/types";
-import { ComponentPropsWithoutRef, ElementType } from "react";
+import { ComponentPropsWithRef, ElementType } from "react";
 
-export type DefaultSidebarComponentProps = ComponentPropsWithoutRef<'a'>
+export type DefaultSidebarComponentProps = ComponentPropsWithRef<'a'>
 
-export interface SidebarItemProps extends ComponentPropsWithoutRef<'a'> {
+export interface SidebarItemProps extends ComponentPropsWithRef<'a'> {
     component?  : ElementType
     icon?       : PassableIconElement
     isActive?   : boolean

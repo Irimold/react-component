@@ -1,8 +1,8 @@
-import { ComponentPropsWithoutRef, ElementType } from "react";
+import { ComponentPropsWithRef, ElementType } from "react";
 import { Displays, Variants } from "./constants";
 import { AvailableSizesType } from "@/constants";
 
-type BaseProps<T extends ElementType> = ComponentPropsWithoutRef<T> & {
+type BaseProps<T extends ElementType> = ComponentPropsWithRef<T> & {
     variant?        : keyof typeof Variants
     leftIcon?       : ElementType
     rightIcon?      : ElementType
@@ -21,4 +21,4 @@ export interface LinkButtonProps extends BaseProps<'a'> {
 
 export type ButtonProps = DefaultButtonProps | LinkButtonProps
 
-export type DefaultLinkProps = ComponentPropsWithoutRef<'a'>
+export type DefaultLinkProps = ComponentPropsWithRef<'a'>

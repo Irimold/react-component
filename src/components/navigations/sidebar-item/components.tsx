@@ -1,25 +1,26 @@
-import { ElementType, forwardRef } from "react";
+import { ElementType, FC } from "react";
 import { DefaultSidebarComponentProps, SidebarItemProps } from "./props";
 import { FilledHome, OutlineHome } from "@irimold/react-icons";
 import { sidebarItemClasses, sidebarItemIconClasses } from "./classes";
 import { Active, Hover, Idle } from "@/constants";
 import { isIconVariant } from "@/types";
 
-const DefaultSidebarComponent = forwardRef<HTMLAnchorElement, DefaultSidebarComponentProps>((props, ref) => (
-    <a ref={ref} {...props}/>
-))
+const DefaultSidebarComponent : FC<DefaultSidebarComponentProps> = (props) => (
+    <a {...props}/>
+)
 
 DefaultSidebarComponent.displayName = 'DefaultSidebarComponent'
 
 
-export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
+export const SidebarItem : FC<SidebarItemProps> = ({
     component = DefaultSidebarComponent,
     icon,
     isActive,
     className = '',
     children,
+    ref,
     ...props
-}, ref) => {
+}) => {
     const AnchorComponent = component
 
     let IdleIcon : ElementType = OutlineHome
@@ -91,6 +92,6 @@ export const SidebarItem = forwardRef<HTMLAnchorElement, SidebarItemProps>(({
             </span>
         </AnchorComponent>
     )
-})
+}
 
 SidebarItem.displayName = 'SidebarItem'

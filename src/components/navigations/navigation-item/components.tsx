@@ -1,11 +1,11 @@
-import { FC, forwardRef } from "react";
+import { FC } from "react";
 import { DefaultAnchorProps, NavigationItemLineProps, NavigationItemProps } from "./props";
 import { navItemClasses, navItemLineClasses } from "./classes";
 import { Active, Idle } from "@/constants";
 
-const DefaultAnchor = forwardRef<HTMLAnchorElement, DefaultAnchorProps>((props, ref) => (
-    <a ref={ref} {...props}/>
-))
+const DefaultAnchor : FC<DefaultAnchorProps> = (props) => (
+    <a {...props}/>
+)
 
 DefaultAnchor.displayName = 'DefaultAnchor'
 
@@ -31,13 +31,14 @@ const NavigationItemLine : FC<NavigationItemLineProps> = ({
     />
 )
 
-export const NavigationItem = forwardRef<HTMLAnchorElement, NavigationItemProps>(({
+export const NavigationItem : FC<NavigationItemProps> = ({
     component = DefaultAnchor,
     className = '',
     isActive = false,
     children,
+    ref,
     ...props
-}, ref) => {
+}) => {
     const Component = component
     return (
         <Component
@@ -67,7 +68,7 @@ export const NavigationItem = forwardRef<HTMLAnchorElement, NavigationItemProps>
             { children }
         </Component>
     )
-})
+}
 
 NavigationItem.displayName = 'NavigationItem'
 

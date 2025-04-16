@@ -1,17 +1,18 @@
-import { forwardRef } from "react";
+import { FC } from "react";
 import { NavigationButtonProps } from "./props";
 import { navBtnBarClasses, navBtnClasses } from "./classes";
 import { Active, Idle, Large } from "@/constants";
 import { Light } from "./constants";
 
-export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonProps>(({
+export const NavigationButton : FC<NavigationButtonProps> = ({
     className = '',
     color,
     isActive,
     showOnLarge = false,
     size,
+    ref,
     ...props
-}, ref) => {
+}) => {
     const btnColor = color || Light
     const btnSize = size || Large
 
@@ -65,7 +66,7 @@ export const NavigationButton = forwardRef<HTMLButtonElement, NavigationButtonPr
             )) }
         </button>
     )
-})
+}
 
 NavigationButton.displayName = 'NavigationButton'
 

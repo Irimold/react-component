@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, MouseEventHandler } from "react";
+import { ComponentPropsWithRef, MouseEventHandler } from "react";
 import { ImageSrcSetParserType, SrcSetType } from "./types";
 
 export interface BrokenImageProps {
@@ -8,7 +8,7 @@ export interface BrokenImageProps {
     height?     : number | string
 }
 
-export interface ImageProps extends Omit<ComponentPropsWithoutRef<"img">, 'srcSet'> {
+export interface ImageProps extends Omit<ComponentPropsWithRef<"img">, 'srcSet'> {
     srcSetParser?       : ImageSrcSetParserType
     srcSetType?         : SrcSetType
     availableSrcSets?   : number[]

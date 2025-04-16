@@ -1,7 +1,7 @@
-import { ComponentPropsWithoutRef, ElementType } from "react"
+import { ComponentPropsWithRef, ElementType } from "react"
 import { InputChangeHandler } from "./types"
 
-export type BaseInputProps <T extends ElementType = "input"> = Omit<ComponentPropsWithoutRef<T>, 'onChange' | 'name' | 'type'> & {
+export type BaseInputProps <T extends ElementType = "input"> = Omit<ComponentPropsWithRef<T>, 'onChange' | 'name' | 'type'> & {
     onChange?   : InputChangeHandler
     name        : string
     label?      : string

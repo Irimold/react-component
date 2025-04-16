@@ -1,19 +1,19 @@
 "use client"
 
-import { ChangeEventHandler, useRef } from "react";
-import { forwardRef } from "react";
+import { ChangeEventHandler, FC, useRef } from "react";
 import { InputProps } from "./props";
 import { containerClasses, inputClasses, labelClasses } from "./classes";
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(({
+export const Input : FC<InputProps> = ({
     label,
     name,
     id = '',
     onChange,
     className = '',
     placeholder = 'placeholder',
+    ref,
     ...props
-}, ref) => {
+}) => {
 
     const inputRef = useRef<HTMLInputElement|null>(null)
     const inputId = `input-${name}-${id}`
@@ -101,6 +101,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({
             </label>
         </div>
     )
-})
+}
 
 Input.displayName = "Input"

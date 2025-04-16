@@ -1,16 +1,16 @@
-import { forwardRef } from "react";
+import { FC } from "react";
 import { ButtonProps, DefaultButtonProps, DefaultLinkProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
 import { Solid } from "./constants";
 import { Large, Small } from "@/constants";
 
-const DefaultLink = forwardRef<HTMLAnchorElement, DefaultLinkProps>((props, ref) => (
-    <a ref={ref} {...props}/>
-))
+const DefaultLink : FC<DefaultLinkProps> = (props) => (
+    <a {...props}/>
+)
 
 DefaultLink.displayName = 'DefaultLink'
 
-export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
+export const Button : FC<ButtonProps> = ({
     variant         = Solid,
     functionality   = 'button',
     display         = 'inline',
@@ -21,7 +21,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     rightIcon,
     linkComponent,
     ...props
-}, ref) => {
+}) => {
 
     const ClassName = `${
             buttonClasses.background[variant]
@@ -94,7 +94,6 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
         return (
             <Component
                 className={ClassName}
-                ref={ref as React.ForwardedRef<HTMLAnchorElement>}
                 {...props as LinkButtonProps}
             >
                 { content }
@@ -105,12 +104,11 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
     return (
         <button
             className={ClassName}
-            ref={ref as React.ForwardedRef<HTMLButtonElement>}
             {...props as DefaultButtonProps}
         >
             { content }
         </button>
     )
 
-})
+}
 Button.displayName = "Button"

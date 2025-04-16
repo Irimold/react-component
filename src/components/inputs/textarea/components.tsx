@@ -1,11 +1,11 @@
 "use client"
 
-import { ChangeEventHandler, forwardRef, useRef, useState } from "react";
+import { ChangeEventHandler, FC, useRef, useState } from "react";
 import { TextAreaProps } from "./props";
 import { containerClasses, counterClasses, labelClasses, textAreaClasses } from "./classes";
 import { useTextareaAutoResize } from "@irimold/react-hooks";
 
-export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
+export const TextArea : FC<TextAreaProps> = ({
     label,
     name,
     id = '',
@@ -15,8 +15,9 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
     disableAutoResize = false,
     minHeight = 80,
     placeholder='placeholder',
+    ref,
     ...props
-}, ref) => {
+}) => {
     const [count, setCount] = useState((props.value as string)?.length || 0)
     const [content, setContent] = useState(props.value)
 
@@ -137,6 +138,6 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({
             ) : (<></>) }
         </div>
     )
-})
+}
 
 TextArea.displayName = 'TextArea'

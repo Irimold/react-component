@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, ReactEventHandler, forwardRef, useMemo, useState } from "react";
+import { FC, ReactEventHandler, useMemo, useState } from "react";
 import { BrokenImageProps, ImageProps } from "./props";
 import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";
@@ -48,7 +48,7 @@ const BrokenImage : FC<BrokenImageProps> = ({
     </div>
 )
 
-export const Image = forwardRef<HTMLImageElement, ImageProps>(({
+export const Image : FC<ImageProps> = ({
     src,
     availableSrcSets,
     srcSetParser = ImageSrcSetParser,
@@ -58,8 +58,9 @@ export const Image = forwardRef<HTMLImageElement, ImageProps>(({
     onError,
     onClick,
     className = '',
+    ref,
     ...props
-}, ref) => {
+}) => {
     const [failedToLoad, setFailedToLoad] = useState(false)
 
     const srcSet = useMemo(() => {
@@ -136,6 +137,6 @@ export const Image = forwardRef<HTMLImageElement, ImageProps>(({
             {...props}
         />
     )
-})
+}
 
 Image.displayName = 'Image'
