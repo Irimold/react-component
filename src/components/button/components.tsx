@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { ButtonProps, DefaultButtonProps, DefaultLinkProps, LinkButtonProps } from "./props";
 import { buttonClasses, childrenClasses, leftIconClasses, rightIconClasses } from "./classes";
 import { Solid } from "./constants";
-import { Large } from "@/constants";
+import { Large, Small } from "@/constants";
 
 const DefaultLink = forwardRef<HTMLAnchorElement, DefaultLinkProps>((props, ref) => (
     <a ref={ref} {...props}/>
@@ -60,7 +60,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                         children ? leftIconClasses.margin : ''
                     }`}
                 >
-                    <LeftIcon size="1.5em"/>
+                    <LeftIcon size={ size != Small ? "1.5em" : "1.25em" }/>
                 </span>
             ) : (<></>) }
             { children ? (
@@ -82,7 +82,7 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
                         children ? rightIconClasses.margin : ''
                     }`}
                 >
-                    <RightIcon size="1.5em"/>
+                    <RightIcon size={ size != Small ? "1.5em" : ".75em" }/>
                 </span>
             ) : (<></>)}
         </>
