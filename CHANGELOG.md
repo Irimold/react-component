@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.6](https://github.com/Irimold/react-component/compare/v0.24.5...v0.24.6) (2025-04-16)
+
+
+### Bug Fixes
+
+* Loading state for confirm modal ([8f2eb8e](https://github.com/Irimold/react-component/commit/8f2eb8e8f11aa9f7f737dc5e3afb674894930bf3))
+
 ## [0.24.5](https://github.com/Irimold/react-component/compare/v0.24.4...v0.24.5) (2025-04-16)
 
 
