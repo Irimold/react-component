@@ -8,4 +8,5 @@ export interface ConfirmationModalProps extends ModalProps {
     onCancel?   : GenericVoidCallback
     flow?       : FlowTypes
     icon?       : ElementType
+    loading?    : boolean
 }
