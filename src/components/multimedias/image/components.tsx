@@ -5,7 +5,7 @@ import { BrokenImageProps, ImageProps } from "./props";
 import { DefaultAvailableSrcSets, PixelDensity, Width } from "./constants";
 import { ImageSrcSetParser } from "./functions";
 import { FilledDestroyed } from "@irimold/react-icons";
-import { brokenImageClasses, brokenImageIconClasses, brokenImageLabelClasses } from "./classes";
+import { brokenImageClasses, brokenImageIconClasses } from "./classes";
 
 const BrokenImage : FC<BrokenImageProps> = ({
     className = '',
@@ -42,30 +42,9 @@ const BrokenImage : FC<BrokenImageProps> = ({
                 brokenImageIconClasses.color
             } ${
                 brokenImageIconClasses.display
-            } ${
-                brokenImageIconClasses.margin
             }`}
             size={typeof width == 'number' ? width * 2/3 : width}
         />
-        <p
-            className={`${
-                brokenImageLabelClasses.alignment
-            } ${
-                brokenImageLabelClasses.color
-            } ${
-                brokenImageLabelClasses.font
-            } ${
-                brokenImageLabelClasses.margin
-            } ${
-                brokenImageLabelClasses.padding
-            } ${
-                brokenImageLabelClasses.text
-            } ${
-                brokenImageLabelClasses.width
-            }`}
-        >
-            Unable to load image
-        </p>
     </div>
 )
 
