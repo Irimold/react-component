@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.5](https://github.com/Irimold/react-component/compare/v0.24.4...v0.24.5) (2025-04-16)
+
+
+### Bug Fixes
+
+* Remove forwardRef ([3535734](https://github.com/Irimold/react-component/commit/353573405b3d66942589a96fb3513102b8a03d57))
+
 ## [0.24.4](https://github.com/Irimold/react-component/compare/v0.24.3...v0.24.4) (2025-04-16)
 
 
