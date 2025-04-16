@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.24.3](https://github.com/Irimold/react-component/compare/v0.24.2...v0.24.3) (2025-04-16)
+
+
+### Bug Fixes
+
+* Remove broken image text ([d0c8ad6](https://github.com/Irimold/react-component/commit/d0c8ad6b3e8694e9aedf5488a35ae53972ebb59d))
+
 ## [0.24.2](https://github.com/Irimold/react-component/compare/v0.24.1...v0.24.2) (2025-01-21)
 
 
